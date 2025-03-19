@@ -1,1 +1,1 @@
-# React-studentsc
+# React-students
