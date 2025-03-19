@@ -1,3 +1,5 @@
+import React, { useEffect, useState } from 'react'
+import { getApi } from '../../core/services/api'
 import React from 'react'
 import HeroSection from './HeroSection.jsx'
 import VectorLines from './VectorLines.jsx'
