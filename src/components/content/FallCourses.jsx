@@ -14,8 +14,8 @@ const FallCourses = () => {
               <img src="" alt=""/>
             </div>
             <h3 className="mt-[5px] mr-[10px] text-[14px]">دوره جاوااسکریپت</h3>
-            <div className="flex justify-between items-center">
-              <div className="right  flex items-center gap-[5px] w-[50%] h-[35px] mt-[10px] p-[5px] border">
+            <div className="flex justify-between items-center mt-[10px]">
+              <div className="right  flex items-center gap-[5px] w-[50%] h-[35px] border">
                 <img src="" alt=""/>
                 <span className="text-[12px] text-gray-500">محمدحسین بحرالعلومی</span>
               </div>
@@ -28,8 +28,8 @@ const FallCourses = () => {
               <img src="" alt=""/>
             </div>
             <h3 className="mt-[5px] mr-[10px] text-[14px]">دوره html و CSS</h3>
-            <div className="flex justify-between items-center">
-              <div className="right  flex items-center gap-[5px] w-[50%] h-[35px] mt-[10px] p-[5px] border">
+            <div className="flex justify-between items-center mt-[10px]">
+              <div className="right  flex items-center gap-[5px] w-[50%] h-[35px] border">
                 <img src="" alt=""/>
                 <span className="text-[12px] text-gray-500">محمدحسین بحرالعلومی</span>
               </div>
@@ -41,8 +41,8 @@ const FallCourses = () => {
               <img src="" alt=""/>
             </div>
             <h3 className="mt-[5px] mr-[10px] text-[14px]">دوره جاوااسکریپت</h3>
-            <div className="flex justify-between items-center">
-              <div className="right  flex items-center gap-[5px] w-[50%] h-[35px] mt-[10px] p-[5px] border">
+            <div className="flex justify-between items-center mt-[10px]">
+              <div className="right  flex items-center gap-[5px] w-[50%] h-[35px] border">
                 <img src="" alt=""/>
                 <span className="text-[12px] text-gray-500">محمدحسین بحرالعلومی</span>
               </div>
