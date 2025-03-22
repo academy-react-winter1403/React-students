@@ -17,7 +17,7 @@ const Header = () => {
         <a className="px-[10px] py-[5px] text-[16px] rounded-[10px]  hover:bg-gray-200">درباره ما</a>
       </div>
       <div className="loginSignup  w-[9%] h-[60px] flex justify-center items-center gap-[10px] border">
-        <a className="flex justify-center items-center w-[35%] h-[30px] text-[13px] border rounded-[10px]">ورود</a>
+        <a className="flex justify-center items-center w-[31px] h-[21px] text-[16px] border">ورود</a>
         <a className="flex justify-center items-center w-[83px] h-[37px] px-[16px] py-[8px] text-[16px] text-white bg-[#A74DD1] rounded-[12px]">ثبت نام</a>
       </div>
     </div>
