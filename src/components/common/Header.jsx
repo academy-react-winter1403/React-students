@@ -29,7 +29,7 @@ const Header = () => {
       </div>
       <div className="loginSignup   flex justify-center gap-[24px] border">
         <a className="flex justify-center items-center mt-[12px] font-[semibold] text-[16px] border">ورود</a>
-        <a className="flex justify-center items-center mt-[4px] px-[16px] py-[8px] font-[semibold] text-[16px] text-white bg-[#A74DD1] rounded-[12px]">ثبت نام</a>
+        <a className="flex justify-center items-center w-[83px] h-[37px] mt-[4px] px-[16px] py-[8px] font-[semibold] text-[16px] text-white bg-[#A74DD1] rounded-[12px]">ثبت نام</a>
       </div>
     </div>
   )

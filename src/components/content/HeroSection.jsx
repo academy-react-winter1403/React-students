@@ -8,7 +8,7 @@ const HeroSection = () => {
           <p className="font-[semibold] text-[40px]">با آکادمی سپهر ، میتونی از کدنویسی</p>
         </div>
         <div className="flex justify-center items-center gap-[8px] mt-[8px] border">
-          <span className="px-[15px] py-[11px] font-[semibold] text-[40px] text-[#A74DD1] bg-[url('../public/Group 1.svg')] border-[3px] border-[#A74DD1]"> نهایت لذت </span>
+          <span className="px-[15px] py-[11px] font-[semibold] text-[40px] text-[#A74DD1] border-[3px] border-[#A74DD1]">نهایت لذت</span>
           <span className="font-[semibold] text-[40px]">رو ببری</span>
         </div>
       </div>
