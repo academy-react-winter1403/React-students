@@ -4,32 +4,32 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div className="header   flex justify-between border mt-[20px] pr-[64px] pl-[64px]">
-      <div className="logo   flex gap-[8px]">
-        <img className="w-[44px] h-[44px]" src="" alt=""/>
-        <h2 className="mt-[13px] font-[semibold] text-[14px]">React-students</h2>
+    <div className="flex justify-between items-center border mt-[20px]   ts:px-[8px]    os:px-[16px]  sm:px-[32px]    lg:px-[64px]">
+      <div className="flex justify-center items-center   ts:gap-[2px]   os:gap-[4px]   sm:gap-[6px]   lg:gap-[8px]">
+        <img className="ts:w-[14px] ts:h-[14px]   os:w-[20px] os:h-[20px]   sm:w-[32px] sm:h-[32px]   lg:w-[44px] lg:h-[44px]" src="" alt=""/>
+        <h2 className="font-[semibold]    ts:text-[8px]    os:text-[10px]   sm:text-[12px]   lg:text-[14px]">React-students</h2>
       </div>
-      <div className="links   flex justify-center gap-[48px] border">
-        <div className="mt-[12px]">
-          <a className="font-[medium] text-[16px]">خانه</a>
-          <div className="w-[40.3%] h-[3px] mx-[auto] bg-[#A74DD1] rounded-[1.5px]"></div>
+      <div className="flex justify-center items-center border   ts:gap-[24px]   os:gap-[32px]   sm:gap:[40px]   lg:gap-[48px]">
+        <div className="border">
+          <a className="font-[medium]   ts:text-[8px]   os:text-[10px]   sm:text-[12px]   lg:text-[16px]">خانه</a>
+          <div className="mx-[auto] bg-[#A74DD1] rounded-[1.5px]   ts:w-[25%] ts:h-[1px]   os:w-[30%] os:h-[1px]   sm:w-[35%] sm:h-[2px]   lg:w-[40.3%] lg:h-[3px]"></div>
         </div>
-        <div className="mt-[12px]">
-          <a className="font-[medium] text-[16px]">دوره ها</a>
-          <div></div>
+        <div className="border">
+          <a className="font-[medium]   ts:text-[8px]   os:text-[10px]   sm:text-[12px]   lg:text-[16px]">دوره ها</a>
+          <div className="mx-[auto] bg-white rounded-[1.5px]   ts:w-[25%] ts:h-[1px]   os:w-[30%] os:h-[1px]   sm:w-[35%] sm:h-[2px]   lg:w-[40.3%] lg:h-[3px]"></div>
         </div>
-        <div className="mt-[12px]">
-          <a className="font-[medium] text-[16px]">بلاگ ها</a>
-          <div></div>
+        <div className="border">
+          <a className="font-[medium]   ts:text-[8px]   os:text-[10px]   sm:text-[12px]   lg:text-[16px]">بلاگ ها</a>
+          <div className="mx-[auto] bg-white rounded-[1.5px]   ts:w-[25%] ts:h-[1px]   os:w-[30%] os:h-[1px]   sm:w-[35%] sm:h-[2px]   lg:w-[40.3%] lg:h-[3px]"></div>
         </div>
-        <div className="mt-[12px]">
-          <a className="font-[medium] text-[16px]">درباره ما</a>
-          <div></div>
+        <div className="border">
+          <a className="font-[medium]   ts:text-[8px]   os:text-[10px]   sm:text-[12px]   lg:text-[16px]">درباره ما</a>
+          <div className="mx-[auto] bg-white rounded-[1.5px]   ts:w-[25%] ts:h-[1px]   os:w-[30%] os:h-[1px]   sm:w-[35%] sm:h-[2px]   lg:w-[40.3%] lg:h-[3px]"></div>
         </div>
       </div>
-      <div className="loginSignup   flex justify-center gap-[24px] border">
-        <a className="flex justify-center items-center mt-[12px] font-[semibold] text-[16px] border">ورود</a>
-        <a className="flex justify-center items-center w-[83px] h-[37px] mt-[4px] px-[16px] py-[8px] font-[semibold] text-[16px] text-white bg-[#A74DD1] rounded-[12px]">ثبت نام</a>
+      <div className="flex justify-center items-center border   ts:gap-[4px]   os:gap-[8px]   sm:gap-[16px]   lg:gap-[24px]">
+        <a className="flex justify-center items-center font-[semibold] border   ts:text-[8px]   os:text-[10px]  sm:text-[12px]  lg:text-[16px]">ورود</a>
+        <a className="flex justify-center items-center font-[semibold] text-white bg-[#A74DD1]   ts:px-[8px] ts:py-[2px] ts:text-[8px] ts:rounded-[6px]    os:px-[12px] os:py-[4px] os:text-[10px] os:rounded-[8px]    sm:px-[14px] sm:py-[6px] sm:text-[12px] sm:rounded-[10px]   lg:px-[16px] lg:py-[8px] lg:text-[16px] lg:rounded-[12px]">ثبت نام</a>
       </div>
     </div>
   )

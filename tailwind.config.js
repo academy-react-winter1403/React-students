@@ -2,6 +2,12 @@
 export default {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
+    screens: {
+      'lg': '1024px',
+      'sm': '640px',
+      'os': '500px',
+      'ts': '300px'
+    },
     extend: {
       // fontFamily: {
       //   Black: "Black1",
