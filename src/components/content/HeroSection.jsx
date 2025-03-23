@@ -2,14 +2,14 @@ import React from 'react'
 
 const HeroSection = () => {
   return (
-    <div className="content1   mx-[auto] mt-[60px] text-center border">
+    <div className="mx-[auto] text-center border   ts:mt-[20px]   sm:mt-[40px]   lg:mt-[60px]">
       <div className="border">
         <div className="border">
-          <p className="font-[semibold]   ts:text-[18px]   os:text-[26px]    sm:text-[32px]   lg:text-[40px]">با آکادمی سپهر ، میتونی از کدنویسی</p>
+          <p className="font-[semibold]   ts:text-[12px]   os:text-[20px]    sm:text-[32px]   lg:text-[40px]">با آکادمی سپهر ، میتونی از کدنویسی</p>
         </div>
         <div className="flex justify-center items-center border   ts:gap-[2px] ts:mt-[2px]   os:gap-[4px] os:mt-[4px]   sm:gap-[6px] sm:mt-[6px]    lg:gap-[8px] lg:mt-[8px]">
-          <span className="font-[semibold] text-[#A74DD1] border-[3px] border-[#A74DD1]   ts:px-[4px] ts:py-[2px] ts:text-[16px]   os:px-[8px] os:py-[4px] os:text-[24px]   sm:px-[12px] sm:py-[8px] sm:text-[32px]   lg:px-[15px] lg:py-[11px] lg:text-[40px]">نهایت لذت</span>
-          <span className="font-[semibold]   ts:text-[16px]   os:text-[24px]   sm:text-[32px]   lg:text-[40px]">رو ببری</span>
+          <span className="font-[semibold] text-[#A74DD1] border-[3px] border-[#A74DD1]   ts:px-[4px] ts:py-[2px] ts:text-[12px]   os:px-[8px] os:py-[4px] os:text-[20px]   sm:px-[12px] sm:py-[8px] sm:text-[32px]   lg:px-[15px] lg:py-[11px] lg:text-[40px]">نهایت لذت</span>
+          <span className="font-[semibold]   ts:text-[12px]   os:text-[20px]   sm:text-[32px]   lg:text-[40px]">رو ببری</span>
         </div>
       </div>
       <div className="mx-[auto]   ts:w-[140px]   os:w-[270px]   sm:w-[400px]   lg:w-[547px]">

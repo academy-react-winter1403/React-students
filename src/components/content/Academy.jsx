@@ -2,11 +2,13 @@ import React from 'react'
 
 const Academy = () => {
   return (
-    <div className="content3  flex justify-between gap-[101px] border">
+    <div className="flex justify-between gap-[101px] border   ts:mt-[24px]   sm:mt-[48px]   lg:mt-[96px]">
       <div className="pr-[64px] border">
-        <button className="w-[97px] h-[32px] mt-[10px] px-[16px] py-[8px] font-[bold] text-[12px] text-[#A74DD1] bg-[#F1D1FF] rounded-[8px]">درباره آکادمی</button>
-        <h2 className="w-[170px] h-[42px] mt-[12px] font-[bold] text-[32px]">آکادمی سپهر</h2>
-        <p className="w-[543px] h-[104px] mt-[24px] font-[medium] text-[20px]">آکادمی سپهر با 20 سال سابقه آموزش تخصصی در زمینه کدنویسی و برنامه نویسی در سنین کودکی تا بزرگسال در محیطی جامع و پیشرفت متداول در تمامی مهارت ها در کنار اساتید بزرگ از سراسر جهان. اینجا مکانی برای بدست اوردن رویاهای شماست.</p>
+        <button className="font-[bold] text-[#A74DD1] bg-[#F1D1FF]  ts:mt-[6px] ts:px-[8px] ts:py-[4px] ts:text-[8px] ts:rounded-[6px]    sm:mt-[8px] sm:px-[12px] sm:py-[4px] sm:text-[12px] sm:rounded-[8px]   lg:mt-[10px] lg:px-[16px] lg:py-[8px] lg:text-[12px] lg:rounded-[8px]">درباره آکادمی</button>
+        <h2 className="font-[bold]   ts:mt-[6px] ts:text-[10px]   os:mt-[8px] os:text-[18px]   sm:mt-[10px] sm:text-[26px]   lg:mt-[12px] lg:text-[32px]">آکادمی سپهر</h2>
+        <div className="ts:w-[200px] ts:mt-[12px]   os:w-[350px] os:mt-[16px]   sm:w-[470px] sm:mt-[20px]   lg:w-[543px] lg:mt-[24px]">
+          <p className="font-[medium]   ts:text-[8px]   os:text-[12px]   sm:text-[16px]   lg:text-[20px]">آکادمی سپهر با 20 سال سابقه آموزش تخصصی در زمینه کدنویسی و برنامه نویسی در سنین کودکی تا بزرگسال در محیطی جامع و پیشرفت متداول در تمامی مهارت ها در کنار اساتید بزرگ از سراسر جهان. اینجا مکانی برای بدست اوردن رویاهای شماست.</p>
+        </div>
       </div>
       <div className="flex justify-center items-end gap-[24px] ml-[81px] border"> 
         <div className="flex items-end w-[201px] h-[116px] bg-[#F5F5F5] rounded-[24px]">
