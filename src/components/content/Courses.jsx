@@ -2,7 +2,7 @@ import React from 'react'
 
 const Courses = () => {
   return (  
-    <div className="border mt-[112px]">
+    <div className="border   ts:mt-[18px]   os:mt-[32px]   sm:mt-[68px]   lg:mt-[112px]">
       <div className="text-center border">
         <button className="flex justify-center items-center mx-[auto] font-[bold] text-[#A74DD1] bg-[#F1D1FF]   ts:px-[8px] ts:py-[4px] ts:text-[8px] ts:rounded-[4px]   os:px-[8px] os:py-[4px] os:text-[6px] os:rounded-[4px]   sm:px-[16px] sm:py-[8px] sm:text-[10px] sm:rounded-[8px]   lg:px-[16px] lg:py-[8px] lg:text-[12px] lg:rounded-[8px]">دسته بندی</button>
         <h2 className="text-center font-[bold]    ts:mt-[4px] ts:text-[12px]   os:mt-[8px] os:text-[16px]    sm:mt-[12px] sm:text-[18px]   lg:mt-[12px] lg:text-[24px]">دسته بندی دوره های ما</h2>

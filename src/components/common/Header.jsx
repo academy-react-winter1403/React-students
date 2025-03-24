@@ -4,7 +4,7 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div className="flex justify-between items-center border   ts:px-[16px]   sm:px-[32px]    lg:px-[64px] mt-[20px]">
+    <div className="flex justify-between items-center border   ts:px-[16px] ts:mt-[8px]   sm:px-[32px] sm:mt-[16px]    lg:px-[64px] mt-[20px]">
       <div className="flex justify-center items-center   ts:gap-[4px]   sm:gap-[8px]   lg:gap-[8px]">
         <img className="ts:w-[20px] ts:h-[20px]   sm:w-[32px] sm:h-[32px]   lg:w-[44px] lg:h-[44px]" src="" alt=""/>
         <h2 className="font-[semibold]    ts:text-[6px]    os:text-[8px]   sm:text-[12px]   lg:text-[14px]">React-students</h2>

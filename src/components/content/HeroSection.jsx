@@ -2,7 +2,7 @@ import React from 'react'
 
 const HeroSection = () => {
   return (
-    <div className="mx-[auto] text-center border mt-[60px]">
+    <div className="mx-[auto] text-center border   ts:mt-[12px]   os:mt-[28px]   sm:mt-[44px]   lg:mt-[60px]">
       <div className="border">
         <div className="border">
           <p className="font-[semibold]   ts:text-[12px]   os:text-[20px]    sm:text-[32px]   lg:text-[40px]">با آکادمی سپهر ، میتونی از کدنویسی</p>
