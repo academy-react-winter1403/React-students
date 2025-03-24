@@ -2,10 +2,10 @@ import React from 'react'
 
 const WeeklyBlogs = () => {
   return (
-    <div className="content6   mt-[112px]">
+    <div className="mt-[112px]">
       <div className="text-center border">
-        <button className="w-[69px] h-[32px] mx-[auto] px-[16px] py-[8px] font-[bold] text-[12px] text-[#A74DD1] bg-[#F1D1FF] rounded-[8px]">بلاگ ها</button>
-        <h2 className="mt-[12px] text-center font-[bold] text-[24px]">بلاگ های این هفته</h2>
+        <button className="mx-[auto] font-[bold] text-[#A74DD1] bg-[#F1D1FF]   ts:px-[8px] ts:py-[4px] ts:text-[6px] ts:rounded-[4px]   os:px-[12px] os:py-[4px] os:text-[8px] os:rounded-[4px]   sm:px-[16px] sm:py-[8px] sm:text-[12px] sm:rounded-[8px]   lg:px-[16px] lg:py-[8px] lg:text-[12px] lg:rounded-[8px]">بلاگ ها</button>
+        <h2 className="text-center font-[bold]   ts:mt-[4px] ts:text-[12px]   os:mt-[8px] os:text-[16px]   sm:mt-[12px] sm:text-[20px]   lg:mt-[12px] lg:text-[24px]">بلاگ های این هفته</h2>
       </div>
       <div>
         <div className="flex justify-center items-center gap-[20px] mt-[40px] border">
