@@ -4,7 +4,7 @@ import Panel from '../components/content/Panel'
 
 const App = () => {
   return (
-    <div className='flex bg-them font-Iran'>
+    <div>
       <Panel />
     </div> 
   )
