@@ -2,37 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
+@font-face {
+  font-family: IranYekan;
+  src: url('/IRANYekanX(Pro)/Webfonts/woff/IRANYekanX-Thin.woff') format('woff2');
+  font-weight: 100;
+  font-display: swap;
+}
 
 @font-face {
-    font-family: iranyekan;
-    src: url('/IRANYekanX(Pro)/Webfonts/woff/IRANYekanX-Black.woff') format('woff'),
-    url('/IRANYekanX(Pro)/Webfonts/woff/IRANYekanX-Bold.woff') format('woff'),
-    url('/IRANYekanX(Pro)/Webfonts/woff/IRANYekanX-DemiBold.woff') format('woff'),
-    url('/IRANYekanX(Pro)/Webfonts/woff/IRANYekanX-ExtraBlack.woff') format('woff'),
-    url('/IRANYekanX(Pro)/Webfonts/woff/IRANYekanX-ExtraBold.woff') format('woff'),
-    url('/IRANYekanX(Pro)/Webfonts/woff/IRANYekanX-Heavy.woff') format('woff'),
-    url('/IRANYekanX(Pro)/Webfonts/woff/IRANYekanX-Light.woff') format('woff'),
-    url('/IRANYekanX(Pro)/Webfonts/woff/IRANYekanX-Medium.woff') format('woff'),
-    url('/IRANYekanX(Pro)/Webfonts/woff/IRANYekanX-Regular.woff') format('woff'),
-    url('/IRANYekanX(Pro)/Webfonts/woff/IRANYekanX-Thin.woff') format('woff'),
-    url('/IRANYekanX(Pro)/Webfonts/woff/IRANYekanX-UltraLight.woff') format('woff'),
-  
-    url('/IRANYekanX(Pro)/Webfonts/woff2/IRANYekanX-Black.woff2') format('woff2'),
-    url('/IRANYekanX(Pro)/Webfonts/woff2/IRANYekanX-Bold.woff2') format('woff2'),
-    url('/IRANYekanX(Pro)/Webfonts/woff2/IRANYekanX-DemiBold.woff2') format('woff2'),
-    url('/IRANYekanX(Pro)/Webfonts/woff2/IRANYekanX-ExtraBlack.woff2') format('woff2'),
-    url('/IRANYekanX(Pro)/Webfonts/woff2/IRANYekanX-Heavy.woff2') format('woff2'),
-    url('/IRANYekanX(Pro)/Webfonts/woff2/IRANYekanX-Light.woff2') format('woff2'),
-    url('/IRANYekanX(Pro)/Webfonts/woff2/IRANYekanX-Medium.woff2') format('woff2'),
-    url('/IRANYekanX(Pro)/Webfonts/woff2/IRANYekanX-Regular.woff2') format('woff2'),
-    url('/IRANYekanX(Pro)/Webfonts/woff2/IRANYekanX-Thin.woff2') format('woff2'),
-    url('/IRANYekanX(Pro)/Webfonts/woff2/IRANYekanX-UltraLight.woff2') format('woff2')
-  }
+  font-family: IranYekan;
+  src: url('/IRANYekanX(Pro)/Webfonts/woff/IRANYekanX-Light.woff') format('woff2');
+  font-weight: 300;
+  font-display: swap;
+}
 
+@font-face {
+  font-family: IranYekan;
+  src: url('/IRANYekanX(Pro)/Webfonts/woff/IRANYekanX-Medium.woff') format('woff');
+  font-weight: 500;
+  font-display: swap;
 
-
-  *{
-    font-family: iranyekan;
-  }
+}@font-face {
+  font-family: IranYekan;
+  src: url('/IRANYekanX(Pro)/Webfonts/woff/IRANYekanX-Bold.woff') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}

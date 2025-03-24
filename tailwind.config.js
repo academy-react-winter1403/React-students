@@ -1,12 +1,42 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/**/*.{html,js,jsx}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}"
+  ],
   theme: {
     extend: {
+      backgroundImage: {
+        'Dashboard': "url('./assets/Icons/Frame(1).svg')",
+        'MyCourse': "url('./assets/Icons/Frame.svg')",
+        'MyReserve': "url('./assets/Icons/Frame(2).svg')",
+        'MyFavoriteCourse': "url('./assets/Icons/Frame(3).svg')",
+        'MyFavoriteBlog': "url('./assets/Icons/Frame(4).svg')",
+        'MyProfile': "url('./assets/Icons/Frame(5).svg')",
+        'Count': "url('./assets/Icons/Frame(6).svg')",
+        'LeftAccount': "url('./assets/Icons/Frame(7).svg')",
+        'iconProfile': "url('./assets/Icons/Frame 45.svg')",
+      },
+      colors: {
+        'them': '#F5F5F5',
+        'box': '#FBF6F6',
+        'listItem': '#8F8F8F',
+      },
+      height: {
+        '340': '89rem',
+      },
+      spacing: {
+        '264': '66rem',
+      },
       fontFamily: {
-        iranyekan: "iranyekan"
-      }
+        Iran: ['IranYekan'], 
+      },
     },
   },
   plugins: [],
+  corePlugins: {
+    textAlign:true,
+  },
+  rtl: true,
 }
+
