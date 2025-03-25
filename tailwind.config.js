@@ -21,6 +21,11 @@ export default {
         'them': '#F5F5F5',
         'box': '#FBF6F6',
         'listItem': '#8F8F8F',
+        'login': '#A74DD0',
+        'loginText':'#848484',
+        'placeHolderLogin':'#8E8E8E',
+        'forgetText':'#A74DD0',
+        'forgetBg':'#F1D1FF',
       },
       height: {
         '340': '89rem',
