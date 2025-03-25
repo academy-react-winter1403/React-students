@@ -2,7 +2,7 @@ import React from 'react'
 
 const HeroSection = () => {
   return (
-    <div className="mx-[auto] text-center border   ts:mt-[12px]   os:mt-[28px]   sm:mt-[44px]   lg:mt-[60px]">
+    <div className="mx-[auto] text-center border   ts:mt-[12px]   os:mt-[28px]   sm:mt-[44px]   lg:mt-[88px]">
       <div className="border">
         <div className="border">
           <p className="font-[semibold]   ts:text-[12px]   os:text-[20px]    sm:text-[32px]   lg:text-[40px]">با آکادمی سپهر ، میتونی از کدنویسی</p>
@@ -12,8 +12,8 @@ const HeroSection = () => {
           <span className="font-[semibold]   ts:text-[12px]   os:text-[20px]   sm:text-[32px]   lg:text-[40px]">رو ببری</span>
         </div>
       </div>
-      <div className="mx-[auto]   ts:w-[140px]   os:w-[270px]   sm:w-[400px]   lg:w-[547px]">
-        <p className="font-[semibold] text-[#959595]   ts:mt-[8px] ts:text-[4px]   os:mt-[12px] os:text-[8px]   sm:mt-[16px] sm:text-[12px]   lg:mt-[20px] lg:text-[16px]">آکادمی سپهر همیشه در تلاش بوده تا محیطی پرانرژی را برای علاقه مندان به حوزه برنامه نویسی و کدنویسی و طراحی وب سایت را فراهم کند.</p>
+      <div className="mx-[auto]   ts:w-[140px] ts:mt-[8px]   os:w-[270px] os:mt-[12px]   sm:w-[400px] sm:mt-[16px]   lg:w-[547px] lg:mt-[20px]">
+        <p className="font-[semibold] text-[#959595]   ts:text-[4px]   os:text-[8px]   sm:text-[12px]   lg:text-[16px]">آکادمی سپهر همیشه در تلاش بوده تا محیطی پرانرژی را برای علاقه مندان به حوزه برنامه نویسی و کدنویسی و طراحی وب سایت را فراهم کند.</p>
       </div>
       <div className="flex justify-center items-center mx-[auto] border   ts:mt-[8px] ts:gap-[6px]   os:mt-[12px] os:gap-[8px]   sm:mt-[16px] sm:gap-[10px]   lg:mt-[20px] lg:gap-[12px]">
         <button className="flex justify-center items-center font-[semibold] text-white bg-[#A74DD1]   ts:px-[8px] ts:py-[4px] ts:text-[6px] ts:rounded-[8px]   os:px-[8px] os:py-[4px] os:text-[8px] os:rounded-[8px]   sm:px-[12px] sm:py-[8px] sm:text-[12px] sm:rounded-[12px]   lg:px-[16px] lg:py-[12px] lg:text-[16px] lg:rounded-[16px]">شروع یادگیری</button>

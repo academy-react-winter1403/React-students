@@ -2,7 +2,7 @@ import React from 'react'
 
 const VectorLines = () => {
   return (
-    <div className="border   ts:h-[60px] ts:mt-[4px]   os:h-[120px] os:mt-[8px]   sm:h-[180px] sm:mt-[8px]   lg:h-[250px] lg:mt-[10px]">
+    <div className="border   ts:h-[60px] ts:mt-[12px]   os:h-[100px] os:mt-[16px]   sm:h-[140px] sm:mt-[24px]   lg:h-[183px] lg:mt-[36px]">
       <img src="" alt=""/>
     </div>
   )
