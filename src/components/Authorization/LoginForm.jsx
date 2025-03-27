@@ -1,7 +1,7 @@
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 
-const LoginPage = () => {
+const LoginForm = () => {
   const validationSchema = Yup.object({
     email: Yup.string()
       .email('لطفا یک ایمیل معتبر وارد کنید')
@@ -150,4 +150,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default LoginForm;

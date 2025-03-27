@@ -1,13 +1,11 @@
 import React from 'react'
-import Panel from '../components/content/Panel'
-import LoginForm from '../components/content/LoginForm'
+import Content from '../components/Landing/Content'
 
 
 const App = () => {
   return (
     <div className='font-Iran'>
-      <LoginForm />
-      {/* <Panel /> */}
+
     </div> 
   )
 }
