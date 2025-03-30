@@ -4,15 +4,11 @@ import Content from '../components/Landing/Content'
 
 const App = () => {
   return (
-<<<<<<< HEAD
-    <div className='font-Iran'>
 
-=======
-    <div>
-      <Panel />
->>>>>>> Parham
-    </div> 
+    <div className='font-Iran'>
+      
+    </div>
   )
 }
 
-export default App
+export default App;

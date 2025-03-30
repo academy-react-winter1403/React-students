@@ -16,6 +16,7 @@ export default {
         'Count': "url('./assets/Icons/Frame(6).svg')",
         'LeftAccount': "url('./assets/Icons/Frame(7).svg')",
         'iconProfile': "url('./assets/Icons/Frame 45.svg')",
+        'arrowLeft': "url('./assets/Icon/arrow-left-01.svg')"
       },
       colors: {
         'them': '#F5F5F5',
