@@ -2,7 +2,6 @@ import React from 'react'
 import ReactStudentsIcon from '../../assets/Icons/react-students.svg'
 
 
-
 const Header = () => {
   return (
     <div className="flex justify-between items-center border   ts:px-[16px] ts:mt-[8px]   sm:px-[32px] sm:mt-[16px]    lg:px-[64px] mt-[20px]">
