@@ -1,10 +1,17 @@
+<<<<<<< HEAD
 import Header from '../components/common/Header'
 import Content from '../components/Landing/Content'
 import Footer from '../components/footer/Footer'
 import './App.css'
+=======
+import React from 'react'
+import Content from '../components/Landing/Content'
+>>>>>>> 7b22063b3f379e17e7236f75766b11569e7708ad
 
-function App() {
+
+const App = () => {
   return (
+<<<<<<< HEAD
     <>
       <Content/>
       {
@@ -16,3 +23,17 @@ function App() {
 
 export default App
 
+=======
+<<<<<<< HEAD
+    <div className='font-Iran'>
+
+=======
+    <div>
+      <Panel />
+>>>>>>> Parham
+    </div> 
+  )
+}
+
+export default App
+>>>>>>> 7b22063b3f379e17e7236f75766b11569e7708ad

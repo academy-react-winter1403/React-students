@@ -23,4 +23,8 @@ const HeroSection = () => {
   )
 }
 
+<<<<<<< HEAD
 export default HeroSection
+=======
+export default HeroSection
+>>>>>>> 7b22063b3f379e17e7236f75766b11569e7708ad

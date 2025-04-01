@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+<<<<<<< HEAD
 @font-face {
   font-family: iranyekan;
   src: url('../IRANYekanX(Pro)/Webfonts/woff/IRANYekanX-Black.woff') format('woff'),
@@ -119,3 +120,44 @@ body{
   margin: 0 auto;
 }
 
+=======
+@font-face {
+  font-family: IranYekan;
+  src: url('/IRANYekanX(Pro)/Webfonts/woff/IRANYekanX-Thin.woff') format('woff2');
+  font-weight: 100;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: IranYekan;
+  src: url('/IRANYekanX(Pro)/Webfonts/woff/IRANYekanX-Light.woff') format('woff2');
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: IranYekan;
+  src: url('/IRANYekanX(Pro)/Webfonts/woff/IRANYekanX-Medium.woff') format('woff');
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: IranYekan;
+  src: url('/IRANYekanX(Pro)/Webfonts/woff/IRANYekanX-DemiBold.woff') format('woff2');
+  font-weight: 600;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: IranYekan;
+  src: url('/IRANYekanX(Pro)/Webfonts/woff/IRANYekanX-Bold.woff') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
+
+* {
+  font-family: IranYekan;
+}
+>>>>>>> 7b22063b3f379e17e7236f75766b11569e7708ad
