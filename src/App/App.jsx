@@ -1,5 +1,5 @@
 import Header from '../components/common/Header'
-import Content from '../components/content/Content'
+import Content from '../components/Landing/Content'
 import Footer from '../components/footer/Footer'
 import './App.css'
 
