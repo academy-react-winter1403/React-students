@@ -4,9 +4,9 @@ import Main from './Main'
 
 
 
-const MainContent = () => {
+const MainContent = ({}) => {
   return (
-    <div className="flex justify-center w-full border    gap-[40px] mt-[10px] px-[64px]">
+    <div className="flex justify-center w-full border   ts:gap-[8px] ts:mt-[4px] ts:px-[8px]   os:gap-[16px] os:mt-[8px] os:px-[20px]   sm:gap-[28px] sm:mt-[8px] sm:px-[32px]   lg:gap-[40px] lg:mt-[10px] lg:px-[64px]">
         <Side/>
         <Main/>
     </div>

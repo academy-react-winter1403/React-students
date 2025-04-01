@@ -1,0 +1,14 @@
+import React from 'react'
+
+const CssIcon1 = () => {
+  return (
+    <div>
+      <svg width="29" height="24" viewBox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20.1842 2.46228H5.18417C4.63189 2.46228 4.26192 2.9032 4.35782 3.44709L8.71517 17.6242C8.92296 18.3003 9.46298 18.8832 10.1428 19.1653L14.4546 20.9542C14.8032 21.0988 15.1671 21.1736 15.5219 21.1736C15.827 21.1736 16.1197 21.1183 16.3855 21.0105L21.0107 19.1332C21.6506 18.8735 22.0291 18.2645 21.9966 17.5469L21.3578 3.44709C21.2619 2.9032 20.7365 2.46228 20.1842 2.46228Z" stroke="#4D74FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M8.62872 6.40125H17.6287L9.91014 10.8329H17.9101L18.2784 15.7569L14.952 16.7417L11.2784 15.7569L10.7311 13.7873" stroke="#4D74FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  )
+}
+
+export default CssIcon1

@@ -1,10 +1,10 @@
 import React from 'react'
-import JSIcon2 from '../../assets/Icons/java-script2.svg'
-import MortarBoardIcon from '../../assets/Icons/mortarboard-02.svg'
-import FloorIcon from '../../assets/Icons/Frame.svg'
-import DateIcon from '../../assets/Icons/calendar-02-stroke-rounded 3.svg'
-import ThumbsUpIcon from '../../assets/Icons/thumbs-up.svg'
-import ThumbsDownIcon from '../../assets/Icons/thumbs-down.svg'
+import JsIcon2 from '../Icons/JsIcon2'
+import MortarBoardIcon from '../Icons/MortarBoardIcon'
+import FloorIcon from '../Icons/FloorIcon'
+import DateIcon from '../Icons/DateIcon'
+import ThumbsUpIcon from '../Icons/ThumbsUpIcon'
+import ThumbsDownIcon from '../Icons/ThumbsDownIcon'
 
 
 
@@ -12,7 +12,7 @@ const CourseCard = () => {
   return (
     <div className="overflow-hidden bg-[#EAEAEA]    w-[297px] h-[441px] rounded-[24px]">
         <div className="flex justify-center bg-[#DAE01E]    h-[191px] rounded-b-[32px]">
-            <img className="w-[112px] h-[112px] mt-[48px]" src={JSIcon2} alt="javaScriptIcon"/>
+            <JsIcon2 className="w-[112px] h-[112px] mt-[48px]"/>
         </div>
         <div className="mt-[8px] pr-[16px]">
             <div className="flex gap-[8px]">
@@ -21,25 +21,25 @@ const CourseCard = () => {
             </div>
             <h2 className="font-[semibold]    mt-[8px] text-[20px]">دوره جاوا اسکریپت</h2>
             <div className="flex items-center     gap-[8px] mt-[16px]">
-                <img className="w-[24px] h-[24px]" src={MortarBoardIcon} alt="mortarBoardIcon"/>
+                <MortarBoardIcon className="w-[24px] h-[24px]"/>
                 <span className="font-[semibold] text-[#1E1E1E]    text-[14px]">محمدحسین بحرالعلومی</span>
             </div>
             <div className="flex items-center     gap-[8px] mt-[12px]">
-                <img src={FloorIcon} alt="floorIcon"/>
+                <FloorIcon/>
                 <span className="font-[semibold] text-[#1E1E1E]    text-[14px]">طبقه بالا</span>
             </div>
             <div className="flex items-center     gap-[8px] mt-[12px]">
-                <img src={DateIcon} alt="dateIcon"/>
+                <DateIcon/>
                 <span className="font-[semibold] text-[#1E1E1E]    text-[14px]">20 اردیبهشت 1404</span>
             </div>
             <div className="flex items-center     gap-[38px] mt-[26px]">
                 <div className="flex    gap-[16px]">
                 <div className="flex items-center    gap-[8px]">
-                    <img src={ThumbsUpIcon} alt="thumbsUpIcon"/>
+                    <ThumbsUpIcon/>
                     <span className="font-[medium]    text-[16px]">20</span>
                 </div>
                 <div className="flex items-center    gap-[8px]">
-                    <img src={ThumbsDownIcon} alt="thumbsDownIcon"/>
+                    <ThumbsDownIcon/>
                     <span className="font-[medium]    text-[16px]">3</span>
                 </div>
                 </div>

@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactStudentsIcon from '../../assets/Icons/react-students.svg'
-import TwitterIcon from '../../assets/Icons/twitter.svg'
-import TelegramIcon from '../../assets/Icons/telegram.svg'
-import InstagramIcon from '../../assets/Icons/instagram.svg'
+import TwitterIcon from '../Icons/TwitterIcon'
+import TelegramIcon from '../Icons/TelegramIcon'
+import InstagramIcon from '../Icons/InstagramIcon'
 
 
 
@@ -21,9 +21,9 @@ const Footer = () => {
         <a className="font-[medium]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[20px]">تماس با ما</a>
       </div>
       <div className="flex justify-center items-center border   ts:gap-[4px]   os:gap-[4px]   sm:gap-[8px]   lg:gap-[16px]">
-        <img className="ts:w-[8px] ts:h-[8px]   os:w-[12px] os:h-[12px]   sm:w-[16px] sm:h-[16px]   lg:w-[24px] lg:h-[24px]" src={TwitterIcon} alt="twitterIcon"/>
-        <img className="ts:w-[8px] ts:h-[8px]   os:w-[12px] os:h-[12px]   sm:w-[16px] sm:h-[16px]   lg:w-[24px] lg:h-[24px]" src={TelegramIcon} alt="telegramIcon"/>
-        <img className="ts:w-[8px] ts:h-[8px]   os:w-[12px] os:h-[12px]   sm:w-[16px] sm:h-[16px]   lg:w-[24px] lg:h-[24px]" src={InstagramIcon} alt="instagramIcon"/>
+        <TwitterIcon className="ts:w-[8px] ts:h-[8px]   os:w-[12px] os:h-[12px]   sm:w-[16px] sm:h-[16px]   lg:w-[24px] lg:h-[24px]"/>
+        <TelegramIcon className="ts:w-[8px] ts:h-[8px]   os:w-[12px] os:h-[12px]   sm:w-[16px] sm:h-[16px]   lg:w-[24px] lg:h-[24px]"/>
+        <InstagramIcon className="ts:w-[8px] ts:h-[8px]   os:w-[12px] os:h-[12px]   sm:w-[16px] sm:h-[16px]   lg:w-[24px] lg:h-[24px]"/>
       </div>
     </div>
   )

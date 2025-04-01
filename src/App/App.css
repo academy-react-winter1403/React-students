@@ -10,11 +10,11 @@
 } */
 @font-face {
   font-family: bold;
-  src: url("./IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff/IRANYekanXFaNum-Bold.woff") format("woff");
+  src: url("../assets/IRANYekanX(Pro)/IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff/IRANYekanXFaNum-Bold.woff") format("woff");
 }
 @font-face {
   font-family: semiBold;
-  src: url("./IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff/IRANYekanXFaNum-DemiBold.woff") format("woff");
+  src: url("../assets/IRANYekanX(Pro)/IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff/IRANYekanXFaNum-DemiBold.woff") format("woff");
 }
 /* @font-face {
   font-family: ExtraBlack1;
@@ -34,7 +34,7 @@
 } */
 @font-face {
   font-family: medium;
-  src: url("./IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff/IRANYekanXFaNum-Medium.woff") format("woff");
+  src: url("../assets/IRANYekanX(Pro)/IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff/IRANYekanXFaNum-Medium.woff") format("woff");
 }
 /* @font-face {
   font-family: Regular1;

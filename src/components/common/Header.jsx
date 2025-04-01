@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div className="flex justify-between items-center border   ts:px-[16px] ts:mt-[8px]   sm:px-[32px] sm:mt-[16px]    lg:px-[64px] mt-[20px]">
       <div className="flex justify-center items-center   ts:gap-[4px]   sm:gap-[8px]   lg:gap-[8px]">
-        <img className="ts:w-[20px] ts:h-[20px]   sm:w-[32px] sm:h-[32px]   lg:w-[44px] lg:h-[44px]" src={ReactStudentsIcon} alt=""/>
+        <img className="ts:w-[20px] ts:h-[20px]   sm:w-[32px] sm:h-[32px]   lg:w-[44px] lg:h-[44px]" src={ReactStudentsIcon} alt="reactStudentsIcon"/>
         <h2 className="font-[semibold]    ts:text-[6px]    os:text-[8px]   sm:text-[12px]   lg:text-[14px]">React-students</h2>
       </div>
       <div className="flex justify-center items-center border   ts:gap-[20px]   os:gap-[32px]   sm:gap:[40px]   lg:ml-[356px] lg:mr-[344px] lg:gap-[48px]">
