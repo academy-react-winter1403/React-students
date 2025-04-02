@@ -11,8 +11,8 @@ import ThumbsDownIcon from '../Icons/ThumbsDownIcon'
 const CourseCard = () => {
   return (
     <div className="overflow-hidden bg-[#EAEAEA]    w-[297px] h-[441px] rounded-[24px]">
-        <div className="flex justify-center bg-[#DAE01E]    h-[191px] rounded-b-[32px]">
-            <JsIcon2 className="w-[112px] h-[112px] mt-[48px]"/>
+        <div className="flex justify-center bg-[#DAE01E]    h-[191px] pt-[48px] rounded-b-[32px]">
+            <JsIcon2 className="w-[112px] h-[112px]"/>
         </div>
         <div className="mt-[8px] pr-[16px]">
             <div className="flex gap-[8px]">
