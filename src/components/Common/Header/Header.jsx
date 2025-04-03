@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import ReactStudentsIcon from '../../assets/Icons/react-students.svg'
+import ReactStudentsIcon from '../../../assets/Icons/react-students.svg'
 
 
 

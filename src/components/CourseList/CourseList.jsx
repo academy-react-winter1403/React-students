@@ -1,22 +1,31 @@
 import React, { useEffect, useState } from 'react'
-import HeroSection from './HeroSection'
-import MainContent from './MainContent'
+import ListHeroSection from '../Common/ListHeroSection/ListHeroSection'
+import ListMainContent from '../Common/ListMainContent/ListMainContent'
 import { getApi } from '../../core/services/api'
 import { useFetchCourse } from '../../core/Hook/useFetchCourse/useFetchCourse'
+import CodingImage from '../../assets/Icons/Coding-A-Website-Streamline.svg'
+import Icons from '../../assets/Icons/4icons.svg'
 
 const CourseList = () => {
   
   const { Course } = useFetchCourse();
   
 
-  console.log(Course);
+  
+  const data1 = {
+    button: "دوره ها", 
+    heading: "آموزش رو از همین حالا شروع کن",           
+    desc: "تمامی دوره های آموزشی آکادمی به همراه تمامی سطح ها و دسته بندی ها و فیلتر ها",
+    rightImg: CodingImage,
+    leftImg: Icons
+  }
 
 
 
   return (
     <div>
-        <HeroSection/>
-        <MainContent/>
+        <ListHeroSection data={data1}/>
+        <ListMainContent/>
     </div>
   )
 }
