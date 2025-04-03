@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import CourseCard from '../CourseList/CourseCard'
 import FrameRightIcon from '../Icons/FrameRightIcon'
 import FrameLeftIcon from '../Icons/FrameLeftIcon'
@@ -6,6 +6,12 @@ import FrameLeftIcon from '../Icons/FrameLeftIcon'
 
 
 const Main = () => {
+
+
+
+  
+
+
   return (
     <div className="border">
         <div className="flex items-center mx-[auto] bg-[#F8F8F8]   ts:w-[360px] ts:h-[36px] ts:pr-[12px] ts:pl-[12px] ts:rounded-[24px]   os:w-[500px] os:h-[48px] os:pr-[16px] os:pl-[16px] os:rounded-[24px]   sm:w-[640px] sm:h-[60px] sm:pr-[20px] sm:pl-[20px] sm:rounded-[24px]   lg:w-[956px] lg:h-[72px] lg:pr-[26px] lg:pl-[24px] lg:rounded-[24px]">

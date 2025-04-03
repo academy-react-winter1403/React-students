@@ -6,7 +6,7 @@ import { useFetchCourse } from '../../core/Hook/useFetchCourse/useFetchCourse'
 
 const CourseList = () => {
   
-  const { Course } = useFetchCourse()
+  const { Course } = useFetchCourse();
   
 
   console.log(Course);
