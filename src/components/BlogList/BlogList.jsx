@@ -1,12 +1,29 @@
 import React from 'react'
-import HeroSection from '../CourseList/HeroSection'
-import MainContent from '../CourseList/MainContent'
+import ListHeroSection from '../Common/ListHeroSection/ListHeroSection'
+import ListMainContent from '../Common/ListMainContent/ListMainContent'
+import StreamLineImage from '../../assets/Icons/Data-Cloud-Streamline.svg'
+import Icons from '../../assets/Icons/4icons.svg'
+
+
 
 const BlogList = () => {
+
+
+  const data2 = {
+    button: "بلاگ ها",
+    heading: "اطلاعات خودت رو با مقاله بالا ببر",
+    desc: "تمامی مقاله ها و اخبار روز آکادمی در سریع ترین زمان ممکن در اختیار گذاشته میشه",
+    rightImg: StreamLineImage,
+    leftImg: Icons
+  }
+
+
+
+
   return (
     <div>
-      <HeroSection/>
-      <MainContent/>
+      <ListHeroSection data={data2}/>
+      <ListMainContent/>
     </div>
   )
 }
