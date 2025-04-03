@@ -4,7 +4,7 @@ import App from './App/App'
 <<<<<<< HEAD
 import Root from './components/config/Root'
 import CourseList from './components/CourseList/CourseList'
-import BlogList from './components/blogList/BlogList'
+import BlogList from './components/BlogList/BlogList'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
 <<<<<<< HEAD

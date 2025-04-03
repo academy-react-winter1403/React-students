@@ -1,15 +1,15 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import JsIcon2 from '../../../assets/Icons/java-script2.svg'
-import MortarBoardIcon from '../../../assets/Icons/mortarboard.svg'
-import FloorIcon from '../../../assets/Icons/Frame.svg'
-import DateIcon from '../../../assets/Icons/calendar-02-stroke-rounded 3.svg'
-import ThumbsUpIcon from '../../../assets/Icons/thumbs-up.svg'
-import ThumbsDownIcon from '../../../assets/Icons/thumbs-down.svg'
+import JsIcon2 from '../../assets/Icons/java-script2.svg'
+import MortarBoardIcon from '../../assets/Icons/mortarboard.svg'
+import FloorIcon from '../../assets/Icons/Frame.svg'
+import DateIcon from '../../assets/Icons/calendar-02-stroke-rounded 3.svg'
+import ThumbsUpIcon from '../../assets/Icons/thumbs-up.svg'
+import ThumbsDownIcon from '../../assets/Icons/thumbs-down.svg'
 
 
 
-const Card = ({data}) => {
+const CourseCard = ({data}) => {
 
   const navigate = useNavigate();
 
@@ -57,4 +57,4 @@ const Card = ({data}) => {
   )
 }
 
-export default Card
+export default CourseCard

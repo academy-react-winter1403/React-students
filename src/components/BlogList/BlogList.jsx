@@ -1,6 +1,6 @@
 import React from 'react'
 import ListHeroSection from '../Common/ListHeroSection/ListHeroSection'
-import ListMainContent from '../Common/ListMainContent/ListMainContent'
+import MainContent from './MainContent'
 import StreamLineImage from '../../assets/Icons/Data-Cloud-Streamline.svg'
 import Icons from '../../assets/Icons/4icons.svg'
 
@@ -23,7 +23,7 @@ const BlogList = () => {
   return (
     <div>
       <ListHeroSection data={data2}/>
-      <ListMainContent/>
+      <MainContent/>
     </div>
   )
 }
