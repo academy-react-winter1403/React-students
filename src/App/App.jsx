@@ -1,17 +1,13 @@
 import React from 'react'
-import Content from '../components/Landing/Content'
+import { RouterProvider } from 'react-router-dom'
+import { router } from '../components/config/route'
 
 
 const App = () => {
   return (
-<<<<<<< HEAD
-    <div className='font-Iran'>
-
-=======
-    <div>
-      <Panel />
->>>>>>> Parham
-    </div> 
+    <div >
+          <RouterProvider router={router} />
+    </div>
   )
 }
 
