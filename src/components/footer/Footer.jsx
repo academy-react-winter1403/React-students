@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import ReactStudentsIcon from '../../assets/Icons/react-students.svg'
-import TwitterIcon from '../Icons/TwitterIcon'
-import TelegramIcon from '../Icons/TelegramIcon'
-import InstagramIcon from '../Icons/InstagramIcon'
+import TwitterIcon from '../../assets/Icons/twitter.svg'
+import TelegramIcon from '../../assets/Icons/telegram.svg'
+import InstagramIcon from '../../assets/Icons/instagram.svg'
 
 
 
@@ -14,16 +15,16 @@ const Footer = () => {
         <h2 className="font-[semibold]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[20px]">React-students</h2>
       </div>
       <div className="flex justify-center items-center border   ts:gap-[12px]   os:gap-[24px]   sm:gap-[36px]   lg:gap-[48px]   3x:mr-[199px] 3x:ml-[302px]">
-        <a className="font-[medium]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[20px]">خانه</a>
-        <a className="font-[medium]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[20px]">دوره ها</a>
-        <a className="font-[medium]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[20px]">بلاگ ها</a>
-        <a className="font-[medium]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[20px]">درباره ما</a>
-        <a className="font-[medium]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[20px]">تماس با ما</a>
+        <Link className="font-[medium]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[20px]">خانه</Link>
+        <Link className="font-[medium]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[20px]">دوره ها</Link>
+        <Link className="font-[medium]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[20px]">بلاگ ها</Link>
+        <Link className="font-[medium]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[20px]">درباره ما</Link>
+        <Link className="font-[medium]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[20px]">تماس با ما</Link>
       </div>
       <div className="flex justify-center items-center border   ts:gap-[4px]   os:gap-[4px]   sm:gap-[8px]   lg:gap-[16px]">
-        <TwitterIcon className="ts:w-[8px] ts:h-[8px]   os:w-[12px] os:h-[12px]   sm:w-[16px] sm:h-[16px]   lg:w-[24px] lg:h-[24px]"/>
-        <TelegramIcon className="ts:w-[8px] ts:h-[8px]   os:w-[12px] os:h-[12px]   sm:w-[16px] sm:h-[16px]   lg:w-[24px] lg:h-[24px]"/>
-        <InstagramIcon className="ts:w-[8px] ts:h-[8px]   os:w-[12px] os:h-[12px]   sm:w-[16px] sm:h-[16px]   lg:w-[24px] lg:h-[24px]"/>
+        <img className="ts:w-[8px] ts:h-[8px]   os:w-[12px] os:h-[12px]   sm:w-[16px] sm:h-[16px]   lg:w-[24px] lg:h-[24px]" src={TwitterIcon} alt="twitterIcon"/>
+        <img className="ts:w-[8px] ts:h-[8px]   os:w-[12px] os:h-[12px]   sm:w-[16px] sm:h-[16px]   lg:w-[24px] lg:h-[24px]" src={TelegramIcon} alt="telegramIcon"/>
+        <img className="ts:w-[8px] ts:h-[8px]   os:w-[12px] os:h-[12px]   sm:w-[16px] sm:h-[16px]   lg:w-[24px] lg:h-[24px]" src={InstagramIcon} alt="instagramIcon"/>
       </div>
     </div>
   )

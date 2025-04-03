@@ -5,11 +5,11 @@ const HeroSection = () => {
     <div className="mx-[auto] text-center border   ts:mt-[12px]   os:mt-[28px]   sm:mt-[44px]   lg:mt-[88px]">
       <div className="border">
         <div className="border">
-          <p className="font-[semibold]   ts:text-[12px]   os:text-[20px]    sm:text-[32px]   lg:text-[40px]">با آکادمی سپهر ، میتونی از کدنویسی</p>
+          <p className="font-[semibold]   ts:text-[12px]   os:text-[20px]    sm:text-[28px]   lg:text-[40px]">با آکادمی سپهر ، میتونی از کدنویسی</p>
         </div>
         <div className="flex justify-center items-center border   ts:gap-[4px] ts:mt-[4px]   os:gap-[4px] os:mt-[4px]   sm:gap-[8px] sm:mt-[8px]    lg:gap-[8px] lg:mt-[8px]">
-          <span className="font-[semibold] text-[#A74DD1] border-[3px] border-[#A74DD1]   ts:px-[8px] ts:py-[4px] ts:text-[12px]   os:px-[8px] os:py-[4px] os:text-[20px]   sm:px-[12px] sm:py-[8px] sm:text-[32px]   lg:px-[15px] lg:py-[11px] lg:text-[40px]">نهایت لذت</span>
-          <span className="font-[semibold]   ts:text-[12px]   os:text-[20px]   sm:text-[32px]   lg:text-[40px]">رو ببری</span>
+          <span className="font-[semibold] text-[#A74DD1] border-[3px] border-[#A74DD1]   ts:px-[8px] ts:py-[4px] ts:text-[12px]   os:px-[8px] os:py-[4px] os:text-[20px]   sm:px-[12px] sm:py-[8px] sm:text-[28px]   lg:px-[15px] lg:py-[11px] lg:text-[40px]">نهایت لذت</span>
+          <span className="font-[semibold]   ts:text-[12px]   os:text-[20px]   sm:text-[28px]   lg:text-[40px]">رو ببری</span>
         </div>
       </div>
       <div className="mx-[auto]   ts:w-[140px] ts:mt-[8px]   os:w-[270px] os:mt-[12px]   sm:w-[400px] sm:mt-[16px]   lg:w-[547px] lg:mt-[20px]">

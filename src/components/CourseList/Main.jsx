@@ -8,7 +8,7 @@ import FrameLeftIcon from '../Icons/FrameLeftIcon'
 const Main = () => {
   return (
     <div className="border">
-        <div className="flex items-center bg-[#F8F8F8]   ts:w-[360px] ts:h-[36px] ts:pr-[12px] ts:pl-[12px] ts:rounded-[24px]   os:w-[500px] os:h-[48px] os:pr-[16px] os:pl-[16px] os:rounded-[24px]   sm:w-[640px] sm:h-[60px] sm:pr-[20px] sm:pl-[20px] sm:rounded-[24px]   lg:w-[956px] lg:h-[72px] lg:pr-[26px] lg:pl-[24px] lg:rounded-[24px]">
+        <div className="flex items-center mx-[auto] bg-[#F8F8F8]   ts:w-[360px] ts:h-[36px] ts:pr-[12px] ts:pl-[12px] ts:rounded-[24px]   os:w-[500px] os:h-[48px] os:pr-[16px] os:pl-[16px] os:rounded-[24px]   sm:w-[640px] sm:h-[60px] sm:pr-[20px] sm:pl-[20px] sm:rounded-[24px]   lg:w-[956px] lg:h-[72px] lg:pr-[26px] lg:pl-[24px] lg:rounded-[24px]">
           <h2 className="font-[semibold] text-[#1E1E1E]   ts:text-[8px]   os:text-[12px]   sm:text-[16px]   lg:text-[16px]">ترتیب</h2>
           <div className="flex justify-center   ts:gap-[4px] ts:mr-[12px]   os:gap-[8px] os:mr-[16px]   sm:gap-[12px] sm:mr-[20px]   lg:gap-[12px] lg:mr-[24px]">
             <button className="flex justify-center items-center font-[semibold] text-[#FFFFFF] bg-[#A74DD1]   ts:px-[8px] ts:py-[4px] ts:text-[6px] ts:rounded-[16px]   os:px-[12px] os:py-[8px] os:text-[8px] os:rounded-[16px]   sm:px-[16px] sm:py-[12px] sm:text-[12px] sm:rounded-[16px]   lg:px-[16px] lg:py-[13.5px] lg:text-[16px] lg:rounded-[16px]">محبوب ترین</button>
