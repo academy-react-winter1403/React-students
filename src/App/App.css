@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 
-<<<<<<< HEAD
 
 /* @font-face {
   font-family: Black1;
@@ -101,45 +100,6 @@
 
 
 
-
-
-
-
-@font-face {
-  font-family: iranyekan;
-  src: url('../IRANYekanX(Pro)/Webfonts/woff/IRANYekanX-Black.woff') format('woff'),
-  url('../IRANYekanX(Pro)/Webfonts/woff/IRANYekanX-Bold.woff') format('woff'),
-  url('../IRANYekanX(Pro)/Webfonts/woff/IRANYekanX-DemiBold.woff') format('woff'),
-  url('../IRANYekanX(Pro)/Webfonts/woff/IRANYekanX-ExtraBlack.woff') format('woff'),
-  url('../IRANYekanX(Pro)/Webfonts/woff/IRANYekanX-ExtraBold.woff') format('woff'),
-  url('../IRANYekanX(Pro)/Webfonts/woff/IRANYekanX-Heavy.woff') format('woff'),
-  url('../IRANYekanX(Pro)/Webfonts/woff/IRANYekanX-Light.woff') format('woff'),
-  url('../IRANYekanX(Pro)/Webfonts/woff/IRANYekanX-Medium.woff') format('woff'),
-  url('../IRANYekanX(Pro)/Webfonts/woff/IRANYekanX-Regular.woff') format('woff'),
-  url('../IRANYekanX(Pro)/Webfonts/woff/IRANYekanX-Thin.woff') format('woff'),
-  url('../IRANYekanX(Pro)/Webfonts/woff/IRANYekanX-UltraLight.woff') format('woff'),
-
-  url('../IRANYekanX(Pro)/Webfonts/woff2/IRANYekanX-Black.woff2') format('woff2'),
-  url('../IRANYekanX(Pro)/Webfonts/woff2/IRANYekanX-Bold.woff2') format('woff2'),
-  url('../IRANYekanX(Pro)/Webfonts/woff2/IRANYekanX-DemiBold.woff2') format('woff2'),
-  url('../IRANYekanX(Pro)/Webfonts/woff2/IRANYekanX-ExtraBlack.woff2') format('woff2'),
-  url('../IRANYekanX(Pro)/Webfonts/woff2/IRANYekanX-ExtraBold.woff2') format('woff2'),
-  url('../IRANYekanX(Pro)/Webfonts/woff2/IRANYekanX-Heavy.woff2') format('woff2'),
-  url('../IRANYekanX(Pro)/Webfonts/woff2/IRANYekanX-Light.woff2') format('woff2'),
-  url('../IRANYekanX(Pro)/Webfonts/woff2/IRANYekanX-Medium.woff2') format('woff2'),
-  url('../IRANYekanX(Pro)/Webfonts/woff2/IRANYekanX-Regular.woff2') format('woff2'),
-  url('../IRANYekanX(Pro)/Webfonts/woff2/IRANYekanX-Thin.woff2') format('woff2'),
-  url('../IRANYekanX(Pro)/Webfonts/woff2/IRANYekanX-UltraLight.woff2') format('woff2'),
-}
-
-
-
-
-*{
-  font-family: iranyekan;
-}
-=======
->>>>>>> 7b22063b3f379e17e7236f75766b11569e7708ad
 body{
   margin: 0;
 }

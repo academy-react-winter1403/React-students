@@ -36,12 +36,12 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: "/UserPanel",
+    path: "/userpanel",
     element: <Panel />,
     errorElement: <Error />,
   }, 
   {
-    path: "/Register",
+    path: "/register",
     element: <LoginForm />,
     errorElement: <Error />,
   },
