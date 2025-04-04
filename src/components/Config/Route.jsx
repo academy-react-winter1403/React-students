@@ -1,9 +1,9 @@
 import React from 'react'
-import Header from '../Common/Header/Header';
-import Footer from '../Footer/Footer';
+import Header from '../Layout/Header';
+import Footer from '../Layout/Footer';
 import { Outlet } from 'react-router-dom';
 
-const Root = () => {
+const Route = () => {
   return (
     <div>
       <Header/>
@@ -15,4 +15,4 @@ const Root = () => {
   );
 }
 
-export default Root
+export default Route
