@@ -5,7 +5,17 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
+    screens: {
+      '2x': '1450px',
+      'xx': '1400px',
+      'xl': '1200px',
+      'lg': '1024px',
+      'sm': '640px',
+      'os': '500px',
+      'ts': '300px'
+    },
     extend: {
+<<<<<<< HEAD
       backgroundImage: {
         'Dashboard': "url('./assets/Icons/Frame(1).svg')",
         'MyCourse': "url('./assets/Icons/Frame.svg')",
@@ -36,6 +46,32 @@ export default {
       fontFamily: {
         Iran: ['IranYekan'], 
       },
+=======
+      // fontFamily: {
+      //   Black: "Black1",
+      //   Bold: "Bold1",
+      //   DemiBold: "DemiBold1",
+      //   ExtraBlack: "ExtraBlack1",
+      //   ExtraBold: "ExtraBold1",
+      //   Heavy: "Heavy1",
+      //   Light: "Light1",
+      //   Medium: "Medium1",
+      //   Regular: "Regular1",
+      //   Thin: "Thin1",
+      //   UltraLight: "UltraLight1",
+      //   Black2: "Black2",
+      //   Bold2: "Bold2",
+      //   DemiBold2: "DemiBold2",
+      //   ExtraBlack2: "ExtraBlack2",
+      //   ExtraBold2: "ExtraBold2",
+      //   Heavy2: "Heavy2",
+      //   Light2: "Light2",
+      //   Medium2: "Medium2",
+      //   Regular2: "Regular2",
+      //   Thin2: "Thin2",
+      //   UltraLight2: "UltraLight2",
+      // }
+>>>>>>> 779cf64b6ecbd9c6f8e38f09be3a25629d4b501b
     },
   },
   plugins: [],
