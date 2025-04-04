@@ -14,7 +14,7 @@ const BlogCard = ({data}) => {
   const navigate = useNavigate();
 
   return (
-    <div onClick={() => navigate("/detail/" + id)} className="overflow-hidden bg-[#EAEAEA]    ts:w-[60px] ts:h-[200px] ts:rounded-[16px]   os:w-[140px] os:h-[280px] os:rounded-[20px]   sm:w-[220px] sm:h-[360px] sm:rounded-[24px]   lg:w-[297px] lg:h-[441px] lg:rounded-[24px]">
+    <div onClick={() => navigate("/detail/" + id)} className="overflow-hidden bg-[#EAEAEA]    ts:w-[120px] ts:h-[200px] ts:rounded-[16px]   os:w-[180px] os:h-[280px] os:rounded-[20px]   sm:w-[240px] sm:h-[360px] sm:rounded-[24px]   lg:w-[297px] lg:h-[441px] lg:rounded-[24px]">
         <div className="flex justify-center bg-[#DAE01E]   ts:h-[80px] ts:pt-[24px] ts:rounded-b-[24px]   os:h-[120px] os:pt-[32px] os:rounded-b-[28px]   sm:h-[160px] sm:pt-[40px] sm:rounded-b-[32px]   lg:h-[191px] lg:pt-[48px] lg:rounded-b-[32px]">
             <img className="ts:w-[14px] ts:h-[14px]   os:w-[28px] os:h-[28px]   sm:w-[56px] sm:h-[56px]   lg:w-[112px] lg:h-[112px]" src={JsIcon2} alt="javaScriptIcon"/>
         </div>
@@ -24,11 +24,11 @@ const BlogCard = ({data}) => {
             </div>
             <h2 className="font-[semibold]   ts:mt-[4px] ts:text-[8px]   os:mt-[4px] os:text-[12px]   sm:mt-[8px] sm:text-[16px]   lg:mt-[8px] lg:text-[20px]">{data.title}</h2>
             <p className="font-[semibold] text-[#868686]   ts:mt-[4px] ts:text-[6px]   os:mt-[4px] os:text-[8px]   sm:mt-[8px] sm:text-[12px]   lg:mt-[8px] lg:text-[14px]">{data.describe}</p>
-            <div className="flex items-center   ts:gap-[4px] ts:mt-[4px]   os:gap-[4px] os:mt-[8px]   sm:gap-[8px] sm:mt-[12px]   lg:gap-[8px] lg:mt-[16px]">
+            <div className="flex items-center   ts:gap-[4px] ts:mt-[4px]   os:gap-[4px] os:mt-[4px]   sm:gap-[8px] sm:mt-[8px]   lg:gap-[8px] lg:mt-[16px]">
                 <img className="ts:w-[12px] ts:h-[12px]   os:w-[16px] os:h-[16px]   sm:w-[20px] sm:h-[20px]   lg:w-[24px] lg:h-[24px]" src={WriteIcon} alt="writeIcon"/>
                 <span className="font-[semibold] text-[#1E1E1E]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[14px]">{data.teacherName}</span>
             </div>
-            <div className="flex items-center   ts:gap-[4px] ts:mt-[4px]   os:gap-[4px] os:mt-[8px]   sm:gap-[8px] sm:mt-[12px]   lg:gap-[8px] lg:mt-[12px]">
+            <div className="flex items-center   ts:gap-[4px] ts:mt-[4px]   os:gap-[4px] os:mt-[4px]   sm:gap-[8px] sm:mt-[8px]   lg:gap-[8px] lg:mt-[12px]">
                 <img className="ts:w-[12px] ts:h-[12px]   os:w-[16px] os:h-[16px]   sm:w-[20px] sm:h-[20px]   lg:w-[24px] lg:h-[24px]" src={DateIcon} alt="dateIcon"/>
                 <span className="font-[semibold] text-[#1E1E1E]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[14px]">{data.lastUpdate}</span>
             </div>

@@ -5,7 +5,7 @@ const getApi = async (url) => {
     const response = await http.get(url);
     return response;
   } catch (error) {
-    return console.log(error);
+    // return console.log(error);
   }
 };
 
