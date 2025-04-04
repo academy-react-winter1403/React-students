@@ -4,10 +4,6 @@
 
 
 
-/* @font-face {
-  font-family: Black1;
-  src: url("./IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff/IRANYekanXFaNum-Black.woff") format("woff");
-} */
 @font-face {
   font-family: bold;
   src: url("../assets/IRANYekanX(Pro)/IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff/IRANYekanXFaNum-Bold.woff") format("woff");
@@ -16,86 +12,13 @@
   font-family: semiBold;
   src: url("../assets/IRANYekanX(Pro)/IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff/IRANYekanXFaNum-DemiBold.woff") format("woff");
 }
-/* @font-face {
-  font-family: ExtraBlack1;
-  src: url("./IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff/IRANYekanXFaNum-ExtraBlack.woff") format("woff");
-}
-@font-face {
-  font-family: ExtraBold1;
-  src: url("./IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff/IRANYekanXFaNum-ExtraBold.woff") format("woff");
-}
-@font-face {
-  font-family: Heavy1;
-  src: url("./IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff/IRANYekanXFaNum-Heavy.woff") format("woff");
-}
-@font-face {
-  font-family: Light1;
-  src: url("./IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff/IRANYekanXFaNum-Light.woff") format("woff");
-} */
 @font-face {
   font-family: medium;
   src: url("../assets/IRANYekanX(Pro)/IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff/IRANYekanXFaNum-Medium.woff") format("woff");
 }
-/* @font-face {
-  font-family: Regular1;
-  src: url("./IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff/IRANYekanXFaNum-Regular.woff") format("woff");
-}
-@font-face {
-  font-family: Thin1;
-  src: url("./IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff/IRANYekanXFaNum-Thin.woff") format("woff");
-}
-@font-face {
-  font-family: UltraLight1;
-  src: url("./IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff/IRANYekanXFaNum-UltraLight.woff") format("woff");
-}
 
 
 
-
-@font-face {
-  font-family: Black2;
-  src: url("./IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff2/IRANYekanXFaNum-Black.woff2") format("woff2");
-}
-@font-face {
-  font-family: Bold2;
-  src: url("./IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff2/IRANYekanXFaNum-Bold.woff2") format("woff2");
-}
-@font-face {
-  font-family: DemiBold2;
-  src: url("./IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff2/IRANYekanXFaNum-DemiBold.woff2") format("woff2");
-}
-@font-face {
-  font-family: ExtraBlack2;
-  src: url("./IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff2/IRANYekanXFaNum-ExtraBlack.woff2") format("woff2");
-}
-@font-face {
-  font-family: ExtraBold2;
-  src: url("./IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff2/IRANYekanXFaNum-ExtraBold.woff2") format("woff2");
-}
-@font-face {
-  font-family: Heavy2;
-  src: url("./IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff2/IRANYekanXFaNum-Heavy.woff2") format("woff2");
-}
-@font-face {
-  font-family: Light2;
-  src: url("./IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff2/IRANYekanXFaNum-Light.woff2") format("woff2");
-}
-@font-face {
-  font-family: Medium2;
-  src: url("./IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff2/IRANYekanXFaNum-Medium.woff2") format("woff2");
-}
-@font-face {
-  font-family: Regular2;
-  src: url("./IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff2/IRANYekanXFaNum-Regular.woff2") format("woff2");
-}
-@font-face {
-  font-family: Thin2;
-  src: url("./IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff/IRANYekanXFaNum-Thin.woff") format("woff");
-}
-@font-face {
-  font-family: UltraLight2;
-  src: url("./IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff/IRANYekanXFaNum-UltraLight.woff") format("woff");
-} */
 
 
 
@@ -103,7 +26,6 @@
 body{
   margin: 0;
 }
-
 #root {
   margin: 0 auto;
 }
