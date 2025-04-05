@@ -11,12 +11,19 @@ const onSucc = (res) => {
 };
 
 const onErr = (err) => {
+  console.log(err)
+
+  if (err.response.status >= 404 && err.response.status < 500){
+    alert("Client error : " + err.response.status);
+  }
+
   return Promise.reject(err);
 };
 
 instance.interceptors.response.use(onSucc, onErr);
 
 instance.interceptors.request.use((opt) => {
+  opt.headers['messageTest'] = "Hello world!";
   return opt;
 });
 

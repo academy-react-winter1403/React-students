@@ -9,13 +9,26 @@ import AutImg from '../common/AutImg';
 import ValidationSchemaLogin from '../../../core/validation/login/validationSchemaLogin';
 import initialValuesLogin from '../../../core/validation/login/InitialValuesLogin';
 import Icon from '../common/Icon';
+import { useEffect, useState } from 'react';
+import { postLoginForm } from '../../../core/services/api/Login';
 
 const LoginForm = () => {
 
+  const [Login, setLogin] = useState([]);
+ 
+  const postLogin = async () => {
+    const Login = await postLoginForm();
+    setLogin(Login);
+  }
+
+  useEffect(() => {
+    postLogin();
+  }, [])
+  
   const handleSubmit = (values, { setSubmitting }) => {
     console.log('مقادیر ارسالی:', values);
     setTimeout(() => {
-      alert(JSON.stringify(values, null, 2));
+      // alert(JSON.stringify(values, null, 2));
       setSubmitting(false);
     }, 1000);
   };
