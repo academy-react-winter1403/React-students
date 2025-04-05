@@ -6,15 +6,15 @@
 
 @font-face {
   font-family: "bold";
-  src: url("../src/assets/Fonts/IRANYekanXFaNum-Bold.woff") format("woff");
+  src: url("../assets/Fonts/IRANYekanXFaNum-Bold.woff") format("woff");
 }
 @font-face {
   font-family: "semiBold";
-  src: url("../src/assets/Fonts/IRANYekanXFaNum-DemiBold.woff") format("woff");
+  src: url("../assets/Fonts/IRANYekanXFaNum-DemiBold.woff") format("woff");
 }
 @font-face {
   font-family: "medium";
-  src: url("../src/assets/Fonts/IRANYekanXFaNum-Medium.woff") format("woff");
+  src: url("../assets/Fonts/IRANYekanXFaNum-Medium.woff") format("woff");
 }
 
 

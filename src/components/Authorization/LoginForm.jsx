@@ -43,11 +43,11 @@ const LoginForm = () => {
 
         <div className="w-full max-w-md space-y-8">
           <div>
-            <h2 className="text-right text-3xl font-bold text-gray-900">
+            <h2 className="text-right text-3xl font-[bold] text-gray-900">
             سلام،<br/>
             خوش برگشتی
             </h2>
-            <p className="mt-5 text-right font-semibold text-loginText">
+            <p className="mt-5 text-right font-[semibold] text-loginText">
             برای وارد شدن به حساب کاربری خود اطلاعات حساب را وارد کنید
             </p>
           </div>
@@ -61,23 +61,23 @@ const LoginForm = () => {
               <Form className="space-y-6 bg-white p-8 rounded-xl">
                 <div className="rounded-md shadow-sm -space-y-px">
                   <div>
-                    <label htmlFor="email" className="font-semibold"> ایمیل یا شماره همراه</label>
+                    <label htmlFor="email" className="font-[semibold]"> ایمیل یا شماره همراه</label>
                     <Field
                       name="email"
                       type="email"
                       autoComplete="email"
-                      className="mt-2 mb-2 appearance-none rounded-none block w-full px-4 py-3 border-2 border-login placeholder-placeHolderLogin text-gray-900 rounded-xl focus:outline-none sm:text-sm"
+                      className="mt-2 mb-2 appearance-none block w-full px-4 py-3 border-2 border-login placeholder-placeHolderLogin text-gray-900 rounded-xl focus:outline-none sm:text-sm"
                       placeholder="ایمیل یا شماره همراه خود را وارد کنید"
                     />
                     <ErrorMessage name="email" component="div" className="mt-2 text-sm text-red-600" />
                   </div>
                   <div>
-                    <label htmlFor="password" className="font-semibold">رمز عبور</label>
+                    <label htmlFor="password" className="font-[semibold]">رمز عبور</label>
                     <Field
                       name="password"
                       type="password"
                       autoComplete="current-password"
-                      className="mt-2 appearance-none rounded-none block w-full px-4 py-3 border-2 border-login placeholder-placeHolderLogin text-gray-900 rounded-xl focus:outline-none sm:text-sm"
+                      className="mt-2 appearance-none block w-full px-4 py-3 border-2 border-login placeholder-placeHolderLogin text-gray-900 rounded-xl focus:outline-none sm:text-sm"
                       placeholder="رمز عبور خود را وارد کنید"
                     />
                     <ErrorMessage name="password" component="div" className="mt-2 text-sm text-red-600" />
@@ -92,13 +92,13 @@ const LoginForm = () => {
                       type="checkbox"
                       className="h-4 w-4 appearance-none border-2 border-login rounded-md checked:bg-purple-600 "
                     />
-                    <label htmlFor="rememberMe" className="mr-2 block text-sm font-semibold">
+                    <label htmlFor="rememberMe" className="mr-2 block text-sm font-[semibold]">
                     مرا بخاطر بسپار!
                     </label>
                   </div>
 
                   <div className="text-sm">
-                    <a href="#" className="font-medium bg-forgetBg p-2 rounded-3xl font-semibold text-forgetText hover:text-purple-900">
+                    <a href="#" className="font-[medium] bg-forgetBg p-2 rounded-3xl text-forgetText hover:text-purple-900">
                     رمزعبور فراموش کردید؟
                     </a>
                   </div>
@@ -107,7 +107,7 @@ const LoginForm = () => {
                 <div>
                   <button
                     type="submit"
-                    className="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-2xl text-white bg-login hover:bg-purple-600 outline-none"
+                    className="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-[medium] rounded-2xl text-white bg-login hover:bg-purple-600 outline-none"
                     disabled={isSubmitting}
                   >
                     {isSubmitting ? (
@@ -128,7 +128,7 @@ const LoginForm = () => {
           <div className="text-center">
             <p className="text-sm">
               حساب کاربری ندارید؟{' '}
-              <a href="#" className="font-semibold underline">
+              <a href="#" className="font-[semibold] underline">
                 ثبت نام کنید
               </a>
             </p>
