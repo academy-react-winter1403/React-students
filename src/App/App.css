@@ -6,15 +6,15 @@
 
 @font-face {
   font-family: "bold";
-  src: url("../assets/IRANYekanX(Pro)/IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff/IRANYekanXFaNum-Bold.woff") format("woff");
+  src: url("../src/assets/Fonts/IRANYekanXFaNum-Bold.woff") format("woff");
 }
 @font-face {
   font-family: "semiBold";
-  src: url("../assets/IRANYekanX(Pro)/IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff/IRANYekanXFaNum-DemiBold.woff") format("woff");
+  src: url("../src/assets/Fonts/IRANYekanXFaNum-DemiBold.woff") format("woff");
 }
 @font-face {
   font-family: "medium";
-  src: url("../assets/IRANYekanX(Pro)/IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff/IRANYekanXFaNum-Medium.woff") format("woff");
+  src: url("../src/assets/Fonts/IRANYekanXFaNum-Medium.woff") format("woff");
 }
 
 
