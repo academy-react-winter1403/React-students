@@ -1,17 +1,11 @@
 import App from './App/App'
-<<<<<<< HEAD
-import CourseList from './components/CourseList/CourseList.jsx'
-import BlogList from './components/BlogList/BlogList.jsx'
-import Panel from './components/UsePanel/Panel.jsx'
-import LoginForm from './components/Authorization/LoginForm.jsx'
-import NotFound from './components/Error/NotFound.jsx'
-import Error from './components/Error/Error.jsx'
-import Route from './components/Config/Route.jsx'
-=======
 import Route from './components/Config/Route'
 import CourseList from './components/CourseList/CourseList'
 import BlogList from './components/BlogList/BlogList'
->>>>>>> landingcourse
+import Panel from './components/UsePanel/Panel'
+import LoginForm from './components/Authorization/LoginForm'
+import NotFound from './components/Error/NotFound'
+import Error from './components/Error/Error'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
@@ -24,13 +18,8 @@ import './index.css'
 const router = createBrowserRouter([
   {
     path: "/",
-<<<<<<< HEAD
-    element: <Route/>, 
-    children:[
-=======
     element: <Route/>,
     children: [
->>>>>>> landingcourse
       {
         index: true,
         path: "/",

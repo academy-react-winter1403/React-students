@@ -6,17 +6,6 @@
 
 @font-face {
   font-family: "bold";
-<<<<<<< HEAD
-  src: url("../assets/IRANYekanX(Pro)/IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff/IRANYekanXFaNum-Bold.woff") format("woff");
-}
-@font-face {
-  font-family: "semiBold";
-  src: url("../assets/IRANYekanX(Pro)/IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff/IRANYekanXFaNum-DemiBold.woff") format("woff");
-}
-@font-face {
-  font-family: "medium";
-  src: url("../assets/IRANYekanX(Pro)/IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff/IRANYekanXFaNum-Medium.woff") format("woff");
-=======
   src: url("../src/assets/Fonts/IRANYekanXFaNum-Bold.woff") format("woff");
 }
 @font-face {
@@ -26,7 +15,6 @@
 @font-face {
   font-family: "medium";
   src: url("../src/assets/Fonts/IRANYekanXFaNum-Medium.woff") format("woff");
->>>>>>> landingcourse
 }
 
 
@@ -41,4 +29,9 @@ body{
 #root {
   margin: 0 auto;
 }
+
+
+
+
+
 

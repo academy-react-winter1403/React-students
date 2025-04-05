@@ -1,22 +1,9 @@
 import React from 'react'
-<<<<<<< HEAD:src/components/Landing/WeeklyTeachers.jsx
-<<<<<<< HEAD
-import ProfilePicIcon from '../../assets/Icons/profile-picture.svg'
-import MedalFirstIcon from '../../assets/Icons/medal-first-place.svg'
-import MedalSecondIcon from '../../assets/Icons/medal-second-place.svg'
-import MedalThirdIcon from '../../assets/Icons/medal-third-place.svg'
-=======
 import ProfilePicIcon from '../../../assets/Icons/profile-picture.svg'
 import MedalFirstIcon from '../../../assets/Icons/medal-first-place.svg'
 import MedalSecondIcon from '../../../assets/Icons/medal-second-place.svg'
 import MedalThirdIcon from '../../../assets/Icons/medal-third-place.svg'
->>>>>>> landingcourse:src/components/Landing/WeeklyTeachers/WeeklyTeachers.jsx
 
-
-
-
-=======
->>>>>>> 7b22063b3f379e17e7236f75766b11569e7708ad
 
 const WeeklyTeachers = () => {
   return (
@@ -30,90 +17,40 @@ const WeeklyTeachers = () => {
           <h3 className="font-[bold]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[20px]">رتبه اول</h3>
           <div className="flex justify-between items-end">
             <div className="border">
-<<<<<<< HEAD
               <img className="ts:w-[8px] ts:h-[8px] ts:mt-[4px]   os:w-[24px] os:h-[24px] os:mt-[4px]   sm:w-[40px] sm:h-[40px] sm:mt-[8px]   lg:w-[56px] lg:h-[56px] lg:mt-[24px]" src={ProfilePicIcon} alt="profilePictureIcon"/>
               <h2 className="font-[semibold]   ts:text-[6px]   os:mt-[4px] text-[8px]   sm:mt-[4px] sm:text-[10px]   lg:mt-[8px] lg:text-[20px]">علی رمضانی</h2>
               <p className="font-[semibold] text-[#959595]   ts:text-[4px] ts:mb-[4px]   os:text-[6px] os:mb-[8px]   sm:mt-[4px] sm:mb-[16px] sm:text-[10px]   lg:mt-[4px] lg:mb-[24px] lg:text-[16px]">دکترای هوش مصنوعی</p>
             </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-            <MedalFirstIcon className="ts:w-[20px] ts:h-[20px] ts:mb-[8px] ts:ml-[4px]   os:w-[32px] os:h-[32px] os:mb-[16px] os:ml-[8px]   sm:w-[56px] sm:h-[56px] sm:mb-[16px] sm:ml-[16px]   lg:w-[112px] lg:h-[112px] lg:mb-[19.27px] lg:ml-[16px]"/>
-=======
             <img className="ts:w-[20px] ts:h-[20px] ts:mb-[8px] ts:ml-[4px]   os:w-[32px] os:h-[32px] os:mb-[16px] os:ml-[8px]   sm:w-[56px] sm:h-[56px] sm:mb-[16px] sm:ml-[16px]   lg:w-[112px] lg:h-[112px] lg:mb-[19.27px] lg:ml-[16px]" src={MedalFirstIcon} alt="medalFirstPlaceIcon"/>
-=======
-              <img className="ts:w-[8px] ts:h-[8px] ts:mt-[4px]   os:w-[24px] os:h-[24px] os:mt-[4px]   sm:w-[40px] sm:h-[40px] sm:mt-[8px]   lg:w-[56px] lg:h-[56px] lg:mt-[24px]" src="" alt=""/>
-              <h2 className="font-[semibold]   ts:text-[6px]   os:mt-[4px] text-[8px]   sm:mt-[4px] sm:text-[10px]   lg:mt-[8px] lg:text-[20px]">علی رمضانی</h2>
-              <p className="font-[semibold] text-[#959595]   ts:text-[4px] ts:mb-[4px]   os:text-[6px] os:mb-[8px]   sm:mt-[4px] sm:mb-[16px] sm:text-[10px]   lg:mt-[4px] lg:mb-[24px] lg:text-[16px]">دکترای هوش مصنوعی</p>
             </div>
-            <img className="ts:w-[20px] ts:h-[20px] ts:mb-[8px] ts:ml-[4px]   os:w-[32px] os:h-[32px] os:mb-[16px] os:ml-[8px]   sm:w-[56px] sm:h-[56px] sm:mb-[16px] sm:ml-[16px]   lg:w-[112px] lg:h-[112px] lg:mb-[19.27px] lg:ml-[16px]" src="" alt=""/>
->>>>>>> 7b22063b3f379e17e7236f75766b11569e7708ad
->>>>>>> 4afd4c3cd105e6f976e432d6ba08ab5fc5e633af
-=======
-            <img className="ts:w-[20px] ts:h-[20px] ts:mb-[8px] ts:ml-[4px]   os:w-[32px] os:h-[32px] os:mb-[16px] os:ml-[8px]   sm:w-[56px] sm:h-[56px] sm:mb-[16px] sm:ml-[16px]   lg:w-[112px] lg:h-[112px] lg:mb-[19.27px] lg:ml-[16px]" src={MedalFirstIcon} alt="medalFirstIcon"/>
->>>>>>> landingcourse
           </div>
         </div>
         <div className="border-2 border-[#DADADA] ts:w-[100px] ts:h-[60px] ts:pt-[4px] ts:pr-[4px] ts:rounded-[8px]   os:w-[140px] os:h-[80px] os:pt-[8px] os:pr-[8px] os:rounded-[16px]   sm:w-[380px] sm:h-[140px] sm:pt-[12px] sm:pr-[16px] sm:rounded-[24px]   lg:w-[421px] lg:h-[216px] lg:pt-[27px] lg:pr-[24px] lg:rounded-[24px]">
           <h3 className="font-[bold]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[20px]">رتبه دوم</h3>
           <div className="flex justify-between items-end">
             <div className="border">
-<<<<<<< HEAD
               <img className="ts:w-[8px] ts:h-[8px] ts:mt-[4px]   os:w-[24px] os:h-[24px] os:mt-[4px]   sm:w-[40px] sm:h-[40px] sm:mt-[8px]   lg:w-[56px] lg:h-[56px] lg:mt-[24px]" src={ProfilePicIcon} alt="profilePictureIcon"/>
               <h2 className="font-[semibold]   ts:text-[6px]   os:mt-[4px] text-[8px]   sm:mt-[4px] sm:text-[10px]   lg:mt-[8px] lg:text-[20px]">علی رمضانی</h2>
               <p className="font-[semibold] text-[#959595]   ts:text-[4px] ts:mb-[4px]   os:text-[6px] os:mb-[8px]   sm:mt-[4px] sm:mb-[16px] sm:text-[10px]   lg:mt-[4px] lg:mb-[24px] lg:text-[16px]">دکترای هوش مصنوعی</p>
             </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-            <MedalSecondIcon className="ts:w-[20px] ts:h-[20px] ts:mb-[8px] ts:ml-[4px]   os:w-[32px] os:h-[32px] os:mb-[16px] os:ml-[8px]   sm:w-[56px] sm:h-[56px] sm:mb-[16px] sm:ml-[16px]   lg:w-[112px] lg:h-[112px] lg:mb-[19.27px] lg:ml-[16px]"/>
-=======
-            <img className="ts:w-[20px] ts:h-[20px] ts:mb-[8px] ts:ml-[4px]   os:w-[32px] os:h-[32px] os:mb-[16px] os:ml-[8px]   sm:w-[56px] sm:h-[56px] sm:mb-[16px] sm:ml-[16px]   lg:w-[112px] lg:h-[112px] lg:mb-[19.27px] lg:ml-[16px]" src={MedalSecondIcon} alt="medalSecondPlaceIcon"/>
-=======
-              <img className="ts:w-[8px] ts:h-[8px] ts:mt-[4px]   os:w-[24px] os:h-[24px] os:mt-[4px]   sm:w-[40px] sm:h-[40px] sm:mt-[8px]   lg:w-[56px] lg:h-[56px] lg:mt-[24px]" src="" alt=""/>
-              <h2 className="font-[semibold]   ts:text-[6px]   os:mt-[4px] text-[8px]   sm:mt-[4px] sm:text-[10px]   lg:mt-[8px] lg:text-[20px]">علی رمضانی</h2>
-              <p className="font-[semibold] text-[#959595]   ts:text-[4px] ts:mb-[4px]   os:text-[6px] os:mb-[8px]   sm:mt-[4px] sm:mb-[16px] sm:text-[10px]   lg:mt-[4px] lg:mb-[24px] lg:text-[16px]">دکترای هوش مصنوعی</p>
-            </div>
-            <img className="ts:w-[20px] ts:h-[20px] ts:mb-[8px] ts:ml-[4px]   os:w-[32px] os:h-[32px] os:mb-[16px] os:ml-[8px]   sm:w-[56px] sm:h-[56px] sm:mb-[16px] sm:ml-[16px]   lg:w-[112px] lg:h-[112px] lg:mb-[19.27px] lg:ml-[16px]" src="" alt=""/>
->>>>>>> 7b22063b3f379e17e7236f75766b11569e7708ad
->>>>>>> 4afd4c3cd105e6f976e432d6ba08ab5fc5e633af
-=======
             <img className="ts:w-[20px] ts:h-[20px] ts:mb-[8px] ts:ml-[4px]   os:w-[32px] os:h-[32px] os:mb-[16px] os:ml-[8px]   sm:w-[56px] sm:h-[56px] sm:mb-[16px] sm:ml-[16px]   lg:w-[112px] lg:h-[112px] lg:mb-[19.27px] lg:ml-[16px]" src={MedalSecondIcon} alt="medalSecondIcon"/>
->>>>>>> landingcourse
           </div>
         </div>
         <div className="border-2 border-[#FFBF6C] ts:w-[100px] ts:h-[60px] ts:pt-[4px] ts:pr-[4px] ts:rounded-[8px]   os:w-[140px] os:h-[80px] os:pt-[8px] os:pr-[8px] os:rounded-[16px]   sm:w-[380px] sm:h-[140px] sm:pt-[12px] sm:pr-[16px] sm:rounded-[24px]   lg:w-[421px] lg:h-[216px] lg:pt-[27px] lg:pr-[24px] lg:rounded-[24px]">
           <h3 className="font-[bold]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[20px]">رتبه سوم</h3>
           <div className="flex justify-between items-end">
             <div className="border">
-<<<<<<< HEAD
               <img className="ts:w-[8px] ts:h-[8px] ts:mt-[4px]   os:w-[24px] os:h-[24px] os:mt-[4px]   sm:w-[40px] sm:h-[40px] sm:mt-[8px]   lg:w-[56px] lg:h-[56px] lg:mt-[24px]" src={ProfilePicIcon} alt="profilePictureIcon"/>
               <h2 className="font-[semibold]   ts:text-[6px]   os:mt-[4px] text-[8px]   sm:mt-[4px] sm:text-[10px]   lg:mt-[8px] lg:text-[20px]">علی رمضانی</h2>
               <p className="font-[semibold] text-[#959595]   ts:text-[4px] ts:mb-[4px]   os:text-[6px] os:mb-[8px]   sm:mt-[4px] sm:mb-[16px] sm:text-[10px]   lg:mt-[4px] lg:mb-[24px] lg:text-[16px]">دکترای هوش مصنوعی</p>
             </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-            <MedalThirdIcon className="ts:w-[20px] ts:h-[20px] ts:mb-[8px] ts:ml-[4px]   os:w-[32px] os:h-[32px] os:mb-[16px] os:ml-[8px]   sm:w-[56px] sm:h-[56px] sm:mb-[16px] sm:ml-[16px]   lg:w-[112px] lg:h-[112px] lg:mb-[19.27px] lg:ml-[16px]"/>
-=======
             <img className="ts:w-[20px] ts:h-[20px] ts:mb-[8px] ts:ml-[4px]   os:w-[32px] os:h-[32px] os:mb-[16px] os:ml-[8px]   sm:w-[56px] sm:h-[56px] sm:mb-[16px] sm:ml-[16px]   lg:w-[112px] lg:h-[112px] lg:mb-[19.27px] lg:ml-[16px]" src={MedalThirdIcon} alt="medalThirdPlaceIcon"/>
-=======
-              <img className="ts:w-[8px] ts:h-[8px] ts:mt-[4px]   os:w-[24px] os:h-[24px] os:mt-[4px]   sm:w-[40px] sm:h-[40px] sm:mt-[8px]   lg:w-[56px] lg:h-[56px] lg:mt-[24px]" src="" alt=""/>
-              <h2 className="font-[semibold]   ts:text-[6px]   os:mt-[4px] text-[8px]   sm:mt-[4px] sm:text-[10px]   lg:mt-[8px] lg:text-[20px]">علی رمضانی</h2>
-              <p className="font-[semibold] text-[#959595]   ts:text-[4px] ts:mb-[4px]   os:text-[6px] os:mb-[8px]   sm:mt-[4px] sm:mb-[16px] sm:text-[10px]   lg:mt-[4px] lg:mb-[24px] lg:text-[16px]">دکترای هوش مصنوعی</p>
-            </div>
-            <img className="ts:w-[20px] ts:h-[20px] ts:mb-[8px] ts:ml-[4px]   os:w-[32px] os:h-[32px] os:mb-[16px] os:ml-[8px]   sm:w-[56px] sm:h-[56px] sm:mb-[16px] sm:ml-[16px]   lg:w-[112px] lg:h-[112px] lg:mb-[19.27px] lg:ml-[16px]" src="" alt=""/>
->>>>>>> 7b22063b3f379e17e7236f75766b11569e7708ad
->>>>>>> 4afd4c3cd105e6f976e432d6ba08ab5fc5e633af
-=======
-            <img className="ts:w-[20px] ts:h-[20px] ts:mb-[8px] ts:ml-[4px]   os:w-[32px] os:h-[32px] os:mb-[16px] os:ml-[8px]   sm:w-[56px] sm:h-[56px] sm:mb-[16px] sm:ml-[16px]   lg:w-[112px] lg:h-[112px] lg:mb-[19.27px] lg:ml-[16px]" src={MedalThirdIcon} alt="medalThirdIcon"/>
->>>>>>> landingcourse
           </div>
         </div>
-      </div>
     </div>
   )
 }
 
-<<<<<<< HEAD
+
 export default WeeklyTeachers
-=======
-export default WeeklyTeachers
->>>>>>> 7b22063b3f379e17e7236f75766b11569e7708ad
+

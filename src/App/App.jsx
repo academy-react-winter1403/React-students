@@ -1,11 +1,7 @@
-<<<<<<< HEAD
-import Content from '../components/Landing/Content'
-=======
-import Index from '../components/Landing/index'
->>>>>>> landingcourse
-import './App.css'
 import React from 'react'
-import Content from '../components/Landing/Content'
+import Index from '../components/Landing/index'
+import './App.css'
+
 
 
 
