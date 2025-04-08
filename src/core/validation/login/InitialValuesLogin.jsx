@@ -1,5 +1,5 @@
 const initialValuesLogin = {
-    text: '',
+    phoneOrGmail: '',
     password: '',
     rememberMe: false
   };

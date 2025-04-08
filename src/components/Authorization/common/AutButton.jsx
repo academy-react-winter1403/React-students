@@ -1,6 +1,7 @@
 import React from 'react'
 
-const AutButton = ({type , SvgTitle , isSubmittingTitle , isSubmitting}) => {
+
+const AutButton = ({type , SvgTitle , isSubmittingTitle , isSubmitting }) => {
   return (
     <div>
         <button

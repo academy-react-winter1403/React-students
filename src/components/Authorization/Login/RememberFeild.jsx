@@ -1,7 +1,7 @@
 import { Field } from 'formik'
 import React from 'react'
 
-const RememberFeild = ({title , name , type}) => {
+const RememberField = ({title , name , type}) => {
   return (
     <div className="flex items-center ">
         <Field
@@ -17,4 +17,4 @@ const RememberFeild = ({title , name , type}) => {
   )
 }
 
-export default RememberFeild
+export default RememberField;

@@ -1,7 +1,7 @@
 const InitialValuesForm = {
-    text: '',
+    email: '',
     password: '',
-    rememberMe: false
+    passwordRepeat: '',
   };
 
 export default InitialValuesForm;

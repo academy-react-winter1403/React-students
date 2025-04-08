@@ -1,7 +1,7 @@
 import * as Yup from 'yup';
 
   const ValidationSchemaConfrimCode = Yup.object({
-    text: Yup.string()
+    verificationCode: Yup.string()
       .required("کد تایید الزامی است"),
   });
 

@@ -18,7 +18,7 @@ const Header = () => {
       </div>
       <div className="loginSignup  w-[9%] h-[60px] flex justify-center items-center gap-[10px] border">
         <Link to="/Login" className="flex justify-center items-center w-[35%] h-[30px] text-[13px] border rounded-[10px] cursor-pointer">ورود</Link>
-        <Link to="/SingUp" className="flex justify-center items-center w-[55%] h-[30px] text-[13px] text-white bg-[#A74DD1] rounded-[10px] cursor-pointer">ثبت نام</Link>
+        <Link to="/SignUp" className="flex justify-center items-center w-[55%] h-[30px] text-[13px] text-white bg-[#A74DD1] rounded-[10px] cursor-pointer">ثبت نام</Link>
       </div>
     </div>
   )

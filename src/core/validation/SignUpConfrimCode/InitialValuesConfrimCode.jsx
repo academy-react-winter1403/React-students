@@ -1,5 +1,5 @@
 const InitialValuesConfrimCode = {
-    text: '',
+  verificationCode: '',
   };
 
 export default InitialValuesConfrimCode;

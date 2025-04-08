@@ -1,7 +1,7 @@
 import * as Yup from 'yup';
 
 const ValidationSchema = Yup.object({
-    text: Yup.string()
+    phone: Yup.string()
       .required('شماره همراه الزامی است'),
   });
 

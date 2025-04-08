@@ -1,5 +1,5 @@
 const InitialValuesSingUp = {
-    text: '',
+  phone: '',
   };
 
 export default InitialValuesSingUp

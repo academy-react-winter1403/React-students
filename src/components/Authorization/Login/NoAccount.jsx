@@ -5,7 +5,7 @@ const NoAccount = ({address , accountTitle , SingUpTitle}) => {
   return (
     <div className="text-center">
     <p className="text-sm">
-      {accountTitle}{' '}
+      {accountTitle}
       <Link to={address} className="font-semibold underline">
         {SingUpTitle}
       </Link>

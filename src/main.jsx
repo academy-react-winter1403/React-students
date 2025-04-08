@@ -9,9 +9,10 @@ import NotFound from './components/error/NotFound'
 import Route from './components/config/route'
 import Error from './components/error/Error'
 import Panel from './components/UsePanel/Panel'
-import SingUp from './components/Authorization/SignUp/SignUp'
 import SingUpConfirmCode from './components/Authorization/SignUp/SingUpConfirmCode'
 import SignUpForm from './components/Authorization/SignUp/SignUpForm'
+import StepOne from './components/Authorization/SignUp/StepOne'
+// import SignUp from './components/Authorization/SignUp/SignUp.jsx'
 
 const router = createBrowserRouter([
   {
@@ -36,12 +37,12 @@ const router = createBrowserRouter([
     errorElement: <Error />,
   },
   {
-    path: "/SingUp",
-    element: <SingUp />,
+    path: "/SignUp",
+    element: <StepOne />,
     errorElement: <Error />,
   },
   {
-    path: "/SingUpCode",
+    path: "/SignUpCode",
     element: <SingUpConfirmCode />,
     errorElement: <Error />,
   },
