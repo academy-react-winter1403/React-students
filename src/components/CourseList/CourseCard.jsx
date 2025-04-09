@@ -47,7 +47,7 @@ const CourseCard = ({data}) => {
                         <span className="font-[medium]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[16px]">{data.dissLikeCount}</span>
                     </div>
                 </div>
-                <div className="flex items-center    gap-[4px]">
+                <div className="flex items-center gap-[4px]   ts:ml-[4px]   os:ml-[8px]   sm:ml-[12px]   lg:ml-[16px]">
                     <span className="font-[semibold]   text-[8px]   os:text-[12px]   sm:text-[16px]   lg:text-[20px]">{data.cost}</span>
                     <span className="font-[semibold]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[14px]">تومان</span>
                 </div>

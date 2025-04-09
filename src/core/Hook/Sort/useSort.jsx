@@ -2,10 +2,7 @@ import React from 'react'
 
 const useSort = () => {
 
-
-  let sortFlag = false;
-
-  const [filter, setFilter] = useState([])
+  const [filter, setFilter] = useState(false)
 
   const sortApi = async () => {
     const data = await getApi("/Home/GetCoursesWithPagination?CostDown=&CostUp=")
@@ -15,7 +12,7 @@ const useSort = () => {
   
   useEffect(() => {
     sortApi()
-  }, [sortFlag])
+  }, [filter])
 
 
 
