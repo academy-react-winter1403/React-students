@@ -15,32 +15,6 @@ export default {
       'ts': '300px'
     },
     extend: {
-<<<<<<< HEAD
-      // fontFamily: {
-      //   Black: "Black1",
-      //   Bold: "Bold1",
-      //   DemiBold: "DemiBold1",
-      //   ExtraBlack: "ExtraBlack1",
-      //   ExtraBold: "ExtraBold1",
-      //   Heavy: "Heavy1",
-      //   Light: "Light1",
-      //   Medium: "Medium1",
-      //   Regular: "Regular1",
-      //   Thin: "Thin1",
-      //   UltraLight: "UltraLight1",
-      //   Black2: "Black2",
-      //   Bold2: "Bold2",
-      //   DemiBold2: "DemiBold2",
-      //   ExtraBlack2: "ExtraBlack2",
-      //   ExtraBold2: "ExtraBold2",
-      //   Heavy2: "Heavy2",
-      //   Light2: "Light2",
-      //   Medium2: "Medium2",
-      //   Regular2: "Regular2",
-      //   Thin2: "Thin2",
-      //   UltraLight2: "UltraLight2",
-      // }
-=======
       backgroundImage: {
         'Dashboard': "url('./assets/Icons/Frame(1).svg')",
         'MyCourse': "url('./assets/Icons/Frame.svg')",
@@ -71,7 +45,6 @@ export default {
       fontFamily: {
         Iran: ['IranYekan'], 
       },
->>>>>>> 7b22063b3f379e17e7236f75766b11569e7708ad
     },
   },
   plugins: [],
