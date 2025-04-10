@@ -12,7 +12,6 @@ import Panel from './components/UsePanel/Panel'
 import SingUpConfirmCode from './components/Authorization/SignUp/SingUpConfirmCode'
 import SignUpForm from './components/Authorization/SignUp/SignUpForm'
 import StepOne from './components/Authorization/SignUp/StepOne'
-// import SignUp from './components/Authorization/SignUp/SignUp.jsx'
 
 const router = createBrowserRouter([
   {
