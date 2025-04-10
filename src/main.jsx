@@ -1,21 +1,16 @@
-import App from './App/App'
 import Route from './components/Config/Route'
+import App from './App/App'
 import CourseList from './components/CourseList/CourseList'
 import BlogList from './components/BlogList/BlogList'
 import Panel from './components/UsePanel/Panel'
 import LoginForm from './components/Authorization/LoginForm'
 import NotFound from './components/Error/NotFound'
 import Error from './components/Error/Error'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter , RouterProvider } from 'react-router-dom'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
 
-
-
-
-
-const router = createBrowserRouter([
+export const router = createBrowserRouter([
   {
     path: "/",
     element: <Route/>,
@@ -50,6 +45,8 @@ const router = createBrowserRouter([
     element: <NotFound />
   },
 ]);
+
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
