@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import CourseCard from './CourseCard'
 import { useFetchCourse } from '../../core/Hook/useFetchCourse/useFetchCourse'
 import FrameRightIcon from '../../assets/Icons/frame-right.svg'

@@ -1,4 +1,5 @@
 import React from 'react'
+import SeeAll from '../../Common/SeeAll/SeeAll'
 import HtmlIcon2 from '../../../assets/Icons/html-5-2.svg'
 import CssIcon2 from '../../../assets/Icons/css-3-2.svg'
 import JsIcon2 from '../../../assets/Icons/java-script2.svg'
@@ -6,7 +7,6 @@ import ReactIcon2 from '../../../assets/Icons/react2.svg'
 import ArrowURIcon from '../../../assets/Icons/arrow-up-right.svg'
 import BookMarkIcon from '../../../assets/Icons/bookmark-add.svg'
 import MortarBoardIcon from '../../../assets/Icons/mortarboard.svg'
-import ArrowLeftIcon from '../../../assets/Icons/arrow-left.svg'
 import VectorLine3 from '../../../assets/Icons/Group 7.svg'
 
 
@@ -93,10 +93,7 @@ const FallCourses = () => {
           </div>
         </div>
       </div>
-      <button className="flex justify-center items-center mx-[auto] bg-[#A74DD1]   ts:gap-[4px] ts:mt-[16px] ts:px-[8px] ts:py-[4px] ts:rounded-[4px]   os:gap-[4px] os:mt-[24px] os:px-[12px] os:py-[8px] os:rounded-[8px]   sm:gap-[8px] sm:mt-[32px] sm:px-[16px] sm:py-[12px] sm:rounded-[16px]   lg:gap-[8px] lg:mt-[40px] lg:px-[16px] lg:py-[12px] lg:rounded-[16px]">
-        <span className="font-[semibold] text-white   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[16px]">مشاهده همه</span>
-        <img className="ts:w-[8px] ts:h-[8px]   os:w-[12px] os:h-[12px]   sm:w-[20px] sm:h-[20px]   lg:w-[24px] lg:h-[24px]" src={ArrowLeftIcon} alt="arrowLeftIcon"/>
-      </button>
+      <SeeAll/>
       <img className="w-full absolute bottom-[-165px] z-[5]" src={VectorLine3} alt="vectorLine3Image"/>
     </div>
   )
