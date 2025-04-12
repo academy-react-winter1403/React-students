@@ -6,9 +6,14 @@ import FrameLeftIcon from '../../assets/Icons/frame-left.svg'
 
 
 
-const Main = () => {
+const Main = ({ searchTerm }) => {
 
   const {course} = useFetchCourse();
+
+  const filteredCourses = course.filter(item =>
+    item.title?.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
 
   return (
     <div className="border">
@@ -31,9 +36,11 @@ const Main = () => {
         </div>
         <div className="flex flex-row flex-wrap justify-center   ts:gap-[8px] ts:mt-[8px]   os:gap-[16px] os:mt-[16px]   sm:gap-[24px] sm:mt-[24px]   lg:gap-[33px] lg:mt-[32px]">
         {
-          course.map((item) => (
-            <CourseCard 
-            data={item}/>
+          filteredCourses.map((item) => (
+            <CourseCard
+              data={item}
+              key={item.id}
+            />
           ))
         }
 
