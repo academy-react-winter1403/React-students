@@ -11,8 +11,8 @@ const FallCourses = () => {
 
   const [fallcourse , setFallCourse] = useState([
     {id:1 , mainImg:ReactIcon2 , backGroundColor:"#6F8EFF" , title:"دوره جاوااسکریپت" , teacher:"محمدحسین بحرالعلومی" , price:"4،200،000"},
-    {id:2 , mainImg:HtmlIcon2 , backGroundColor:"#EEEEEE" , title:"دوره جاوااسکریپت" , teacher:"محمدحسین بحرالعلومی" , price:"500،000"},
-    {id:3 , mainImg:JsIcon2 , backGroundColor:"#DAE01E" , title:"دوره جاوااسکریپت" , teacher:"محمدحسین بحرالعلومی" , price:"2،000،000"}
+    {id:2 , mainImg:HtmlIcon2 , backGroundColor:"#EEEEEE" , title:"دوره html و css" , teacher:"محمدحسین بحرالعلومی" , price:"500،000"},
+    {id:3 , mainImg:JsIcon2 , backGroundColor:"#DAE01E" , title:"دوره جاوا اسکریپت" , teacher:"محمدحسین بحرالعلومی" , price:"2،000،000"}
   ]);
 
 
