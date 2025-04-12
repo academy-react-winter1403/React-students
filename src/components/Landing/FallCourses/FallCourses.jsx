@@ -7,10 +7,6 @@ import ReactIcon2 from '../../../assets/Icons/react2.svg'
 import VectorLine3 from '../../../assets/Icons/Group 7.svg'
 
 
-
-
-
-
 const FallCourses = () => {
 
   const [fallcourse , setFallCourse] = useState([
