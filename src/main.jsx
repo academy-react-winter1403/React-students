@@ -1,4 +1,4 @@
-import Route from './components/Config/Route'
+import Route from './components/config/Route'
 import App from './App/App'
 import CourseList from './components/CourseList/CourseList'
 import BlogList from './components/BlogList/BlogList'
