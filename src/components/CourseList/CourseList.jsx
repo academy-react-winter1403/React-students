@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import ListHeroSection from '../Common/ListHeroSection/ListHeroSection'
-import MainContent from './MainContent'
+import CourseContent from './CourseContent'
 import { getApi } from '../../core/services/api'
 import { useFetchCourse } from '../../core/Hook/useFetchCourse/useFetchCourse'
 import CodingImage from '../../assets/Icons/Coding-A-Website-Streamline.svg'
@@ -25,7 +25,7 @@ const CourseList = () => {
   return (
     <div>
         <ListHeroSection data={data1}/>
-        <MainContent/>
+        <CourseContent/>
     </div>
   )
 }

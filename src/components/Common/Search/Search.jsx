@@ -1,8 +1,8 @@
 import {React , useState} from 'react'
 import { Field } from 'formik'
-import SearchIcon from '../../assets/Icons/search-stroke-rounded.svg'
+import SearchIcon from '../../../assets/Icons/search-stroke-rounded.svg'
 
-const CourseSearch = ({ onSearchChange }) => {
+const Search = ({ onSearchChange }) => {
 
 
   const [searchValue, setSearchValue] = useState('');
@@ -41,4 +41,4 @@ const CourseSearch = ({ onSearchChange }) => {
   )
 }
 
-export default CourseSearch
+export default Search

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Field } from 'formik'
 
-const CourseDate = () => {
+const Date = () => {
   return (
     <div>
       <label className="block font-[semibold] text-[#1E1E1E]   ts:mt-[4px] ts:text-[6px]   os:mt-[8px] os:text-[8px]   sm:mt-[12px] sm:text-[12px]   lg:mt-[16px] lg:text-[16px]">تاریخ</label>
@@ -10,4 +10,4 @@ const CourseDate = () => {
   )
 }
 
-export default CourseDate
+export default Date
