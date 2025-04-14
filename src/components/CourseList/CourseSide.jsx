@@ -3,8 +3,6 @@ import { Formik , Form } from 'formik'
 import Search from '../Common/Search/Search'
 import DropDownHolder from '../Common/DropDown/DropDownHolder'
 import Date from '../Common/Date/Date'
-import CoursePrice from './CoursePrice'
-import '../Common/Style/CommonStyle.css'
 
 
 
@@ -17,7 +15,6 @@ const CourseSide = ({ onSearchChange, onPriceFilterChange }) => {
   ])
 
 
-
   return (
     <Formik>
       <Form>
@@ -27,7 +24,6 @@ const CourseSide = ({ onSearchChange, onPriceFilterChange }) => {
           {sideData.map((item , index) => {
             return <DropDownHolder key={index} title={item.title} placeholder={item.placeholder}/>
           })}
-          <CoursePrice onPriceFilterChange={onPriceFilterChange}/>
           <Date/>
         </div>
       </Form>

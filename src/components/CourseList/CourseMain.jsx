@@ -4,28 +4,13 @@ import { useFetchCourse } from '../../core/Hook/useFetchCourse/useFetchCourse';
 import FrameRightIcon from '../../assets/Icons/frame-right.svg';
 import FrameLeftIcon from '../../assets/Icons/frame-left.svg';
 
-const CourseMain = ({ searchTerm, priceFilter }) => {
+const CourseMain = ({ searchTerm }) => {
+
+  
   const { course } = useFetchCourse();
-
-  const filteredCourses = course.filter(item => {
-    const titleMatch = item.title?.toLowerCase().includes(searchTerm.toLowerCase());
-    let priceMatch = true;
-
-    if (priceFilter) {
-      const { min, max } = priceFilter;
-      const price = item.price; // فرض بر این است که دوره ها دارای پراپرتی 'price' هستند
-
-      if (min !== undefined && price < min) {
-        priceMatch = false;
-      }
-
-      if (max !== undefined && price > max) {
-        priceMatch = false;
-      }
-    }
-
-    return titleMatch && priceMatch;
-  });
+  const filteredCourses = course.filter(item =>
+    item.title?.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   return (
     <div className="border">
