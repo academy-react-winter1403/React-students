@@ -6,7 +6,7 @@ import Date from '../Common/Date/Date'
 
 
 
-const CourseSide = ({ onSearchChange, onPriceFilterChange }) => {
+const CourseSide = ({ onSearchChange }) => {
 
   const [sideData , setSideData] = useState([
     {title: "دسته بندی", placeholder: "دسته‌بندی مورد نظر را انتخاب کنید..."},
