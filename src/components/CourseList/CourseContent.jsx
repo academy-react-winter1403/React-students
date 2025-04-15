@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import CourseSide from './CourseSide';
+import CourseSort from './CourseSort'
 import CourseMain from './CourseMain';
 import CourseMain2 from './CourseMain2';
-import CourseSort from './CourseSort';
 
 const CourseContent = ({ courses, showMain }) => {
-  
   const [searchTerm, setSearchTerm] = useState('');
 
   const handleSearchChange = (newTerm) => {

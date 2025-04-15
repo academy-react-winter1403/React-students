@@ -1,10 +1,10 @@
 import React from 'react';
 import CourseCard from './CourseCard';
-import { useFetchCourse } from '../../core/Hook/useFetchCourse/useFetchCourse';
 
 const CourseMain = ({ courses, searchTerm }) => {
   const filteredCourses = courses?.filter(item =>
-    item.title?.toLowerCase().includes(searchTerm?.toLowerCase()));
+    item.title?.toLowerCase().includes(searchTerm?.toLowerCase())
+  );
 
   return (
     <div className="border">

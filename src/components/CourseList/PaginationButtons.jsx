@@ -6,7 +6,7 @@ const PaginationButtons = ({ currentPage, totalPages, onPageChange }) => {
   const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
 
   return (
-    <div className="flex items-center mx-[auto] border   ts:gap-[8px] ts:w-[220px] ts:mt-[16px]   os:gap-[8px] os:w-[280px] os:mt-[24px]   sm:gap-[12px] sm:w-[340px] sm:mt-[32px]   lg:gap-[12px] lg:w-[404px] lg:mt-[40px]">
+    <div className="flex justify-center items-center mx-[auto] border   ts:gap-[8px] ts:w-[220px] ts:mt-[16px]   os:gap-[8px] os:w-[280px] os:mt-[24px]   sm:gap-[12px] sm:w-[340px] sm:mt-[32px]   lg:gap-[12px] lg:w-[404px] lg:mt-[40px]">
       <button
         onClick={() => onPageChange(Math.max(currentPage - 1, 1))}
         disabled={currentPage === 1}

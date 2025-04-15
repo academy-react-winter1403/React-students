@@ -6,21 +6,21 @@ import CourseMain2 from './CourseMain2';
 import { useFetchCourse } from '../../core/Hook/useFetchCourse/useFetchCourse';
 import CodingImage from '../../assets/Icons/Coding-A-Website-Streamline.svg';
 import Icons from '../../assets/Icons/4icons.svg';
-import PaginationButtons from './PaginationButtons';
+import PaginationButtons from './PaginationButtons'; // Import کامپوننت جدید
 
 const CourseList = () => {
-
-
   const { course, loading, error } = useFetchCourse();
   const [currentPage, setCurrentPage] = useState(1);
-  const coursesPerPage = 6; 
+  const coursesPerPage = 6; // Number of courses to display per page
 
+  // Calculate the index of the first and last course on the current page
   const indexOfLastCourse = currentPage * coursesPerPage;
   const indexOfFirstCourse = indexOfLastCourse - coursesPerPage;
   const currentCourses = course?.slice(indexOfFirstCourse, indexOfLastCourse) || [];
 
   const totalPages = Math.ceil((course?.length || 0) / coursesPerPage);
 
+  // Function to handle page change
   const handlePageChange = (pageNumber) => setCurrentPage(pageNumber);
 
   const data1 = {
@@ -31,13 +31,13 @@ const CourseList = () => {
     leftImg: Icons
   };
 
-  // if (loading) {
-  //   return <div>در حال بارگذاری دوره ها...</div>;
-  // }
+  if (loading) {
+    return <div>در حال بارگذاری دوره ها...</div>;
+  }
 
-  // if (error) {
-  //   return <div>خطا در بارگذاری دوره ها.</div>;
-  // }
+  if (error) {
+    return <div>خطا در بارگذاری دوره ها.</div>;
+  }
 
   return (
     <div>
