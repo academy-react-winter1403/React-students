@@ -1,7 +1,6 @@
-// CourseSort.js
 import React from 'react';
 
-const CourseSort = ({ onSort }) => {
+const CourseSort = ({ onSort, onItemsPerPageChange, currentItemsPerPage }) => {
   return (
     <div>
       <div className="flex items-center mx-[auto] bg-[#F8F8F8]   ts:w-[360px] ts:h-[36px] ts:pr-[12px] ts:pl-[12px] ts:rounded-[24px]   os:w-[500px] os:h-[48px] os:pr-[16px] os:pl-[16px] os:rounded-[24px]   sm:w-[640px] sm:h-[60px] sm:pr-[20px] sm:pl-[20px] sm:rounded-[24px]   lg:w-[956px] lg:h-[72px] lg:pr-[26px] lg:pl-[24px] lg:rounded-[24px]">
@@ -30,15 +29,20 @@ const CourseSort = ({ onSort }) => {
           <label className="block font-[semibold] text-[#1E1E1E]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[16px]">تعداد نمایش</label>
           <select
             className="font-[semibold] text-[#1E1E1E] bg-[#FFFFFF]   ts:pr-[8px] ts:pl-[8px] ts:py-[4px] ts:text-[6px] ts:rounded-[16px]   os:pr-[8px] os:pl-[8px] os:py-[4px] os:text-[8px] os:rounded-[16px]   sm:pr-[12px] sm:pl-[12px] sm:py-[8px] sm:text-[12px] sm:rounded-[16px]   lg:pr-[12px] lg:pl-[16px] lg:py-[12px] lg:text-[16px] lg:rounded-[16px]"
-            name=""
-            id=""
+            name="itemsPerPage"
+            id="itemsPerPage"
+            value={currentItemsPerPage}
+            onChange={(e) => onItemsPerPageChange(e.target.value)}
           >
-            <option value="disable selected">9</option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
+            <option className="font-[semibold]" value="9">9</option>
+            <option className="font-[semibold]" value="8">8</option>
+            <option className="font-[semibold]" value="7">7</option>
+            <option className="font-[semibold]" value="6">6</option>
+            <option className="font-[semibold]" value="5">5</option>
+            <option className="font-[semibold]" value="4">4</option>
+            <option className="font-[semibold]" value="3">3</option>
+            <option className="font-[semibold]" value="2">2</option>
+            <option className="font-[semibold]" value="1">1</option>
           </select>
         </div>
       </div>
