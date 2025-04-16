@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import {React , useState, useEffect } from 'react';
 import CourseSide from './CourseSide';
 import CourseSort from './CourseSort';
 import CourseMain from './CourseMain';

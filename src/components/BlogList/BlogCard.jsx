@@ -28,7 +28,7 @@ const BlogCard = ({data}) => {
                 <img className="ts:w-[12px] ts:h-[12px]   os:w-[16px] os:h-[16px]   sm:w-[20px] sm:h-[20px]   lg:w-[24px] lg:h-[24px]" src={WriteIcon} alt="writeIcon"/>
                 <span className="font-[semibold] text-[#1E1E1E]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[14px]">{data.teacherName}</span>
             </div>
-            <div className="flex items-center   ts:gap-[4px] ts:mt-[4px]   os:gap-[4px] os:mt-[4px]   sm:gap-[8px] sm:mt-[8px]   lg:gap-[8px] lg:mt-[12px]">
+            <div className="flex items-center   ts:gap-[4px] ts:mt-[4px]   os:gap-[4px] os:mt-[4px]   sm:gap-[8px] sm:mt-[8px]   lg:gap-[8px] lg:mt-[8px]">
                 <img className="ts:w-[12px] ts:h-[12px]   os:w-[16px] os:h-[16px]   sm:w-[20px] sm:h-[20px]   lg:w-[24px] lg:h-[24px]" src={DateIcon} alt="dateIcon"/>
                 <span className="font-[semibold] text-[#1E1E1E]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[14px]">{data.lastUpdate}</span>
             </div>
@@ -43,7 +43,7 @@ const BlogCard = ({data}) => {
                         <span className="font-[medium]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[16px]">{data.dissLikeCount}</span>
                     </div>
                 </div>
-                <div className="flex items-center    gap-[8px]">
+                <div className="flex items-center mr-[auto]   ts:gap-[4px] ts:ml-[8px]   os:gap-[4px] os:ml-[16px]   sm:gap-[8px] sm:ml-[20px]   lg:gap-[8px] lg:ml-[24px]">
                     <img className="w-[24px] h-[24px]" src={ViewIcon} alt="viewIcon"/>
                     <span className="font-[medium]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[16px]">{data.currentRegistrants}</span>
                 </div>
