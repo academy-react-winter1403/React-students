@@ -6,7 +6,7 @@ import Academy from '../Landing/Academy/Academy'
 import Courses from '../Landing/Courses/Courses'
 import FallCourses from '../Landing/FallCourses/FallCourses'
 import WeeklyBlogs from '../Landing/WeeklyBlogs/WeeklyBlogs'
-import WeeklyTeachers from '../Landing/WeeklyTeachers/WeeklyTeachers'
+import MonthlyTeachers from '../Landing/MonthlyTeachers/MonthlyTeachers'
 
 const index = () => {
   return (
@@ -17,7 +17,7 @@ const index = () => {
       <Courses/>
       <FallCourses/>
       <WeeklyBlogs/>
-      <WeeklyTeachers/>
+      <MonthlyTeachers/>
     </div>
   )
 }

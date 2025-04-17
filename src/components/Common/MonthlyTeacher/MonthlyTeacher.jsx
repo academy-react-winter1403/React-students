@@ -1,6 +1,6 @@
 import React from 'react'
 
-const WeeklyTeacher = ({data}) => {
+const MonthlyTeacher = ({data}) => {
   return (
     <div>
       <div className="border-2 border-[#FFBF6C] ts:w-[100px] ts:h-[60px] ts:pt-[4px] ts:pr-[4px] ts:rounded-[8px]   os:w-[120px] os:h-[80px] os:pt-[8px] os:pr-[8px] os:rounded-[16px]   sm:w-[200px] sm:h-[140px] sm:pt-[12px] sm:pr-[16px] sm:rounded-[24px]   lg:w-[421px] lg:h-[216px] lg:pt-[27px] lg:pr-[24px] lg:rounded-[24px]">
@@ -18,4 +18,4 @@ const WeeklyTeacher = ({data}) => {
   )
 }
 
-export default WeeklyTeacher
+export default MonthlyTeacher

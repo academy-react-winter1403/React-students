@@ -12,7 +12,11 @@ const CourseMain = ({ courses, searchTerm, itemsPerPage }) => {
   }, [courses, searchTerm, itemsPerPage]);
 
   return (
-    <div className="flex flex-row flex-wrap justify-center   ts:gap-[8px] ts:mt-[8px]   os:gap-[16px] os:mt-[16px]   sm:gap-[24px] sm:mt-[24px]   lg:gap-[33px] lg:mt-[32px]">
+    <div className="flex flex-row flex-wrap justify-center   
+      ts:gap-[8px] ts:mt-[8px]   
+      os:gap-[12px] os:mt-[16px]   
+      sm:gap-[16px] sm:mt-[24px]   
+      lg:gap-[33px] lg:mt-[32px]">
       {displayedCourses?.length > 0 ? (
         displayedCourses.map((item) => (
           <CourseCard
