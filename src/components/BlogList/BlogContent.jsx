@@ -7,7 +7,7 @@ import { useFetchBlogs } from '../../core/Hook/useFetchBlogs/useFetchBlogs';
 
 const BlogContent = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage, setItemsPerPage] = useState('6'); // نمایش پیشفرض 6 خبر
+  const [itemsPerPage, setItemsPerPage] = useState('6'); 
   const [totalPages, setTotalPages] = useState(1);
   const [initialBlogs, setInitialBlogs] = useState([]); // نگهداری 10 خبر اول
 

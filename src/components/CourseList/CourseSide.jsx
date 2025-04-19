@@ -23,7 +23,6 @@ const CourseSide = ({ onSearchChange }) => {
       <Formik
         initialValues={{search: ''}}
         onSubmit={() => {
-          // Handle form submission if needed
         }}
       >
         <Form>

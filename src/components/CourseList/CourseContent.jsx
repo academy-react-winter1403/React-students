@@ -8,9 +8,9 @@ import { useFetchCourses } from '../../core/Hook/useFetchCourses/useFetchCourses
 const CourseContent = () => {
   const { courses: allCourses } = useFetchCourses();
   const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage, setItemsPerPage] = useState('6'); // State برای تعداد نمایش در هر صفحه (پیشفرض 6)
+  const [itemsPerPage, setItemsPerPage] = useState('6');
   const [searchTerm, setSearchTerm] = useState('');
-  const [filteredCourses, setFilteredCourses] = useState(allCourses); // نگهداری لیست فیلتر شده
+  const [filteredCourses, setFilteredCourses] = useState(allCourses); 
   const [totalPages, setTotalPages] = useState(1); 
   const handlePageChange = (pageNumber) => setCurrentPage(pageNumber);
 
@@ -25,7 +25,6 @@ const CourseContent = () => {
   };
 
   const handleSort = (sortBy) => {
-    // console.log('مرتب سازی بر اساس:', sortBy);
     let sortedCourses = [...(filteredCourses || [])];
     if (sortBy === 'popular') {
     } else if (sortBy === 'cheapest') {
