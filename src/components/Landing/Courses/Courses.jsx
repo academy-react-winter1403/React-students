@@ -24,14 +24,14 @@ const Courses = () => {
     <div className="border relative z-[10]   ts:mt-[18px]   os:mt-[32px]   sm:mt-[68px]   lg:mt-[112px]">
       <div className="text-center border">
         <button className="flex justify-center items-center mx-[auto] font-[bold] text-[#A74DD1] bg-[#F1D1FF]   
-          ts:px-[8px] ts:py-[4px] ts:text-[8px] ts:rounded-[4px]   
-          os:px-[8px] os:py-[4px] os:text-[6px] os:rounded-[4px]   
-          sm:px-[16px] sm:py-[8px] sm:text-[10px] sm:rounded-[8px]   
-          lg:px-[16px] lg:py-[8px] lg:text-[12px] lg:rounded-[8px]">دسته بندی</button>
+          ts:px-[8px] ts:py-[4px] ts:text-[12px] ts:rounded-[8px]   
+          os:px-[12px] os:py-[4px]        
+          sm:px-[16px] sm:py-[8px]  
+          lg:px-[16px] lg:py-[8px]">دسته بندی</button>
         <h2 className="text-center font-[bold]    
-          ts:mt-[4px] ts:text-[12px]   
-          os:mt-[8px] os:text-[16px]    
-          sm:mt-[12px] sm:text-[18px]   
+          ts:mt-[8px] ts:text-[16px]   
+          os:mt-[8px] os:text-[20px]    
+          sm:mt-[12px] sm:text-[20px]   
           lg:mt-[12px] lg:text-[24px]">دسته بندی دوره های ما</h2>
       </div>
       <div className="flex flex-row flex-wrap justify-center border   

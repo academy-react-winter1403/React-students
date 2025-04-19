@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react"
 import { getApi } from "../../services/api"
 
-const fetchFallCourses = () => {
+const useFetchFallCourses = () => {
 
     const[fallCourses , setFallCourses] = useState([]);
 
     const fetchApiFallCourses = async () => {
-        const courseFallCourses = await getApi("/Home/GetCoursesTop?Count=3");
-        setFallCourses(courseFallCourses);
+        const fallCoursesApi = await getApi("/Home/GetCoursesTop?Count=3");
+        setFallCourses(fallCoursesApi);
     }
 
     useEffect(() => {
@@ -19,4 +19,4 @@ const fetchFallCourses = () => {
 
 }
 
-export default fetchFallCourses
+export default useFetchFallCourses

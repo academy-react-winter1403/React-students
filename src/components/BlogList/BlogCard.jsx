@@ -20,17 +20,17 @@ const BlogCard = ({data}) => {
         </div>
         <div className="ts:mt-[4px] ts:pr-[4px]   os:mt-[4px] os:pr-[8px]   sm:mt-[8px] sm:pr-[12px]   lg:mt-[8px] lg:pr-[16px]">
             <div className="flex   ts:gap-[4px]   os:gap-[4px]   sm:gap-[8px]   lg:gap-[8px]">
-                <button className="font-[semibold] text-[#A74DD0] bg-[#F1D1FF]   ts:px-[8px] ts:py-[4px] ts:text-[6px] ts:rounded-[4px]   os:px-[8px] os:py-[4px] os:text-[8px] os:rounded-[4px]   sm:px-[8px] sm:py-[4px] sm:text-[12px] sm:rounded-[8px]   lg:px-[8px] lg:py-[5px] lg:text-[12px] lg:rounded-[8px]">{data.levelName}</button>
+                <button className="font-[semibold] text-[#A74DD0] bg-[#F1D1FF]   ts:px-[8px] ts:py-[4px] ts:text-[6px] ts:rounded-[4px]   os:px-[8px] os:py-[4px] os:text-[8px] os:rounded-[4px]   sm:px-[8px] sm:py-[4px] sm:text-[12px] sm:rounded-[8px]   lg:px-[8px] lg:py-[5px] lg:text-[12px] lg:rounded-[8px]">{data.categoryName}</button>
             </div>
-            <h2 className="font-[semibold]   ts:mt-[4px] ts:text-[8px]   os:mt-[4px] os:text-[12px]   sm:mt-[8px] sm:text-[16px]   lg:mt-[8px] lg:text-[20px]">{data.title}</h2>
-            <p className="font-[semibold] text-[#868686]   ts:mt-[4px] ts:text-[6px]   os:mt-[4px] os:text-[8px]   sm:mt-[8px] sm:text-[12px]   lg:mt-[8px] lg:text-[14px]">{data.describe}</p>
+            <h2 className="font-[semibold]   ts:mt-[4px] ts:text-[8px]   os:mt-[4px] os:text-[12px]   sm:mt-[8px] sm:text-[16px]   lg:mt-[8px] lg:text-[20px]">{data.googleTitle}</h2>
+            <p className="font-[semibold] text-[#868686]   ts:mt-[4px] ts:text-[6px]   os:mt-[4px] os:text-[8px]   sm:mt-[8px] sm:text-[12px]   lg:mt-[8px] lg:text-[14px]">{data.googleDescribe}</p>
             <div className="flex items-center   ts:gap-[4px] ts:mt-[4px]   os:gap-[4px] os:mt-[4px]   sm:gap-[8px] sm:mt-[8px]   lg:gap-[8px] lg:mt-[16px]">
                 <img className="ts:w-[12px] ts:h-[12px]   os:w-[16px] os:h-[16px]   sm:w-[20px] sm:h-[20px]   lg:w-[24px] lg:h-[24px]" src={WriteIcon} alt="writeIcon"/>
                 <span className="font-[semibold] text-[#1E1E1E]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[14px]">{data.teacherName}</span>
             </div>
             <div className="flex items-center   ts:gap-[4px] ts:mt-[4px]   os:gap-[4px] os:mt-[4px]   sm:gap-[8px] sm:mt-[8px]   lg:gap-[8px] lg:mt-[8px]">
                 <img className="ts:w-[12px] ts:h-[12px]   os:w-[16px] os:h-[16px]   sm:w-[20px] sm:h-[20px]   lg:w-[24px] lg:h-[24px]" src={DateIcon} alt="dateIcon"/>
-                <span className="font-[semibold] text-[#1E1E1E]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[14px]">{data.lastUpdate}</span>
+                <span className="font-[semibold] text-[#1E1E1E]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[14px]">{data.insertDate}</span>
             </div>
             <div className="flex items-center   ts:gap-[16px] ts:mt-[12px]   os:gap-[28px] os:mt-[16px]   sm:gap-[60px] sm:mt-[20px]   lg:gap-[107px] lg:mt-[26px]">
                 <div className="flex   ts:gap-[4px]   os:gap-[8px]   sm:gap-[12px]   lg:gap-[16px]">

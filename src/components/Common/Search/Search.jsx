@@ -10,7 +10,7 @@ const Search = ({ onSearchChange }) => {
   };
 
   const handleSearchClick = () => {
-    onSearchChange(searchValue); 
+    onSearchChange(searchValue);
   };
 
   return (
@@ -18,16 +18,16 @@ const Search = ({ onSearchChange }) => {
       <label className="block font-[semibold] text-[#1E1E1E]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[16px]">جستجو</label>
       <div className="flex items-center relative   ts:mt-[4px]   os:mt-[4px]   sm:mt-[8px]   lg:mt-[12px]">
         <Field
-          className="outline-0 font-[medium] text-[#898989] border border-[#E9E9E9] cursor-pointer   
-          ts:w-[108px] ts:h-[20px] ts:text-[6px] ts:indent-[4px] ts:rounded-[8px]   
-          os:w-[148px] os:h-[32px] os:text-[6px] os:indent-[8px] os:rounded-[12px]   
-          sm:w-[208px] sm:h-[40px] sm:text-[8px] sm:indent-[12px] sm:rounded-[16px]   
+          className="outline-0 font-[medium] text-[#898989] border border-[#E9E9E9] cursor-pointer
+          ts:w-[108px] ts:h-[20px] ts:text-[6px] ts:indent-[4px] ts:rounded-[8px]
+          os:w-[148px] os:h-[32px] os:text-[6px] os:indent-[8px] os:rounded-[12px]
+          sm:w-[208px] sm:h-[40px] sm:text-[8px] sm:indent-[12px] sm:rounded-[16px]
           lg:w-[268px] lg:h-[48px] lg:text-[14px] lg:indent-[16px] lg:rounded-[16px]"
           type="search"
           placeholder="دوره مورد نظر را جستجو کنید..."
           value={searchValue}
           onChange={handleChange}
-          name="search"/>
+          name="search" />
         <span
           className="flex justify-center items-center bg-[#A74DD0] cursor-pointer absolute top-0 left-0
           ts:w-[20px] ts:h-[20px] ts:rounded-[8px]

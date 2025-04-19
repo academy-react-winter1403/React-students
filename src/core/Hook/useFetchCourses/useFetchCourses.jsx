@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react"
 import { getApi } from "../../services/api"
 
-const useFetchCourse = () => {
+const useFetchCourses = () => {
 
-  const [course, setCourse] = useState([]);
+  const [courses, setCourses] = useState([]);
   
   const fetchApi = async () => {
     const data = await getApi("/Home/GetCoursesWithPagination?PageNumber=1&RowsOfPage=10&SortingCol=Active&SortType=DESC&CostDown=&CostUp=&StartDate=&EndDate=&TeacherId=")
-    setCourse(data.courseFilterDtos)
+    setCourses(data.courseFilterDtos)
   }
 
 
@@ -17,7 +17,7 @@ const useFetchCourse = () => {
   }, [])
 
   
-  return { course }
+  return { courses }
 }
 
-export { useFetchCourse }
+export { useFetchCourses }

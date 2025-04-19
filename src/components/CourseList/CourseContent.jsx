@@ -2,11 +2,11 @@ import {React , useState, useEffect } from 'react';
 import CourseSide from './CourseSide';
 import CourseSort from './CourseSort';
 import CourseMain from './CourseMain';
-import PaginationButtons from './PaginationButtons';
-import { useFetchCourse } from '../../core/Hook/useFetchCourse/useFetchCourse';
+import PaginationButtons from '../Common/PaginationButtons/PaginationButtons';
+import { useFetchCourses } from '../../core/Hook/useFetchCourses/useFetchCourses';
 
 const CourseContent = () => {
-  const { course: allCourses } = useFetchCourse();
+  const { courses: allCourses } = useFetchCourses();
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState('6'); // State برای تعداد نمایش در هر صفحه (پیشفرض 6)
   const [searchTerm, setSearchTerm] = useState('');
