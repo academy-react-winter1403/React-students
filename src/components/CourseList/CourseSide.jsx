@@ -25,7 +25,7 @@ const CourseSide = ({ onSearchChange }) => {
     <div className="relative">
       {!isMenuOpen && (
         <button
-          className="md:hidden p-[8px] shadow-md bg-gray-200 rounded-md fixed top-[16px] right-[16px] z-50"
+          className="md:hidden p-[8px] shadow-md bg-gray-200 rounded-md fixed top-[65px] right-[16px] z-50"
           onClick={toggleMenu}>
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
