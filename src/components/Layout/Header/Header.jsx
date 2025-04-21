@@ -31,7 +31,11 @@ const Header = () => {
       </div>
       <div className="flex justify-center items-center border   ts:gap-[4px]   os:gap-[8px]   sm:gap-[16px]   3x:gap-[24px]">
         <Link className="flex justify-center items-center font-[semibold] border   ts:text-[6px]   os:text-[10px]  sm:text-[12px]  3x:text-[16px]" to={"/register"}>ورود</Link>
-        <Link className="flex justify-center items-center font-[semibold] text-white bg-[#A74DD1]   ts:px-[8px] ts:py-[4px] ts:text-[6px] ts:rounded-[4px]    os:px-[12px] os:py-[4px] os:text-[10px] os:rounded-[8px]    sm:px-[16px] sm:py-[8px] sm:text-[12px] sm:rounded-[10px]   3x:px-[16px] 3x:py-[8px] 3x:text-[16px] 3x:rounded-[12px]" to={"/userpanel"}>ثبت نام</Link>
+        <Link className="flex justify-center items-center font-[semibold] text-white bg-[#A74DD1]   
+          ts:px-[8px] ts:py-[4px] ts:text-[6px] ts:rounded-[4px]    
+          os:px-[12px] os:py-[4px] os:text-[10px] os:rounded-[8px]    
+          sm:px-[16px] sm:py-[8px] sm:text-[12px] sm:rounded-[10px]   
+          3x:px-[16px] 3x:py-[8px] 3x:text-[16px] 3x:rounded-[12px]" to={"/userpanel"}>ثبت نام</Link>
       </div>
     </div>
   )
