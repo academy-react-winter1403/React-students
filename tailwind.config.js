@@ -5,6 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
+    screens: {
+      '2x': '1450px',
+      'xx': '1400px',
+      'xl': '1200px',
+      'lg': '1024px',
+      'sm': '640px',
+      'os': '500px',
+      'ts': '300px'
+    },
     extend: {
       backgroundImage: {
         'Dashboard': "url('./assets/Icons/Frame(1).svg')",

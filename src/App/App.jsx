@@ -4,10 +4,10 @@ import Content from '../components/Landing/Content'
 
 const App = () => {
   return (
-
-    <div className='font-Iran'>
-      
+    <div>
+      <Content/>
     </div>
+
   )
 }
 

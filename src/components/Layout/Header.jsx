@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div className="header  flex justify-center items-center  gap-[350px] h-[100px] border">
       <div className="logo  flex items-center gap-[10px]">
-        <img src="/9a811899-ceeb-49d4-802d-a96c8ba50aee 1.png"/>
+        <img src="/9a811899-ceeb-49d4-802d-a96c8ba50aee.png"/> 
         <h2 className="text-[13px]">React-students</h2>
       </div>
       <div className="links   flex justify-center items-center gap-[30px] w-[30%] h-[50px] border">

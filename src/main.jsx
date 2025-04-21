@@ -1,28 +1,26 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
+import Root from './components/root/Root'
 import App from './App/App'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Content from './components/Landing/Content'
-import LoginForm from './components/Authorization/Login/LoginForm'
-import NotFound from './components/error/NotFound'
-import Route from './components/config/route'
-import Error from './components/error/Error'
+import './index.css'
 import Panel from './components/UsePanel/Panel'
 import SingUpConfirmCode from './components/Authorization/SignUp/SingUpConfirmCode'
 import SignUpForm from './components/Authorization/SignUp/SignUpForm'
+import LoginForm from './components/Authorization/Login/LoginForm'
 import StepOne from './components/Authorization/SignUp/StepOne'
+import NotFound from './components/error/NotFound'
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Route />, 
-    children:[
+    element: <Root />,
+    children: [
       {
+        index: true,
         path: "/",
-        element: <Content />,
-        errorElement: <Error />,
-      },
+        element: <App />,
+      }
     ],
   },
   {
@@ -59,5 +57,5 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} />
-  </StrictMode>,
+  </StrictMode>
 )

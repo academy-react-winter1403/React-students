@@ -14,7 +14,7 @@ import RememberField from './RememberFeild';
 const LoginForm = () => {
   const navigate = useNavigate();
 
-  // ارسال اطلاعات برای ورود
+  // Send data for Login
   const postLoginForm = async (values) => {
     const response = await fetch('https://classapi.sepehracademy.ir/api/Sign/Login', {
       method: 'POST',
@@ -31,7 +31,7 @@ const LoginForm = () => {
     return await response.json();
   };
 
-  // ذخیره توکن در LocalStorage
+  // Save token in localStorage
   const setItem = (key, value) => {
     if (typeof window !== 'undefined') {
       localStorage.setItem(key, value);
@@ -41,14 +41,14 @@ const LoginForm = () => {
   const handleSubmit = async (values, { setSubmitting }) => {
     alert('🟡 ارسال فرم شروع شد');
     try {
-      // ارسال درخواست به سرور
+      //Send request for Server
       const response = await postLoginForm(values);
 
-      // نمایش پاسخ دریافتی برای بررسی
+      // Show Response
       alert('📦 پاسخ دریافتی:\n' + JSON.stringify(response, null, 2));
       console.log('📦 پاسخ دریافتی:', response);
 
-      // استخراج توکن از پاسخ
+      // get token from response
       const token = response?.token || response?.data?.token || response?.access;
 
       if (token) {

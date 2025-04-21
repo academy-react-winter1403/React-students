@@ -2,12 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: bold;
+  src: url("./IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff/IRANYekanXFaNum-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: semiBold;
+  src: url("./IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff/IRANYekanXFaNum-DemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: medium;
+  src: url("./IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff/IRANYekanXFaNum-Medium.woff") format("woff");
+}
 
 body{
   margin: 0;
 }
 
 #root {
-  height: 1000px;
   margin: 0 auto;
 }
