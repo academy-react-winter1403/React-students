@@ -10,8 +10,8 @@ const Route = () => {
     <div>
         <Header />
         <div>
-            {/* <Outlet /> */}
-            <CourseDetail />
+            <Outlet />
+            {/* <CourseDetail /> */}
             
         </div>
         <Footer />

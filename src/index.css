@@ -79,7 +79,7 @@
 
 
 @font-face {
-<<<<<<< HEAD
+
   font-family: IranYekan;
   src: url('/IRANYekanX(Pro)/Webfonts/woff/IRANYekanX-Bold.woff') format('woff2');
   font-weight: 700;
@@ -88,7 +88,6 @@
 
 * {
   font-family: IranYekan;
-=======
   font-family: Black2;
   src: url("./IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff2/IRANYekanXFaNum-Black.woff2") format("woff2");
 }
@@ -141,5 +140,4 @@ body{
 }
 #root {
   margin: 0 auto;
->>>>>>> 779cf64b6ecbd9c6f8e38f09be3a25629d4b501b
 }

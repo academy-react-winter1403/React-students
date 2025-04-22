@@ -26,8 +26,4 @@ const Content = () => {
 
 //https://www.figma.com/design/17vAsBH5Aa6uw69eoq9iP0/React-Students?node-id=0-1&t=YnVcTRpFjO6Y3e9s-1
 
-<<<<<<< HEAD:src/components/Landing/Content.jsx
 export default Content
-=======
-export default Content
->>>>>>> 779cf64b6ecbd9c6f8e38f09be3a25629d4b501b:src/components/content/Content.jsx
