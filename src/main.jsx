@@ -31,7 +31,12 @@ export const router = createBrowserRouter([
     ],
   },
   {
-    path: "/userpanel",
+    path: "/Login",
+    element: <LoginForm />,
+    errorElement: <Error />,
+  }, 
+  {
+    path: "/userPanel",
     element: <Panel />,
     errorElement: <Error />,
   }, 
