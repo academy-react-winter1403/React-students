@@ -9,4 +9,13 @@ const getApi = async (url) => {
   }
 };
 
-export { getApi };
+const postApi = async (url , body) => {
+  try {
+    const response = await http.post(url , body);
+    return response;
+  } catch (error) {
+    return console.log(error);
+  }
+};
+
+export { getApi ,postApi };

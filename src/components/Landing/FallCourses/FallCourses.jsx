@@ -28,11 +28,11 @@ const FallCourses = () => {
         os:gap-[12px] os:mt-[24px]   
         sm:gap-[18px] sm:mt-[32px]   
         lg:gap-[26px] lg:mt-[40px]">
-        {
+        {/* {
           fallCourses.map((item) => {
             return <FallCourse data={item}/>
           })
-        }
+        } */}
       </div>
       <SeeAll/>
       <img className="w-full absolute bottom-[-165px] z-[5]" src={VectorLine3} alt="vectorLine3Image"/>

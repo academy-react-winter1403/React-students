@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @font-face {
   font-family: "bold";
   src: url("../assets/Fonts/IRANYekanXFaNum-Bold.woff") format("woff");
@@ -16,12 +14,6 @@
   font-family: "medium";
   src: url("../assets/Fonts/IRANYekanXFaNum-Medium.woff") format("woff");
 }
-
-
-
-
-
-
 
 body{
   margin: 0;
