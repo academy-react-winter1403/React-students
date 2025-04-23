@@ -9,6 +9,9 @@ import Panel from './components/UsePanel/Panel'
 import LoginForm from './components/Authorization/LoginForm'
 import NotFound from './components/Error/NotFound'
 import Error from './components/Error/Error'
+import StepOne from './components/Authorization/SignUp/StepOne'
+import SingUpConfirmCode from './components/Authorization/SignUp/SingUpConfirmCode'
+import SignUpForm from './components/Authorization/SignUp/SignUpForm'
 
 export const router = createBrowserRouter([
   {
@@ -20,34 +23,42 @@ export const router = createBrowserRouter([
         path: "/",
         element: <App/>,
       },
-      {
-        path: "/courselist",
-        element: <CourseList/>
-      },
-      {
-        path: "/bloglist",
-        element: <BlogList/>
-      }
     ],
+  },
+  {
+    path: "/courselist",
+    element: <CourseList/>,
+    errorElement: <Error />
+  },
+  {
+    path: "/bloglist",
+    element: <BlogList/>,
+    errorElement: <Error />
+  },
+  {
+    path: "/RegisterStepOne",
+    element: <StepOne/>,
+    errorElement: <Error />
+  },
+  {
+    path: "/RegisterStepTwo",
+    element: <SingUpConfirmCode />,
+    errorElement: <Error />
+  },
+  {
+    path: "/RegisterStepThree",
+    element: <SignUpForm />,
+    errorElement: <Error />
   },
   {
     path: "/Login",
     element: <LoginForm />,
-    errorElement: <Error />,
-  }, 
-  {
-    path: "/userPanel",
-    element: <Panel />,
-    errorElement: <Error />,
-  }, 
-  {
-    path: "/register",
-    element: <LoginForm />,
-    errorElement: <Error />,
+    errorElement: <Error />
   },
   {
-    path: "*",
-    element: <NotFound />
+    path: "/UserPanel",
+    element: <Panel />,
+    errorElement: <Error />
   },
 ]);
 
@@ -56,5 +67,5 @@ export const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} />
-  </StrictMode>,
+  </StrictMode>
 )

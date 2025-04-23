@@ -1,4 +1,4 @@
-import {React , useState} from 'react'
+import React ,{useState} from 'react'
 import WeeklyBlog from '../../Common/WeeklyBlog/WeeklyBlog'
 import SeeAll from '../../Common/SeeAll/SeeAll'
 import { useFetchBlogs } from '../../../core/Hook/useFetchBlogs/useFetchBlogs'
@@ -8,7 +8,8 @@ const WeeklyBlogs = () => {
 
   const { blogs } = useFetchBlogs();
 
-  const threeBlogs = blogs.slice(8 , 11);
+  // const threeBlogs = blogs.slice(8 , 11);
+  const threeBlogs = blogs?.slice(8, 11) || [];
 
   return (
     <div className="border   ts:mt-[18px]   os:mt-[32px]   sm:mt-[68px]   lg:mt-[112px]">
@@ -30,9 +31,9 @@ const WeeklyBlogs = () => {
         sm:gap-[24px] sm:mt-[32px]   
         lg:gap-[26px] lg:mt-[40px]">
         {
-          threeBlogs.map((item , index) => {
-            return <WeeklyBlog data={item} key={index}/>
-          })
+          threeBlogs.map((item) => (
+            <WeeklyBlog data={item} key={item.id}/>
+          ))
         }
       </div>
       <SeeAll/>
