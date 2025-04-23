@@ -47,7 +47,7 @@ const BlogCard = ({title, name , date , comments, floor}) => {
 
   return (
     <div>
-    <div className='lg:w-[700px] md:w-[100%] sm:w-[100%] lg:h-full md:h-[300px] sm:h-[250px] flex lg:flex-row rounded-3xl bg-[#F8F8F8] p-4'>
+    <div className='lg:min-w-[780px] md:max-w-[550px] lg:w-[auto] md:w-[100%] sm:w-[370px] lg:h-full md:h-[300px] sm:h-[250px] flex lg:flex-row rounded-3xl bg-[#F8F8F8] p-4'>
       
       <div className='lg:w-1/2  md:mb-[40px] flex flex-col h-full lg:pr-[24px] border-2 border-pink-600'>
         <BlogCategory />
@@ -70,7 +70,7 @@ const BlogCard = ({title, name , date , comments, floor}) => {
           <p className='pr-2'>{floor}</p>
         </div>
   
-        <div className='flex justify-between items-center lg:w-[200px] md:w-[150px] border-2 border-red-500 lg:mt-6 md:mt-3 mb-6'>
+        <div className='hidden md:flex justify-between items-center lg:w-[200px] md:w-[150px] border-2 border-red-500 lg:mt-6 md:mt-3 mb-6'>
           {/* Like */}
           <div className='flex justify-center items-center gap-2 md:text-[15px] sm:text-[13px] w-[50%] h-full border-2 border-gray-800' onClick={handleLikes}>
             <span className='flex justify-center items-center lg:w-11 md:w-8 md:h-8 lg:h-full rounded-full bg-[#A74DD0]'>
@@ -90,12 +90,12 @@ const BlogCard = ({title, name , date , comments, floor}) => {
       </div>
   
       
-      <div className='lg:w-[320px] md:w-[250px] md:mt-8 flex flex-col justify-center items-start lg:h-full sm:h-[200px] border-2 border-orange-300'>
-        <div className='font-bold lg:text-[17px] sm:text-[15px]'>در ادامه بلاگ می‌خوانید...</div>
-        <div className='text-[#868686] mt-3 mb-3 lg:text-[16px] lg:w-[80%] sm:text-[12px] sm:w-[250px]'>
+      <div className='lg:w-[320px] md:max-w-[370px] md:h-[auto] lg:pr-[36px] sm:mr-8 sm:mt-4 sm:pr-[auto] md:pt-12 sm:w-[60%] flex flex-col justify-center items-start lg:h-full sm:h-[200px] border-2 border-orange-300'>
+        <div className='font-bold lg:text-[17px] md:text-[15px] sm:text-[14px]'>در ادامه بلاگ می‌خوانید...</div>
+        <p className='text-[#868686] pt-4 mb-3 lg:text-[16px] lg:w-[85%] md:text-[14px] md:w-[100%] sm:text-[12px] sm:w-[220px]'>
           تمامی مقاله ها و اخبار روز آکادمی در سریع ترین زمان ممکن در اختیار گذاشته میشه تمامی مقاله ها و اخبار روز آکادمی در سریع ترین زمان ممکن در اختیار گذاشته میشه تمامی مقاله ها و اخبار روز آکادمی در سریع ترین زمان ممکن در اختیار گذاشته میشه
-        </div>
-        <div className='flex items-center'>
+        </p>
+        <div className='flex items-center cursor-pointer'>
           <p className='text-[#A74DD0]'>ادامه</p>
           <LeftArrow />
         </div>

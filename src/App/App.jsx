@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div>
       {/* <RouterProvider router={router} />      */}
-      <BlogDetail />     
+      <CourseDetail />     
     </div>
 
     

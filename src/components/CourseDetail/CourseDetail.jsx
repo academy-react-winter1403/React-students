@@ -14,7 +14,7 @@ const CourseDetail = () => {
   return (
     <div>
         <div className='w-[100%] h-[2400px] flex items-center flex-col m-[auto] border-2 border-blue-800'>
-            <div className='flex justify-between w-[90%] h-[362px] mt-[52px] border-2 border-pink-600'>
+            <div className='flex justify-center gap-10 w-[auto] lg:h-[362px] md:h-[auto] sm:h-[auto] mt-[52px] border-2 border-pink-600'>
                 <BlogImg />
                 <BlogCard  />
 
