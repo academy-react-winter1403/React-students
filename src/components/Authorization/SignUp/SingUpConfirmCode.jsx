@@ -1,14 +1,13 @@
 import { Formik, Form } from 'formik';
-import Header from '../common/Header';
-import AutButton from '../common/AutButton';
-import AutImg from '../common/AutImg';
-import Change from './Change';
 import InitialValuesConfrimCode from '../../../core/validation/SignUpConfrimCode/InitialValuesConfrimCode';
 import ValidationSchemaConfrimCode from '../../../core/validation/SignUpConfrimCode/ValidationSchemaConfrimCode';
-import Icon from '../common/Icon';
-import AutField from '../common/AutField';
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import AutField from '../common/AutField';
+import Change from './Change';
+import Header from '../common/Header';
+import AutImg from '../common/AutImg';
+import AutButton from '../common/AutButton';
 
 const CustomParagraph = ({ phoneNumber }) => {
   return (

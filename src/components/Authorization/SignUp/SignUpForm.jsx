@@ -1,12 +1,12 @@
 import { Formik, Form } from 'formik';
 import Header from '../common/Header';
 import AutButton from '../common/AutButton';
-import AutImg from '../common/AutImg';
 import Icon from '../common/Icon';
 import { useNavigate } from 'react-router-dom';
 import InitialValuesForm from '../../../core/validation/SignUpForm/initialValuesForm';
 import ValidationSchemaForm from '../../../core/validation/SignUpForm/ValidationSchemaForm'; // وارد کردن فایل validation
 import AutField from '../common/AutField';
+import AutImg from '../common/AutImg';
 
 const SignUpForm = () => {
   const navigate = useNavigate();
