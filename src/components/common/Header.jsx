@@ -29,8 +29,8 @@ const Header = () => {
         </div>
       </div>
       <div className="flex justify-center items-center border   ts:gap-[4px]   os:gap-[8px]   sm:gap-[16px]   lg:gap-[24px]">
-        <Link to="" className="flex justify-center items-center font-[semibold] border   ts:text-[6px]   os:text-[10px]  sm:text-[12px]  lg:text-[16px]">ورود</Link>
-        <Link to="" className="flex justify-center items-center font-[semibold] text-white bg-[#A74DD1]   ts:px-[8px] ts:py-[4px] ts:text-[6px] ts:rounded-[4px]    os:px-[12px] os:py-[4px] os:text-[10px] os:rounded-[8px]    sm:px-[16px] sm:py-[8px] sm:text-[12px] sm:rounded-[10px]   lg:px-[16px] lg:py-[8px] lg:text-[16px] lg:rounded-[12px]">ثبت نام</Link>
+        <Link to="/Login" className="flex justify-center items-center font-[semibold] border   ts:text-[6px]   os:text-[10px]  sm:text-[12px]  lg:text-[16px]">ورود</Link>
+        <Link to="/RegisterStepOne" className="flex justify-center items-center font-[semibold] text-white bg-[#A74DD1]   ts:px-[8px] ts:py-[4px] ts:text-[6px] ts:rounded-[4px]    os:px-[12px] os:py-[4px] os:text-[10px] os:rounded-[8px]    sm:px-[16px] sm:py-[8px] sm:text-[12px] sm:rounded-[10px]   lg:px-[16px] lg:py-[8px] lg:text-[16px] lg:rounded-[12px]">ثبت نام</Link>
       </div>
     </div>
   )
