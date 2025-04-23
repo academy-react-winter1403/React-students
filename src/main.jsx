@@ -23,17 +23,17 @@ export const router = createBrowserRouter([
         path: "/",
         element: <App/>,
       },
+      {
+        path: "/courselist",
+        element: <CourseList/>,
+        errorElement: <Error />
+      },
+      {
+        path: "/bloglist",
+        element: <BlogList/>,
+        errorElement: <Error />
+      },
     ],
-  },
-  {
-    path: "/courselist",
-    element: <CourseList/>,
-    errorElement: <Error />
-  },
-  {
-    path: "/bloglist",
-    element: <BlogList/>,
-    errorElement: <Error />
   },
   {
     path: "/RegisterStepOne",
