@@ -13,20 +13,20 @@ const Header = () => {
       </div>
       <div className="flex justify-center items-center border   ts:gap-[20px]   os:gap-[32px]   sm:gap:[40px]   3x:ml-[356px] 3x:mr-[344px] 3x:gap-[48px]">
         <div className="border">
-          <Link to="#" className="font-[medium]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   3x:text-[16px]">خانه</Link>
+          <Link className="font-[medium]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   3x:text-[16px]" to={"/"}>خانه</Link>
           <div className="mx-[auto] bg-[#A74DD1] rounded-[1.5px]   ts:w-[25%] ts:h-[1px]   os:w-[30%] os:h-[1px]   sm:w-[35%] sm:h-[2px]   3x:w-[40.3%] 3x:h-[3px]"></div>
         </div>
         <div className="border">
-          <Link to="#" className="font-[medium]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   3x:text-[16px]">دوره ها</Link>
+          <Link className="font-[medium]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   3x:text-[16px]" to={"/courselist"}>دوره ها</Link>
           <div className="mx-[auto] bg-white rounded-[1.5px]   ts:w-[25%] ts:h-[1px]   os:w-[30%] os:h-[1px]   sm:w-[35%] sm:h-[2px]   3x:w-[40.3%] 3x:h-[3px]"></div>
         </div>
         <div className="border">
-          <Link to="" className="font-[medium]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   3x:text-[16px]">بلاگ ها</Link>
-        <div className="mx-[auto] bg-white rounded-[1.5px]   ts:w-[25%] ts:h-[1px]   os:w-[30%] os:h-[1px]   sm:w-[35%] sm:h-[2px]   3x:w-[40.3%] 3x:h-[3px]"></div>
+          <Link className="font-[medium]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   3x:text-[16px]" to={"/bloglist"}>بلاگ ها</Link>
+          <div className="mx-[auto] bg-white rounded-[1.5px]   ts:w-[25%] ts:h-[1px]   os:w-[30%] os:h-[1px]   sm:w-[35%] sm:h-[2px]   3x:w-[40.3%] 3x:h-[3px]"></div>
         </div>
         <div className="border">
-          <Link to="" className="font-[medium]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   3x:text-[16px]">درباره ما</Link>
-        <div className="mx-[auto] bg-white rounded-[1.5px]   ts:w-[25%] ts:h-[1px]   os:w-[30%] os:h-[1px]   sm:w-[35%] sm:h-[2px]   3x:w-[40.3%] 3x:h-[3px]"></div>
+          <Link className="font-[medium]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   3x:text-[16px]" to={"/"}>درباره ما</Link>
+          <div className="mx-[auto] bg-white rounded-[1.5px]   ts:w-[25%] ts:h-[1px]   os:w-[30%] os:h-[1px]   sm:w-[35%] sm:h-[2px]   3x:w-[40.3%] 3x:h-[3px]"></div>
         </div>
       </div>
       <div className="flex justify-center items-center border   ts:gap-[4px]   os:gap-[8px]   sm:gap-[16px]   3x:gap-[24px]">
