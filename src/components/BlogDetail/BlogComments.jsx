@@ -23,7 +23,7 @@ const onSubmit = async (values) => {
 
   return (
     <div>
-        <div className='flex flex-col gap-[10px] lg:w-[800px] sm:w-[500px] h-[auto] md:min-h-[960px] border-2 rounded-2xl border-[#EAEAEA] lg:mt-[35px] md:mt-[200px] sm:mt-[400px] mr-[30px]'>
+        <div className='flex flex-col gap-[10px] lg:w-[800px] sm:w-[500px] h-[auto] min-h-calc(100% + 20px) border-2 rounded-2xl border-[#EAEAEA] lg:mt-[95px] md:mt-[40px] sm:mt-[90px] mr-[30px]'>
             <h1 className='mt-[24px] mr-[24px] text-[24px]'>نظرات</h1>
             <Formik 
             onSubmit={onSubmit}

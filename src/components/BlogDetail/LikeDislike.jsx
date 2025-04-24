@@ -30,10 +30,10 @@ const LikeDislike = ({ initialLikes = 0, initialDislikes = 0 }) => {
   };
 
   return (
-    <div className='text-[16px] flex-row flex gap-5'>
+    <div className='text-[16px] w-[auto] flex gap-5 sm:gap-1 sm:pr-12'>
       <div
         onClick={handleLike}
-        className={`cursor-pointer flex items-center gap-2 ${
+        className={`cursor-pointer flex items-center gap-[6px] md:gap-[3px] sm:w-[38px] sm:text-[12px] ${
             userAction === "like" ? "text-purple-600" : "text-gray-500"
           }`
         }
@@ -42,11 +42,11 @@ const LikeDislike = ({ initialLikes = 0, initialDislikes = 0 }) => {
       </div>
       <div
         onClick={handleDislike}
-        className={`cursor-pointer flex items-center gap-2  ${
+        className={`cursor-pointer flex items-center gap-[6px] sm:w-7 sm:text-[12px] ${
             userAction === "dislike" ? "text-purple-600" : "text-gray-500"
           }`}
       >
-        <FaThumbsDown /> {dislikes}
+        <FaThumbsDown/> {dislikes}
       </div>
     </div>
   );

@@ -13,11 +13,10 @@ const CourseDetail = () => {
 
   return (
     <div>
-        <div className='w-[100%] h-[2400px] flex items-center flex-col m-[auto] border-2 border-blue-800'>
-            <div className='flex justify-center gap-10 w-[auto] lg:h-[362px] md:h-[auto] sm:h-[auto] mt-[52px] border-2 border-pink-600'>
+        <div className='w-[100%] h-[2400px] px-4 lg:px-6 flex items-center flex-col m-[auto] border-2 border-orange-500'>
+            <div className='flex justify-center gap-10 sm:gap-4 w-[auto] lg:h-[362px] md:h-[auto] sm:h-[auto] mt-[52px] border-2 border-pink-600'>
                 <BlogImg />
-                <BlogCard  />
-
+                <BlogCard showCourseText={true} />
             </div>
 
             <BlogText />

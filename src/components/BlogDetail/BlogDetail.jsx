@@ -15,37 +15,35 @@ const {blogId} = useParams()
     const [blog, setBlog] = useState()
 
     const fetchApi = async () => {
-     try {
        const res = await getApi(`/News/${blogId}`)
-       setBlog(res)
        console.log(res);
-     } catch (error) {
-      console.log(error);
-     }
+       setBlog(res?.detailsNewsDto)    
     }
   
     useEffect(() => {
       fetchApi()
     }, [])
   
-  console.log(blogId);
+  console.log(blog);
   // console.log(blog);
   
   return (
-    <div className='w-full '>
+    <div>
     
-        <div className='w-full mx-auto min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 py-8 flex-col border-5 border-purple-500'>
-            <div className='flex flex-row gap-8 justify-center w-[auto] h-[362px] mt-[52px] border-2 border-blue-400'>
-                <BlogImg image={blog?.detailsNewsDto?.currentImageAddress} />
+        <div className='w-[auto] mx-auto h-[auto] flex items-center justify-around pb-12 sm:px-6 lg:px-8 flex-col border-8 border-pink-400'>
+            <div className='flex flex-row gap-8 justify-center w-[auto] h-[362px] mt-[52px] border-2 border-purple-500'>
+                <BlogImg image={blog?.currentImageAddress} />
                 <BlogCard
-                title={blog?.detailsNewsDto?.title} 
-                name={blog?.detailsNewsDto?.addUserFullName} 
-                date={blog?.detailsNewsDto?.updateDate} 
-                comments={blog?.detailsNewsDto?.commentsCount} 
-                floor={blog?.detailsNewsDto?.commentsCount}/>
+                title={blog?.title} 
+                name={blog?.addUserFullName} 
+                date={blog?.updateDate} 
+                comments={blog?.commentsCount} 
+                floor={blog?.commentsCount}
+                miniDescribe={blog?.miniDescribe}
+                />
             </div>
 
-            <BlogText blogtext={blog?.detailsNewsDto?.describe} />
+            <BlogText blogtext={blog?.describe} />
 
             <BlogComments />
 

@@ -74,22 +74,22 @@ const CommentSection = () => {
                             <div className='h-[auto]'>
                                     <div className='h-[90px] flex items-center'>
                                         <img className='h-5 pr-8' src={Arrow} alt="arrow pics" />
-                                        <div className=' flex flex-col mt-[11px] mr-[12px] lg:w-[85%] md:w-[80%] sm:w-[82%] border-2 border-pink-500'>
+                                        <div className=' flex flex-col mt-[11px] mr-[12px] lg:w-[85%] md:w-[80%] sm:w-[82%]'>
                                             <h2 className='font-bold'>تایتل نظر</h2>
                                             <p className='lg:text-[16px] md:text-[14px] sm:text-[11px]'>متن نظر متن نظر متن نظر متن نظر متن نظر متن نظر متن نظر متن نظر متن نظر متن نظر متن نظر متن نظر متن نظر متن نظر متن نظر متن نظر متن نظر متن نظر متن نظر متن نظر</p>
                                         </div>
                                     </div>
 
-                                    <div className='h-[auto] flex lg:justify-start lg:pr-[70px] pt-[16px] lg:w-[70%] md:w-[85%] sm:w-[80%] border-2 border-red-700'>
+                                    <div className='h-[auto] flex gap-6 sm:gap-5 lg:justify-start sm:mr-[17px] lg:pr-[70px] pt-[16px] lg:w-[70%] md:w-[85%] sm:w-[80%]'>
                                         <div className='w-8 gap-2 ml-[25px] flex'>
                                             <LikeDislike initialLikes={10} initialDislikes={2}/>
                                             </div>
-                                            <div className='flex gap-1 items-center text-[#A74DD0] pr-[32px] pl-[32px]'>
-                                                <p className='md:text-[13px]'>جواب دادن</p>
-                                                <img className='md:w-3 md:pt-1 lg:w-5 h-5' src={Arrow} alt="sideArrow" />
+                                            <div className='flex gap-1 items-center text-[#A74DD0] pr-[50px] lg:pl-[10px]'>
+                                                <p className='md:text-[13px] lg:text-[15px] sm:text-[12px]'>جواب دادن</p>
+                                                <img className='md:w-3 md:pt-1 lg:w-5 sm:w-3 sm:pt-1 h-5' src={Arrow} alt="sideArrow" />
                                             </div>
                                             <div className='flex items-center gap-1 underline'>
-                                                <p className='md:text-[13px]'> مشاهده جواب ها (20)</p>
+                                                <p className='md:text-[13px] lg:text-[16px] sm:text-[12px]'> مشاهده جواب ها (20)</p>
                                                 <img className='pt-1' src={upArrow} alt="upArrow" />
                                             </div>
                                     </div>
@@ -111,7 +111,7 @@ const CommentSection = () => {
                     </div>
                     <div className='h-[auto] flex items-center'>
                         <img className='h-5 pr-8' src={Arrow} alt="arrow pics" />
-                        <div className=' flex flex-col lg:w-[85%] md:w-[80%] sm:w-[82%] mr-[12px]'>
+                        <div className=' flex flex-col lg:w-[85%] md:w-[80%] md:mt-[18px] sm:w-[82%] mr-[12px]'>
                             <h2 className='font-bold'>تایتل نظر</h2>
                             <p className='lg:text-[16px] md:text-[14px] sm:text-[11px]'>متن نظر متن نظر متن نظر متن نظر متن نظر متن نظر متن نظر متن نظر متن نظر متن نظر متن نظر متن نظر متن نظر متن نظر متن نظر متن نظر متن نظر متن نظر متن نظر متن نظر
 
