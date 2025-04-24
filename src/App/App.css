@@ -15,9 +15,15 @@
   src: url("../assets/Fonts/IRANYekanXFaNum-Medium.woff") format("woff");
 }
 
+
+
+
+
 body{
   margin: 0;
+  overflow-x: hidden;
 }
 #root {
   margin: 0 auto;
 }
+

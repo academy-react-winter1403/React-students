@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-<<<<<<< HEAD
 
 
 @font-face {
@@ -23,75 +22,4 @@
 
 
 
-=======
-* {
-  font-family: IranYekan;
-  font-family: Black2;
-  src: url("./IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff2/IRANYekanXFaNum-Black.woff2") format("woff2");
-}
 
-@font-face {
-  font-family: IranYekan;
-  src: url('/IRANYekanX(Pro)/Webfonts/woff/IRANYekanX-Bold.woff') format('woff2');
-  font-weight: 700;
-  font-display: swap;
-}
-
-
-@font-face {
-  font-family: Bold2;
-  src: url("./IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff2/IRANYekanXFaNum-Bold.woff2") format("woff2");
-}
-@font-face {
-  font-family: DemiBold2;
-  src: url("./IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff2/IRANYekanXFaNum-DemiBold.woff2") format("woff2");
-}
-@font-face {
-  font-family: ExtraBlack2;
-  src: url("./IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff2/IRANYekanXFaNum-ExtraBlack.woff2") format("woff2");
-}
-@font-face {
-  font-family: ExtraBold2;
-  src: url("./IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff2/IRANYekanXFaNum-ExtraBold.woff2") format("woff2");
-}
-@font-face {
-  font-family: Heavy2;
-  src: url("./IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff2/IRANYekanXFaNum-Heavy.woff2") format("woff2");
-}
-@font-face {
-  font-family: Light2;
-  src: url("./IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff2/IRANYekanXFaNum-Light.woff2") format("woff2");
-}
-@font-face {
-  font-family: Medium2;
-  src: url("./IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff2/IRANYekanXFaNum-Medium.woff2") format("woff2");
-}
-@font-face {
-  font-family: Regular2;
-  src: url("./IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff2/IRANYekanXFaNum-Regular.woff2") format("woff2");
-}
-@font-face {
-  font-family: Thin2;
-  src: url("./IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff/IRANYekanXFaNum-Thin.woff") format("woff");
-}
-@font-face {
-  font-family: UltraLight2;
-  src: url("./IRANYekanX(Pro)/Farsi numerals/Webfonts/Woff/IRANYekanXFaNum-UltraLight.woff") format("woff");
-} 
->>>>>>> Login
-
-body{
-  margin: 0;
-}
-#root {
-  margin: 0 auto;
-<<<<<<< HEAD
-}
-
-
-
-
-
-=======
-}
->>>>>>> Login

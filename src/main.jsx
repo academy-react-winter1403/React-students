@@ -7,7 +7,7 @@ import CourseList from './components/CourseList/CourseList'
 import BlogList from './components/BlogList/BlogList'
 import Panel from './components/UsePanel/Panel'
 import LoginForm from './components/Authorization/Login/LoginForm'
-import NotFound from './components/Error/NotFound'
+// import NotFound from './components/Error/NotFound'
 import Error from './components/Error/Error'
 import StepOne from './components/Authorization/SignUp/StepOne'
 import SingUpConfirmCode from './components/Authorization/SignUp/SingUpConfirmCode'
@@ -60,12 +60,21 @@ export const router = createBrowserRouter([
     element: <Panel />,
     errorElement: <Error />
   },
+  {
+    path: "*",
+    element: <NotFound/>,
+    errorElement: <Error/>
+  }
 ]);
 
 
 
+
 createRoot(document.getElementById('root')).render(
+  <>
   <StrictMode>
     <RouterProvider router={router} />
   </StrictMode>
+  </>
 )
+
