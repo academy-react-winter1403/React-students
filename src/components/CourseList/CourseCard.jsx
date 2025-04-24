@@ -13,7 +13,7 @@ const CourseCard = ({ data }) => {
 
   return (
     <div
-      className="overflow-hidden bg-[#EAEAEA]   
+      className="overflow-hidden bg-[#EAEAEA] cursor-pointer  
         ts:w-[140px] ts:h-[200px] ts:rounded-[16px]   
         os:w-[180px] os:h-[280px] os:rounded-[20px]   
         sm:w-[220px] sm:h-[360px] sm:rounded-[24px]   

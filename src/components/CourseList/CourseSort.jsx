@@ -1,6 +1,8 @@
 import React from 'react';
 
-const CourseSort = ({ onSort, onItemsPerPageChange, currentItemsPerPage }) => {
+const CourseSort = ({ onItemsPerPageChange, currentItemsPerPage }) => {
+
+
   return (
     <div className="flex items-center mx-[auto] bg-[#F8F8F8]
       ts:w-[280px] ts:h-[24px] ts:pr-[12px] ts:pl-[12px] ts:rounded-[24px]
@@ -15,7 +17,6 @@ const CourseSort = ({ onSort, onItemsPerPageChange, currentItemsPerPage }) => {
         sm:gap-[12px] sm:mr-[20px]
         lg:gap-[12px] lg:mr-[24px]">
         <button
-          onClick={() => onSort('popular')}
           className="flex justify-center items-center font-[semibold] text-[#FFFFFF] bg-[#A74DD1]
             ts:px-[8px] ts:py-[4px] ts:text-[6px] ts:rounded-[16px]
             os:px-[12px] os:py-[8px] os:text-[8px] os:rounded-[16px]
@@ -25,7 +26,6 @@ const CourseSort = ({ onSort, onItemsPerPageChange, currentItemsPerPage }) => {
           محبوب ترین
         </button>
         <button
-          onClick={() => onSort('cheapest')}
           className="flex justify-center items-center font-[semibold] text-[#1E1E1E] bg-[#FFFFFF]
             ts:px-[8px] ts:py-[4px] ts:text-[6px] ts:rounded-[16px]
             os:px-[12px] os:py-[8px] os:text-[8px] os:rounded-[16px]
@@ -35,7 +35,6 @@ const CourseSort = ({ onSort, onItemsPerPageChange, currentItemsPerPage }) => {
           ارزان ترین
         </button>
         <button
-          onClick={() => onSort('expensive')}
           className="flex justify-center items-center font-[semibold] text-[#1E1E1E] bg-[#FFFFFF]
             ts:px-[8px] ts:py-[4px] ts:text-[6px] ts:rounded-[16px]
             os:px-[12px] os:py-[8px] os:text-[8px] os:rounded-[16px]
@@ -48,7 +47,7 @@ const CourseSort = ({ onSort, onItemsPerPageChange, currentItemsPerPage }) => {
       <div className="flex justify-center items-center mr-[auto]   ts:gap-[8px]   os:gap-[12px]   sm:gap-[16px]   lg:gap-[24px]">
         <label className="font-[semibold] text-[#1E1E1E]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[16px]">تعداد نمایش</label>
         <select
-          className="font-[semibold] text-[#1E1E1E] bg-[#FFFFFF] 
+          className="font-[semibold] text-[#1E1E1E] bg-[#FFFFFF] cursor-pointer
             ts:pr-[8px] ts:pl-[8px] ts:py-[4px] ts:text-[6px] ts:rounded-[16px]
             os:pr-[8px] os:pl-[8px] os:py-[4px] os:text-[8px] os:rounded-[16px]
             sm:pr-[12px] sm:pl-[12px] sm:py-[8px] sm:text-[12px] sm:rounded-[16px]
