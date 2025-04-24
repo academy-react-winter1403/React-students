@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 
 const HeroSection = () => {
   return (
@@ -16,8 +18,24 @@ const HeroSection = () => {
         <p className="font-[semibold] text-[#959595]   ts:text-[4px]   os:text-[8px]   sm:text-[12px]   lg:text-[16px]">آکادمی سپهر همیشه در تلاش بوده تا محیطی پرانرژی را برای علاقه مندان به حوزه برنامه نویسی و کدنویسی و طراحی وب سایت را فراهم کند.</p>
       </div>
       <div className="flex justify-center items-center mx-[auto] border   ts:mt-[8px] ts:gap-[6px]   os:mt-[12px] os:gap-[8px]   sm:mt-[16px] sm:gap-[10px]   lg:mt-[20px] lg:gap-[12px]">
-        <button className="flex justify-center items-center font-[semibold] text-white bg-[#A74DD1]   ts:px-[8px] ts:py-[4px] ts:text-[6px] ts:rounded-[8px]   os:px-[8px] os:py-[4px] os:text-[8px] os:rounded-[8px]   sm:px-[12px] sm:py-[8px] sm:text-[12px] sm:rounded-[12px]   lg:px-[16px] lg:py-[12px] lg:text-[16px] lg:rounded-[16px]">شروع یادگیری</button>
-        <button className="font-[semibold] border   ts:px-[8px] ts:py-[4px] ts:text-[4px] ts:rounded-[4px]   os:px-[8px] os:py-[4px] os:text-[8px] os:rounded-[4px]   sm:px-[12px] sm:py-[8px] sm:text-[12px] sm:rounded-[8px]   lg:px-[16px] lg:py-[12px] lg:text-[16px] lg:rounded-[12px]">درباره‌ما</button>
+        <Link className="flex justify-center items-center font-[semibold] text-white bg-[#A74DD1]   
+          ts:px-[8px] ts:py-[4px] ts:text-[6px] ts:rounded-[8px]   
+          os:px-[8px] os:py-[4px] os:text-[8px] os:rounded-[8px]   
+          sm:px-[12px] sm:py-[8px] sm:text-[12px] sm:rounded-[12px]   
+          lg:px-[16px] lg:py-[12px] lg:text-[16px] lg:rounded-[16px]"
+          to="/courselist"
+          >
+            شروع یادگیری
+          </Link>
+        <Link className="font-[semibold] border   '
+          ts:px-[8px] ts:py-[4px] ts:text-[4px] ts:rounded-[4px]   
+          os:px-[8px] os:py-[4px] os:text-[8px] os:rounded-[4px]   
+          sm:px-[12px] sm:py-[8px] sm:text-[12px] sm:rounded-[8px]   
+          lg:px-[16px] lg:py-[12px] lg:text-[16px] lg:rounded-[12px]"
+          to="/about-us"
+        >
+          درباره‌ما
+        </Link>
       </div>
     </div>
   )
