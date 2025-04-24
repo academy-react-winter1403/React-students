@@ -1,5 +1,5 @@
 const InitialValuesForm = {
-    email: '',
+    gmail: '',
     password: '',
     passwordRepeat: '',
   };

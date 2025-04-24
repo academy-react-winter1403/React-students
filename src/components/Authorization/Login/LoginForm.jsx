@@ -124,7 +124,7 @@ const LoginForm = () => {
             </Formik>
 
             <NoAccount
-              address={"/SignUp"}
+              address={"/RegisterStepOne"}
               accountTitle={"حساب کاربری ندارید؟"}
               SingUpTitle={"ثبت نام کنید"}
             />

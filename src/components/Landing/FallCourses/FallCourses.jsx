@@ -1,4 +1,4 @@
-import {React , useState } from 'react'
+import React from 'react'
 import FallCourse from '../../Common/FallCourse/FallCourse'
 import SeeAll from '../../Common/SeeAll/SeeAll'
 import useFetchFallCourses from '../../../core/Hook/useFetchFallCourses/useFetchFallCourses'
@@ -30,7 +30,7 @@ const FallCourses = () => {
         lg:gap-[26px] lg:mt-[40px]">
         {
           fallCourses.map((item) => {
-            return <FallCourse data={item}/>
+            return <FallCourse data={item} key={item.id}/>
           })
         }
       </div>

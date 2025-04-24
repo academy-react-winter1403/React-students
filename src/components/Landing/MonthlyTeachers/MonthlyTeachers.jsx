@@ -26,7 +26,7 @@ const MonthlyTeachers = () => {
       <div className="flex flex-row flex-wrap justify-center gap-[24px] mt-[40px]">
         {
           threeTeachers.map((item) => {
-            return <MonthlyTeacher data={item}/>
+            return <MonthlyTeacher data={item} key={item.id}/>
           })
         }
       </div>

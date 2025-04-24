@@ -3,7 +3,7 @@ import { getApi } from "../../services/api"
 
 const useFetchFallCourses = () => {
 
-    const[fallCourses , setFallCourses] = useState([]);
+    const [fallCourses , setFallCourses] = useState([]);
 
     const fetchApiFallCourses = async () => {
         const fallCoursesApi = await getApi("/Home/GetCoursesTop?Count=3");
