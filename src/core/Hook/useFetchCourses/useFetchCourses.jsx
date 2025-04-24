@@ -6,7 +6,7 @@ const useFetchCourses = () => {
   const [courses, setCourses] = useState([]);
   
   const fetchApi = async () => {
-    const data = await getApi("/Home/GetCoursesWithPagination?PageNumber=1&RowsOfPage=10&SortingCol=Active&SortType=DESC&CostDown=&CostUp=&StartDate=&EndDate=&TeacherId=")
+    const data = await getApi("/Home/GetCoursesWithPagination")
     setCourses(data.courseFilterDtos)
   }
 

@@ -10,8 +10,8 @@ const MonthlyTeachers = () => {
   const threeTeachers = teachers.slice(0 , 3);
 
   return (
-    <div className="border   ts:mt-[18px]   os:mt-[32px]   sm:mt-[68px]   lg:mt-[112px]">
-      <div className="text-center border">
+    <div className="ts:mt-[18px]   os:mt-[32px]   sm:mt-[68px]   lg:mt-[112px]">
+      <div className="text-center">
         <button className="mx-[auto] font-[bold] text-[#A74DD1] bg-[#F1D1FF]   
           ts:px-[8px] ts:py-[4px] ts:text-[12px] ts:rounded-[8px]   
           os:px-[12px] os:py-[4px]  
@@ -23,7 +23,7 @@ const MonthlyTeachers = () => {
           sm:mt-[12px] sm:text-[20px]   
           lg:mt-[12px] lg:text-[24px]">اساتید برتر این ماه</h2>
       </div>
-      <div className="flex flex-row flex-wrap justify-center gap-[24px] mt-[40px] border">
+      <div className="flex flex-row flex-wrap justify-center gap-[24px] mt-[40px]">
         {
           threeTeachers.map((item) => {
             return <MonthlyTeacher data={item}/>
