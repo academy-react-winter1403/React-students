@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import ArrowLeftIcon from '../../../assets/Icons/arrow-left.svg'
 
 
-const SeeAll = ({ArrowLeftIcon}) => {
+const SeeAll = () => {
   return (
     <div>
         <Link className="flex justify-center items-center mx-[auto] bg-[#A74DD1]   

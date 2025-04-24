@@ -8,12 +8,11 @@ const WeeklyBlogs = () => {
 
   const { blogs } = useFetchBlogs();
 
-  // const threeBlogs = blogs.slice(8 , 11);
   const threeBlogs = blogs?.slice(8, 11) || [];
 
   return (
-    <div className="border   ts:mt-[18px]   os:mt-[32px]   sm:mt-[68px]   lg:mt-[112px]">
-      <div className="text-center border">
+    <div className="ts:mt-[18px]   os:mt-[32px]   sm:mt-[68px]   lg:mt-[112px]">
+      <div className="text-center">
         <button className="mx-[auto] font-[bold] text-[#A74DD1] bg-[#F1D1FF]   
           ts:px-[8px] ts:py-[4px] ts:text-[12px] ts:rounded-[8px]   
           os:px-[12px] os:py-[4px]   
@@ -25,7 +24,7 @@ const WeeklyBlogs = () => {
           sm:mt-[12px] sm:text-[20px]   
           lg:mt-[12px] lg:text-[24px]">بلاگ های این هفته</h2>
       </div>
-      <div className="flex flex-row flex-wrap justify-center items-center border   
+      <div className="flex flex-row flex-wrap justify-center items-center   
         ts:gap-[16px] ts:mt-[16px]   
         os:gap-[16px] os:mt-[24px]   
         sm:gap-[24px] sm:mt-[32px]   

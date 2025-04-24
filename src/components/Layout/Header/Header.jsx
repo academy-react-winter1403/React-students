@@ -17,8 +17,8 @@ const Header = () => {
         <img className="ts:w-[20px] ts:h-[20px] sm:w-[32px] sm:h-[32px] 3x:w-[44px] 3x:h-[44px]" src={ReactStudentsIcon} alt="reactStudentsIcon" />
         <h2 className="font-[semibold] ts:text-[6px] os:text-[8px] sm:text-[12px] 3x:text-[14px]">React-students</h2>
       </div>
-      <div className="flex justify-center items-center border ts:gap-[20px] os:gap-[32px] sm:gap:[40px] 3x:ml-[356px] 3x:mr-[344px] 3x:gap-[48px]">
-        <div className="border">
+      <div className="flex justify-center items-center ts:gap-[20px] os:gap-[32px] sm:gap:[40px] 3x:ml-[356px] 3x:mr-[344px] 3x:gap-[48px]">
+        <div>
           <Link className="font-[medium] ts:text-[6px] os:text-[8px] sm:text-[12px] 3x:text-[16px]" to="/">
             خانه
           </Link>
@@ -28,7 +28,7 @@ const Header = () => {
             } ts:w-[25%] ts:h-[1px] os:w-[30%] os:h-[1px] sm:w-[35%] sm:h-[2px] 3x:w-[40.3%] 3x:h-[3px]`}
           ></div>
         </div>
-        <div className="border">
+        <div>
           <Link className="font-[medium] ts:text-[6px] os:text-[8px] sm:text-[12px] 3x:text-[16px]" to="/courselist">
             دوره‌ها
           </Link>
@@ -38,9 +38,9 @@ const Header = () => {
             } ts:w-[25%] ts:h-[1px] os:w-[30%] os:h-[1px] sm:w-[35%] sm:h-[2px] 3x:w-[40.3%] 3x:h-[3px]`}
           ></div>
         </div>
-        <div className="border">
+        <div>
           <Link className="font-[medium] ts:text-[6px] os:text-[8px] sm:text-[12px] 3x:text-[16px]" to="/bloglist">
-            بلاگ‌ها
+            بلاگ‌ ها
           </Link>
           <div
             className={`mx-[auto] rounded-[1.5px] ${
@@ -48,7 +48,7 @@ const Header = () => {
             } ts:w-[25%] ts:h-[1px] os:w-[30%] os:h-[1px] sm:w-[35%] sm:h-[2px] 3x:w-[40.3%] 3x:h-[3px]`}
           ></div>
         </div>
-        <div className="border">
+        <div>
           <Link className="font-[medium] ts:text-[6px] os:text-[8px] sm:text-[12px] 3x:text-[16px]" to="/about">
             درباره ما
           </Link>
@@ -59,8 +59,8 @@ const Header = () => {
           ></div>
         </div>
       </div>
-      <div className="flex justify-center items-center border ts:gap-[4px] os:gap-[8px] sm:gap-[16px] 3x:gap-[24px]">
-        <Link className="flex justify-center items-center font-[semibold] border 
+      <div className="flex justify-center items-center ts:gap-[4px] os:gap-[8px] sm:gap-[16px] 3x:gap-[24px]">
+        <Link className="flex justify-center items-center font-[semibold]
           ts:text-[6px] os:text-[10px] sm:text-[12px] 3x:text-[16px]" to="/login">
           ورود
         </Link>
@@ -72,7 +72,7 @@ const Header = () => {
           3x:px-[16px] 3x:py-[8px] 3x:text-[16px] 3x:rounded-[12px]"
           to="/registerstepone"
         >
-          ثبت‌نام
+          ثبت‌ نام
         </Link>
       </div>
     </div>

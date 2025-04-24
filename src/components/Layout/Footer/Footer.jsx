@@ -18,7 +18,7 @@ const Footer = () => {
         <img className="ts:w-[20px] ts:h-[20px]   os:w-[32px] os:h-[32px]   sm:w-[44px] sm:h-[44px]   lg:w-[56px] lg:h-[56px]" src={ReactStudentsIcon} alt="reactStudentsIcon"/>
         <h2 className="font-[semibold]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[20px]">React-students</h2>
       </div>
-      <div className="flex justify-center items-center border   ts:gap-[12px]   os:gap-[24px]   sm:gap-[36px]   lg:gap-[48px]   3x:mr-[199px] 3x:ml-[302px]">
+      <div className="flex justify-center items-center   ts:gap-[12px]   os:gap-[24px]   sm:gap-[36px]   lg:gap-[48px]   3x:mr-[199px] 3x:ml-[302px]">
         <div>
           <Link className="font-[medium]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[20px]" to="/">خانه</Link>
           <div
@@ -60,7 +60,7 @@ const Footer = () => {
           ></div>
         </div>
       </div>
-      <div className="flex justify-center items-center border   ts:gap-[4px]   os:gap-[4px]   sm:gap-[8px]   lg:gap-[16px]">
+      <div className="flex justify-center items-center   ts:gap-[4px]   os:gap-[4px]   sm:gap-[8px]   lg:gap-[16px]">
         <Link to={"/"}>
           <img className="ts:w-[8px] ts:h-[8px]   os:w-[12px] os:h-[12px]   sm:w-[16px] sm:h-[16px]   lg:w-[24px] lg:h-[24px]" src={TwitterIcon} alt="twitterIcon"/>
         </Link>

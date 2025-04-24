@@ -21,8 +21,8 @@ const Courses = () => {
 
   
   return (  
-    <div className="border relative z-[10]   ts:mt-[18px]   os:mt-[32px]   sm:mt-[68px]   lg:mt-[112px]">
-      <div className="text-center border">
+    <div className="relative z-[10]   ts:mt-[18px]   os:mt-[32px]   sm:mt-[68px]   lg:mt-[112px]">
+      <div className="text-center">
         <button className="flex justify-center items-center mx-[auto] font-[bold] text-[#A74DD1] bg-[#F1D1FF]   
           ts:px-[8px] ts:py-[4px] ts:text-[12px] ts:rounded-[8px]   
           os:px-[12px] os:py-[4px]        
@@ -34,7 +34,7 @@ const Courses = () => {
           sm:mt-[12px] sm:text-[20px]   
           lg:mt-[12px] lg:text-[24px]">دسته بندی دوره های ما</h2>
       </div>
-      <div className="flex flex-row flex-wrap justify-center border   
+      <div className="flex flex-row flex-wrap justify-center  
         ts:gap-[12px] ts:mt-[16px]   
         os:gap-[16px] os:mt-[24px]   
         sm:gap-[20px] sm:mt-[32px]   
