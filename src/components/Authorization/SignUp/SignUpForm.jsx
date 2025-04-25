@@ -14,16 +14,16 @@ const SignUpForm = () => {
   const phoneNumber = localStorage.getItem("phoneNumber"); 
 
   const handleSubmit = async (values, { setSubmitting }) => {
-    const { email, password } = values;
+    const { email:gmail , password } = values;
     const phoneNumber = localStorage.getItem("phoneNumber");
 
     // ذخیره ایمیل توی localStorage
-    localStorage.setItem("email", email);
+    localStorage.setItem("email", gmail);
 
     // لاگ نهایی قبل از ارسال به سرور
     console.log("دیتای نهایی ارسالی:", {
       phoneNumber,
-      gmail: email, // 👈 اصلاح شده
+      gmail: gmail, // 👈 اصلاح شده
       password
     });
 
@@ -36,7 +36,7 @@ const SignUpForm = () => {
         body: JSON.stringify({
           phoneNumber: phoneNumber,
           password: password,
-          gmail: email, // 👈 اصلاح شده
+          gmail: gmail, // 👈 اصلاح شده
         }),
       });
 
