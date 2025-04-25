@@ -4,54 +4,38 @@ import BlogCard from './BlogCard'
 import BlogText from './BlogText'
 import BlogComments from './BlogComments'
 import { useFetchBlog } from '../../core/hooks/useFetchCourseDetail/useFetchBlog'
-import { getApi } from "../../core/services/api/index";
-import { useParams } from 'react-router-dom'
+// import { getApi } from "../../core/services/api/index";
+// import { useParams } from 'react-router-dom'
   
 const BlogDetail = () => {
-const {blogId} = useParams()
 
- 
+    const { blog } = useFetchBlog();
   
-    const [blog, setBlog] = useState()
+    console.log(blog);
 
-    const fetchApi = async () => {
-     try {
-       const res = await getApi(`/News/${blogId}`)
-       setBlog(res)
-       console.log(res);
-     } catch (error) {
-      console.log(error);
-     }
-    }
-  
-    useEffect(() => {
-      fetchApi()
-    }, [])
-  
-  console.log(blogId);
-  // console.log(blog);
   
   return (
     <div className='w-full '>
     
-        <div className='w-full mx-auto min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 py-8 flex-col border-5 border-purple-500'>
-            <div className='flex flex-row gap-8 justify-center w-[auto] h-[362px] mt-[52px] border-2 border-blue-400'>
-                <BlogImg image={blog?.detailsNewsDto?.currentImageAddress} />
+       {blog.title? <div className='w-full mx-auto min-h-screen flex items-center justify-center px-8 sm:px-6 lg:px-28 py-8 flex-col border-5 border-purple-500'>
+            <div className='flex flex-row gap-8 justify-center lg:w-screen lg:h-[362px] lg:px-10 sm:justify-center sm:h-[auto] md:overflow-x-invisible h-[362px] mt-[52px] border-2 border-red-400'>
+                <BlogImg image={blog?.currentImageAddress} />
                 <BlogCard
-                title={blog?.detailsNewsDto?.title} 
-                name={blog?.detailsNewsDto?.addUserFullName} 
-                date={blog?.detailsNewsDto?.updateDate} 
-                comments={blog?.detailsNewsDto?.commentsCount} 
-                floor={blog?.detailsNewsDto?.commentsCount}/>
+                title={blog?.title} 
+                name={blog?.addUserFullName} 
+                date={blog?.updateDate} 
+                comments={blog?.commentsCount} 
+                floor={blog?.commentsCount}/>
             </div>
 
-            <BlogText blogtext={blog?.detailsNewsDto?.describe} />
+            <BlogText blogtext={blog?.describe} />
 
             <BlogComments />
 
-        </div>
+        </div>:"درحال لود شدن"}
   </div>
   )
-}
+ }
+
 
 export default BlogDetail

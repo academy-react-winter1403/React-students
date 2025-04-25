@@ -10,7 +10,7 @@ const useFetchBlog = () => {
 
   const fetchApi = async () => {
     const res = await getApi(`/News/${params.blogId}`)
-    setBlog(res.detailsNewsDto)
+    res.detailsNewsDto && setBlog(res?.detailsNewsDto)
   }
 
   useEffect(() => {
