@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 const StarRating = ({ totalStars = 5 }) => {
+  
   const [rating, setRating] = useState(0); 
   const [hover, setHover] = useState(0);   
 

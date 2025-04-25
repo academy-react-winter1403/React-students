@@ -21,7 +21,8 @@ const BlogCard = ({title, name , date , comments, floor}) => {
     if (liked) {
       setLiked(false);
       setLikeCount(likeCount - 1);
-    } else {
+    } 
+    else{
       setLiked(true);
       setLikeCount(likeCount + 1);
       if (disliked) {
@@ -35,7 +36,8 @@ const BlogCard = ({title, name , date , comments, floor}) => {
     if (disliked) {
       setDisliked(false);
       setDislikeCount(dislikeCount - 1);
-    } else {
+    } 
+    else{
       setDisliked(true);
       setDislikeCount(dislikeCount + 1);
       if (liked) {
@@ -49,7 +51,7 @@ const BlogCard = ({title, name , date , comments, floor}) => {
     <div>
     <div className='lg:min-w-[780px] md:max-w-[550px] lg:w-[auto] md:w-[100%] sm:w-[370px] lg:h-full md:h-[300px] sm:h-[250px] flex lg:flex-row rounded-3xl bg-[#F8F8F8] p-4'>
       
-      <div className='lg:w-1/2  md:mb-[40px] flex flex-col h-full lg:pr-[24px] border-2 border-pink-600'>
+      <div className='lg:w-1/2  md:mb-[40px] flex flex-col h-full lg:pr-[24px] border'>
         <BlogCategory />
         <h2 className='mt-4 font-bold'>{title}</h2>
 
@@ -70,9 +72,9 @@ const BlogCard = ({title, name , date , comments, floor}) => {
           <p className='pr-2'>{floor}</p>
         </div>
   
-        <div className='hidden md:flex justify-between items-center lg:w-[200px] md:w-[150px] border-2 border-red-500 lg:mt-6 md:mt-3 mb-6'>
+        <div className='hidden md:flex justify-between items-center lg:w-[200px] md:w-[150px] border lg:mt-6 md:mt-3 mb-6'>
           {/* Like */}
-          <div className='flex justify-center items-center gap-2 md:text-[15px] sm:text-[13px] w-[50%] h-full border-2 border-gray-800' onClick={handleLikes}>
+          <div className='flex justify-center items-center gap-2 md:text-[15px] sm:text-[13px] w-[50%] h-full border' onClick={handleLikes}>
             <span className='flex justify-center items-center lg:w-11 md:w-8 md:h-8 lg:h-full rounded-full bg-[#A74DD0]'>
               {liked ? <FilledLike /> : <LikeIcon />}
             </span>

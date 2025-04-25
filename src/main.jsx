@@ -5,9 +5,11 @@ import Route from './components/config/Route'
 import App from './App/App'
 import CourseList from './components/CourseList/CourseList'
 import BlogList from './components/BlogList/BlogList'
+import CourseDetail from './components/CourseDetail/CourseDetail'
+import BlogDetail from './components/BlogDetail/BlogDetail'
 import Panel from './components/UsePanel/Panel'
 import LoginForm from './components/Authorization/Login/LoginForm'
-// import NotFound from './components/Error/NotFound'
+import NotFound from './components/Error/NotFound'
 import Error from './components/Error/Error'
 import StepOne from './components/Authorization/SignUp/StepOne'
 import SingUpConfirmCode from './components/Authorization/SignUp/SingUpConfirmCode'
@@ -33,6 +35,14 @@ export const router = createBrowserRouter([
         element: <BlogList/>,
         errorElement: <Error />
       },
+      {
+        path: "/detail/:id",
+        element: <CourseDetail />,
+      },
+      {
+        path: "/detail/:id",
+        element: <BlogDetail />,
+      }
     ],
   },
   {

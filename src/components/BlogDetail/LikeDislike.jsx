@@ -1,4 +1,3 @@
-// LikeDislike.jsx
 import React, { useState } from "react";
 import { FaThumbsUp, FaThumbsDown } from "react-icons/fa";
 
@@ -38,7 +37,7 @@ const LikeDislike = ({ initialLikes = 0, initialDislikes = 0 }) => {
           }`
         }
       >
-        <FaThumbsUp /> {likes}
+      <FaThumbsUp/> {likes}
       </div>
       <div
         onClick={handleDislike}
@@ -46,7 +45,7 @@ const LikeDislike = ({ initialLikes = 0, initialDislikes = 0 }) => {
             userAction === "dislike" ? "text-purple-600" : "text-gray-500"
           }`}
       >
-        <FaThumbsDown /> {dislikes}
+      <FaThumbsDown/> {dislikes}
       </div>
     </div>
   );
