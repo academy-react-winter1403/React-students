@@ -68,7 +68,7 @@ const CommentSection = () => {
                             <div className='w-8 gap-2 ml-[25px] flex'>
                                 <LikeDislike initialLikes={10} initialDislikes={2}/>
                             </div>
-                            <div className='flex gap-1 items-center text-[#A74DD0] pr-[32px] pl-[32px]'>
+                            <div className='flex gap-1 items-center text-[#A74DD0] pr-[52px] pl-[20px]'>
                                 <p className='md:text-[13px]'>جواب دادن</p>
                                 <img className='md:w-3 md:pt-1 lg:w-5 h-5' src={Arrow} alt="sideArrow" />
                             </div>

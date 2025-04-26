@@ -72,7 +72,7 @@ const BlogCard = ({title, name , date , comments, floor}) => {
           <p className='pr-2'>{floor}</p>
         </div>
   
-        <div className='hidden md:flex justify-between items-center lg:w-[200px] md:w-[150px] border lg:mt-6 md:mt-3 mb-6'>
+        <div className='sm:hidden lg:flex justify-between items-center lg:w-[200px] md:w-[150px] border lg:mt-6 md:mt-6 mb-6'>
           {/* Like */}
           <div className='flex justify-center items-center gap-2 md:text-[15px] sm:text-[13px] w-[50%] h-full' onClick={handleLikes}>
             <span className='flex justify-center items-center lg:w-11 md:w-8 md:h-8 lg:h-full rounded-full bg-[#A74DD0]'>
