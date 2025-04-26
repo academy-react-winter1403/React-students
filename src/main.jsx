@@ -36,11 +36,11 @@ export const router = createBrowserRouter([
         errorElement: <Error />
       },
       {
-        path: "/detail/:id",
+        path: "/coursedetail/:id",
         element: <CourseDetail />,
       },
       {
-        path: "/detail/:id",
+        path: "/blogdetail/:id",
         element: <BlogDetail />,
       }
     ],
