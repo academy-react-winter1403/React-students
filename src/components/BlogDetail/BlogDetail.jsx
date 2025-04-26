@@ -34,8 +34,8 @@ const BlogDetail = () => {
   
   return (
     <div className='w-full '>
-      <div className='w-full mx-auto min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 py-8 flex-col border-5 border-purple-500'>
-        <div className='flex flex-row gap-8 justify-center w-[auto] h-[362px] mt-[52px] border-2 border-blue-400'>
+      <div className='w-full mx-auto min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 py-8 flex-col'>
+        <div className='flex flex-row gap-8 justify-center w-[auto] h-[362px] mt-[52px]'>
           <BlogImg image={blog?.detailsNewsDto?.currentImageAddress} />
           <BlogCard
           title={blog?.detailsNewsDto?.title} 

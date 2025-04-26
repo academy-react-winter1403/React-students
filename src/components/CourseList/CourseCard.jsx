@@ -18,7 +18,7 @@ const CourseCard = ({ data }) => {
       os:w-[180px] os:h-[280px] os:rounded-[20px]   
       sm:w-[220px] sm:h-[360px] sm:rounded-[24px]   
       lg:w-[297px] lg:h-[441px] lg:rounded-[24px]"
-      onClick={() => navigate("/coursedetail/" + data.id)}
+      onClick={() => navigate("/coursedetail/:" + data.id)}
     >
       <div className="flex justify-center bg-[#DAE01E]   
         ts:h-[80px] ts:pt-[24px] ts:rounded-b-[24px]   
