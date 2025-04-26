@@ -3,8 +3,9 @@ import http from "./interceptor";
 const getApi = async (url) => {
   try {
     const response = await http.get(url);
-    return response;
+    return response.data ;
   } catch (error) {
+    console.log("⛔️ خطا در getApi:", error);
     // return console.log(error);
   }
 };

@@ -17,22 +17,24 @@ const BlogDetail = () => {
   return (
     <div className='w-full '>
     
-       {blog.title? <div className='w-full mx-auto min-h-screen flex items-center justify-center px-8 sm:px-6 lg:px-28 py-8 flex-col border-5 border-purple-500'>
-            <div className='flex flex-row gap-8 justify-center lg:w-screen lg:h-[362px] lg:px-10 sm:justify-center sm:h-[auto] md:overflow-x-invisible h-[362px] mt-[52px] border-2 border-red-400'>
+       <div className='w-full mx-auto min-h-screen flex items-center justify-center px-8 sm:px-6 lg:px-6 py-8 flex-col'>
+            <div className='flex flex-row gap-8 justify-center lg:w-[700px] lg:h-[362px] lg:px-20 sm:justify-center sm:h-[auto] md:overflow-x-invisible h-[362px] mt-[52px]'>
                 <BlogImg image={blog?.currentImageAddress} />
                 <BlogCard
-                title={blog?.title} 
-                name={blog?.addUserFullName} 
-                date={blog?.updateDate} 
-                comments={blog?.commentsCount} 
-                floor={blog?.commentsCount}/>
+                title={blog?.title || "یک نام خیلیی انحصاری برای خبر"} 
+                name={blog?.addUserFullName || "امیرررر-حسینی" } 
+                date={blog?.updateDate || "2023-09-10"} 
+                comments={blog?.commentsCount || 155 } 
+                floor={blog?.inUsersFavoriteCount || 11 }
+                minidescribe={blog?.googleDescribe || "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان "}
+                />
             </div>
 
-            <BlogText blogtext={blog?.describe} />
+            <BlogText describe={blog?.describe || "  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از لورم ایپسوم متن ساختگی با لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان  تولید سادگی نامفهوم از صنعت چاپ، و با استفاده ازلورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از ان تشکیل میشود که بسیار زیبا و جلوه گرافیکی منحصر بفردی دارد."} />
 
             <BlogComments />
 
-        </div>:"درحال لود شدن"}
+        </div>
   </div>
   )
  }
