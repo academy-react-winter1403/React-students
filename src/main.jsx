@@ -5,9 +5,17 @@ import { createRoot } from 'react-dom/client'
 import App from './App/App'
 import CourseList from './components/CourseList/CourseList'
 import BlogList from './components/BlogList/BlogList'
+<<<<<<< HEAD
 import BlogDetail from './components/BlogDetail/BlogDetail'
 import Panel from './components/UsePanel/Panel'
 import LoginForm from './components/Authorization/Login/LoginForm'
+=======
+import CourseDetail from './components/CourseDetail/CourseDetail'
+import BlogDetail from './components/BlogDetail/BlogDetail'
+import Panel from './components/UsePanel/Panel'
+import LoginForm from './components/Authorization/Login/LoginForm'
+import NotFound from './components/Error/NotFound'
+>>>>>>> b57f32a55f77f60ef60069d024ebc19e10255335
 import Error from './components/Error/Error'
 import StepOne from './components/Authorization/SignUp/StepOne'
 import SingUpConfirmCode from './components/Authorization/SignUp/SingUpConfirmCode'
@@ -40,6 +48,7 @@ export const router = createBrowserRouter([
         element: <BlogList/>,
         errorElement: <Error />
       },
+<<<<<<< HEAD
       ,
       {
         path: "/blogdetail/:blogId",
@@ -52,6 +61,16 @@ export const router = createBrowserRouter([
         errorElement: <Error />
       }
       
+=======
+      {
+        path: "/coursedetail/:id",
+        element: <CourseDetail />,
+      },
+      {
+        path: "/blogdetail/:id",
+        element: <BlogDetail />,
+      } 
+>>>>>>> b57f32a55f77f60ef60069d024ebc19e10255335
     ],
   },
   {
