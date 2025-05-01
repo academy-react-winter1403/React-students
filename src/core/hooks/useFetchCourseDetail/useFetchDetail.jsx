@@ -28,4 +28,8 @@ const useFetchDetail = () => {
   return { course };
 };
 
+<<<<<<< HEAD
 export { useFetchDetail };
+=======
+export { useFetchDetail };
+>>>>>>> b57f32a55f77f60ef60069d024ebc19e10255335
