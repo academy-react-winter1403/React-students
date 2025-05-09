@@ -21,7 +21,7 @@ const BlogCard = ({data}) => {
         os:w-[180px] os:h-[280px] os:rounded-[20px]   
         sm:w-[240px] sm:h-[360px] sm:rounded-[24px]   
         lg:w-[297px] lg:h-[441px] lg:rounded-[24px]"
-        onClick={() => navigate("/blogdetail/:" + data.id)} 
+        onClick={() => navigate(`/detail/${id}`)}
     >
         <div className="flex justify-center bg-[#DAE01E]   ts:h-[80px] ts:pt-[24px] ts:rounded-b-[24px]   os:h-[120px] os:pt-[32px] os:rounded-b-[28px]   sm:h-[160px] sm:pt-[40px] sm:rounded-b-[32px]   lg:h-[191px] lg:pt-[48px] lg:rounded-b-[32px]">
             <img className="ts:w-[14px] ts:h-[14px]   os:w-[28px] os:h-[28px]   sm:w-[56px] sm:h-[56px]   lg:w-[112px] lg:h-[112px]" src={JsIcon2} alt="javaScriptIcon"/>

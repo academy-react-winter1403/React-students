@@ -14,8 +14,8 @@ import Error from './components/Error/Error'
 import StepOne from './components/Authorization/SignUp/StepOne'
 import SingUpConfirmCode from './components/Authorization/SignUp/SingUpConfirmCode'
 import SignUpForm from './components/Authorization/SignUp/SignUpForm'
-import Header from './components/Layout/Header/Header'
-import Footer from './components/Layout/Footer/Footer'
+
+
 
 export const router = createBrowserRouter([
   {
@@ -84,9 +84,9 @@ export const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <>
-  <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>
+    <StrictMode>
+      <RouterProvider router={router} />
+    </StrictMode>
   </>
 )
 

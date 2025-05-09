@@ -79,7 +79,11 @@ const BlogCard = ({title, name , date , comments, showCourseText = false , floor
             <span className='flex justify-center items-center lg:w-11 md:w-8 md:h-8 lg:h-full rounded-full bg-[#A74DD0]'>
               {liked ? <FilledLike /> : <LikeIcon />}
             </span>
+<<<<<<< HEAD
               <span>{likeCount}</span>
+=======
+            <span>{likeCount}</span>
+>>>>>>> develop
             </div> 
           </div>
           
