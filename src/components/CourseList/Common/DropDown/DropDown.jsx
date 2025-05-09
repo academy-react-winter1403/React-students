@@ -1,6 +1,6 @@
 import {React , useState } from 'react'
-import FrameDownIcon from '../../../assets/Icons/frame-down.svg'
-import FrameUpIcon from '../../../assets/Icons/frame-up.svg'
+import FrameDownIcon from '../../../../assets/Icons/frame-down.svg'
+import FrameUpIcon from '../../../../assets/Icons/frame-up.svg'
 
 
 

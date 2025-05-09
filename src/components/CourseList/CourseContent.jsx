@@ -2,7 +2,7 @@ import {React , useState, useEffect, useCallback } from 'react';
 import CourseSide from './CourseSide';
 import CourseSort from './CourseSort';
 import CourseMain from './CourseMain';
-import PaginationButtons from '../Common/PaginationButtons/PaginationButtons';
+import PaginationButtons from './Common/PaginationButtons/PaginationButtons';
 import { useFetchCourses } from '../../core/Hook/useFetchCourses/useFetchCourses';
 
 const CourseContent = () => {

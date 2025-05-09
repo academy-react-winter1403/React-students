@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Field } from 'formik';
-import SearchIcon from '../../../assets/Icons/search-stroke-rounded.svg';
+import SearchIcon from '../../../../assets/Icons/search-stroke-rounded.svg';
 
 const Search = ({ onSearchChange }) => {
 

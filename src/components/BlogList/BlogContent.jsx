@@ -2,7 +2,7 @@ import { React, useState, useEffect, useCallback } from 'react';
 import BlogSide from './BlogSide';
 import BlogSort from './BlogSort';
 import BlogMain from './BlogMain';
-import PaginationButtons from '../Common/PaginationButtons/PaginationButtons';
+import PaginationButtons from '../CourseList/Common/PaginationButtons/PaginationButtons';
 import { useFetchBlogs } from '../../core/Hook/useFetchBlogs/useFetchBlogs';
 
 const BlogContent = () => {
