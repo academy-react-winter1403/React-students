@@ -2,7 +2,7 @@ import React from 'react'
 
 const MonthlyTeacher = ({data}) => {
   return (
-    <div className="border-2 border-[#FFBF6C] 
+    <div className="flex-shrink-0 border-2 border-[#FFBF6C] 
       ts:w-[240px] ts:h-[160px] ts:pt-[16px] ts:pr-[20px] ts:rounded-[16px]   
       os:w-[300px] os:h-[180px] os:pt-[20px] os:pr-[20px] os:rounded-[16px]   
       sm:w-[360px] sm:h-[200px] sm:pt-[24px] sm:pr-[24px] sm:rounded-[24px]   

@@ -1,13 +1,13 @@
 import React from 'react'
-import ArrowURIcon from '../../../assets/Icons/arrow-up-right.svg'
-import BookMarkIcon from '../../../assets/Icons/bookmark-add.svg'
-import MortarBoardIcon from '../../../assets/Icons/mortarboard.svg'
+import ArrowURIcon from '../../../../assets/Icons/arrow-up-right.svg'
+import BookMarkIcon from '../../../../assets/Icons/bookmark-add.svg'
+import MortarBoardIcon from '../../../../assets/Icons/mortarboard.svg'
 
 
 const FallCourse = ({data}) => {
 
   return (
-    <div className="group overflow-hidden border   
+    <div className="group overflow-hidden flex-shrink-0 border   
       ts:w-[300px] ts:h-[220px] ts:rounded-[12px]   
       os:w-[340px] os:h-[260px] os:rounded-[16px]   
       sm:w-[380px] sm:h-[300px] sm:rounded-[24px]   

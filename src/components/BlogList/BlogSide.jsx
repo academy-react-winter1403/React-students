@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Formik, Form } from 'formik';
-import Search from '../Common/Search/Search';
-import DropDownHolder from '../Common/DropDown/DropDownHolder';
-import CoursePrice from '../Common/CoursePrice/CoursePrice';
-import Date from '../Common/Date/Date';
+import Search from '../CourseList/Common/Search/Search';
+import DropDownHolder from '../CourseList/Common/DropDown/DropDownHolder';
+import CoursePrice from '../CourseList/Common/CoursePrice/CoursePrice';
+import Date from '../CourseList/Common/Date/Date';
 
 const CourseSide = ({ onSearchChange }) => {
 

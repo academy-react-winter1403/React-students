@@ -1,7 +1,7 @@
 import React from 'react';
 import LinkPanel from './LinkPanel';
 import ImgPanel from './ImgPanel';
-import DarkMode from '../common/DarkMode';
+import DarkMode from '../DarkMode/DarkMode';
 
 const Header = () => {
   return (

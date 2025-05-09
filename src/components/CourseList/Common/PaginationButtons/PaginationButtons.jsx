@@ -1,6 +1,6 @@
 import React from 'react';
-import FrameRightIcon from '../../../assets/Icons/frame-right.svg';
-import FrameLeftIcon from '../../../assets/Icons/frame-left.svg';
+import FrameRightIcon from '../../../../assets/Icons/frame-right.svg';
+import FrameLeftIcon from '../../../../assets/Icons/frame-left.svg';
 
 
 const PaginationButtons = ({ currentPage, totalPages, onPageChange }) => {

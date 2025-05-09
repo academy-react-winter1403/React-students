@@ -2,11 +2,11 @@ import React from 'react'
 
 const CategoryCourse = ({data}) => {
   return (
-    <div className="flex-shrink-0 w-[310px] h-[230px] border-[2px] border-[#E9E9E9] 
-      ts:pr-[12px] ts:rounded-[12px]   
-      os:pr-[16px] os:rounded-[16px]   
-      sm:pr-[20px] sm:rounded-[20px]   
-      lg:pr-[24px] lg:rounded-[24px]">
+    <div className="flex-shrink-0 border-[2px] border-[#E9E9E9] 
+      ts:w-[240px] ts:h-[160px] ts:pr-[12px] ts:rounded-[12px]   
+      os:w-[260px] os:h-[180px] os:pr-[16px] os:rounded-[16px]   
+      sm:w-[280px] sm:h-[200px] sm:pr-[20px] sm:rounded-[20px]   
+      lg:w-[310px] lg:h-[230px] lg:pr-[24px] lg:rounded-[24px]">
       <div className="flex justify-center items-center bg-[#F7F7F7]   
         ts:w-[44px] ts:h-[44px] ts:mt-[4px] ts:rounded-[50px]   
         os:w-[48px] os:h-[48px] os:mt-[8px]    
