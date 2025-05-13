@@ -15,7 +15,7 @@ const Header = () => {
       3x:gap-[350px] 3x:px-[64px] 3x:mt-[20px]">
       <div className="flex justify-center items-center   ts:gap-[4px]   sm:gap-[8px]   3x:gap-[8px]">
         <img className="ts:w-[32px] ts:h-[32px]   os:w-[36px] os:h-[36px]   sm:w-[40px]   sm:h-[40px]   3x:w-[44px] 3x:h-[44px]" src={ReactStudentsIcon} alt="reactStudentsIcon" />
-        <h2 className="font-[semibold]   ts:text-[10px]   sm:text-[12px]   3x:text-[14px]">React-students</h2>
+        <h2 className="hidden font-[semibold]   os:block os:text-[10px]   sm:text-[12px]   3x:text-[14px]">React-students</h2>
       </div>
       <div className="flex justify-center items-center   ts:gap-[20px]   os:gap-[32px]   sm:gap:[40px]    3x:gap-[48px]">
         <div>
@@ -29,8 +29,8 @@ const Header = () => {
           ></div>
         </div>
         <div>
-          <Link className="block font-[medium]   ts:text-[10px]   os:text-[12px]   sm:text-[14px]   3x:text-[16px]" to="/courselist">
-            دوره‌ ها
+          <Link className="block font-[medium]   ts:text-[12px]   os:text-[12px]   sm:text-[14px]   3x:text-[16px]" to="/courselist">
+            دوره‌ها
           </Link>
           <div
             className={`mx-[auto] rounded-[1.5px] ${
@@ -39,7 +39,7 @@ const Header = () => {
           ></div>
         </div>
         <div>
-          <Link className="block font-[medium]   ts:text-[10px]   os:text-[12px]   sm:text-[14px]   3x:text-[16px]" to="/bloglist">
+          <Link className="block font-[medium]   ts:text-[12px]   os:text-[12px]   sm:text-[14px]   3x:text-[16px]" to="/bloglist">
             بلاگ‌ ها
           </Link>
           <div
@@ -49,7 +49,7 @@ const Header = () => {
           ></div>
         </div>
         <div>
-          <Link className="hidden font-[medium]   os:block os:text-[12px]   sm:text-[16px]   3x:text-[16px]" to="/about">
+          <Link className="block font-[medium]   ts:text-[12px]   os:text-[12px]   sm:text-[16px]   3x:text-[16px]" to="/about">
             درباره ما
           </Link>
           <div
@@ -60,12 +60,12 @@ const Header = () => {
         </div>
       </div>
       <div className="flex justify-center items-center   ts:gap-[4px]   os:gap-[8px]   sm:gap-[16px]   3x:gap-[24px]">
-        <Link className="flex justify-center items-center font-[semibold]
+        <Link className="block font-[semibold]
           ts:text-[10px] os:text-[12] sm:text-[14px] 3x:text-[16px]" to="/login">
           ورود
         </Link>
         <Link
-          className="flex justify-center items-center font-[semibold] text-white bg-[#A74DD1] 
+          className="block font-[semibold] text-white bg-[#A74DD1] 
           ts:px-[8px] ts:py-[4px] ts:text-[10px] ts:rounded-[4px] 
           os:px-[12px] os:py-[4px] os:text-[12px] os:rounded-[8px] 
           sm:px-[16px] sm:py-[8px] sm:text-[14px] sm:rounded-[10px] 

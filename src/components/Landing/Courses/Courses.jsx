@@ -47,13 +47,11 @@ const Courses = () => {
           lg:mt-[41px]"
         ref={containerRef}
       >
-        {catCourseData.map((item, index) => (
-          <CategoryCourse
-            data={item}
-            key={index}
-            className="flex-shrink-0 w-full px-4 snap-start sm:w-[auto]"
-          />
-        ))}
+        {
+          catCourseData.map((item, index) => {
+            return  <CategoryCourse data={item} key={index} className="flex-shrink-0 w-full px-4 snap-start sm:w-[auto]"/>
+          })
+        }
       </div>
       {catCourseData.length > 0 && scrollAmount > 0 && (
         <>

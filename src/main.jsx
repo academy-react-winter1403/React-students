@@ -7,13 +7,14 @@ import CourseList from './components/CourseList/CourseList'
 import BlogList from './components/BlogList/BlogList'
 import CourseDetail from './components/CourseDetail/CourseDetail'
 import BlogDetail from './components/BlogDetail/BlogDetail'
-import Panel from './components/UsePanel/Panel'
-import LoginForm from './components/Authorization/Login/LoginForm'
-import NotFound from './components/Error/NotFound'
-import Error from './components/Error/Error'
 import StepOne from './components/Authorization/SignUp/StepOne'
 import SingUpConfirmCode from './components/Authorization/SignUp/SingUpConfirmCode'
 import SignUpForm from './components/Authorization/SignUp/SignUpForm'
+import LoginForm from './components/Authorization/Login/LoginForm'
+import Panel from './components/UsePanel/Panel'
+import StuPanelCourse from './components/StudentPanel/StuPanelCourse'
+import Error from './components/Error/Error'
+import NotFound from './components/Error/NotFound'
 
 
 
@@ -71,6 +72,11 @@ export const router = createBrowserRouter([
     path: "/UserPanel",
     element: <Panel />,
     errorElement: <Error />
+  },
+  {
+    path: "/studentpanel",
+    element: <StuPanelCourse/>,
+    errorElement: <Error/>
   },
   {
     path: "*",

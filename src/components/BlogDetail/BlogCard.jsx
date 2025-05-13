@@ -10,8 +10,9 @@ import FilledDislike from '../../assets/Icons/FilledDislike'
 import LikeIcon from '../../assets/Icons/LikeIcon'
 import Dislike from '../../assets/Icons/Dislike'
 import CourseText from '../CourseDetail/CourseText'
+import { useFetchBlog } from '../../core/hooks/useFetchCourseDetail/useFetchBlog'
 
-const BlogCard = ({title, name , date , comments, showCourseText = false , floor , minidescribe }) => {
+const BlogCard = ({title, name , date , comments, showCourseText = false , floor , minidescribe , currentLikeCount , currentDissLikeCount }) => {
   
   const [liked, setLiked] = useState(false);
   const [disliked, setDisliked] = useState(false);
@@ -48,38 +49,52 @@ const BlogCard = ({title, name , date , comments, showCourseText = false , floor
     }
   };
 
-  return (
-    <div>
-    <div className='lg:min-w-[780px] md:max-w-[550px] lg:w-[auto] md:w-[100%] sm:w-[370px] lg:h-full md:h-[300px] sm:h-[250px] flex lg:flex-row rounded-3xl bg-[#F8F8F8] p-4'>
-      
-      <div className='lg:w-1/2  md:mb-[40px] flex flex-col h-full lg:pr-[24px]'>
-        <BlogCategory />
-        <h2 className='mt-4 font-bold'>{title}</h2>
+  const { blog } = useFetchBlog();
 
-        <div className='flex lg:w-fit md:w-[200px] items-center lg:mt-6 md:mt-0'>
-          <img className='w-6 h-6' src={CourseImage} alt="CourseImageIcon" />
-          <p className='pr-2'>{name}</p>
-        </div>
-        <div className='flex lg:w-fit md:w-[200px] items-center mt-6'>
-          <CourseIcon  />
-          <p className='pr-2'>{date}</p>
-        </div>
-        <div className='flex w-fit items-center mt-6'>
-          <CourseIcon2 />
-          <p className='pr-2'>{comments}</p>
-        </div>
-        <div className='flex w-fit items-center mt-6'>
-          <CourseIcon3 />
-          <p className='pr-2'>{floor}</p>
-        </div>
-  
-        <div className='sm:hidden lg:flex justify-between items-center lg:w-[200px] md:w-[150px] border lg:mt-6 md:mt-6 mb-6'>
-          {/* Like */}
-          <div className='flex justify-center items-center gap-2 md:text-[15px] sm:text-[13px] w-[50%] h-full' onClick={handleLikes}>
-            <span className='flex justify-center items-center lg:w-11 md:w-8 md:h-8 lg:h-full rounded-full bg-[#A74DD0]'>
-              {liked ? <FilledLike /> : <LikeIcon />}
-            </span>
-              <span>{likeCount}</span>
+  return (
+
+   <div>
+      <div className='lg:min-w-[400px] md:max-w-[550px]  lg:justify-around md:w-[100%] sm:w-[370px] sm:justify-between lg:h-[362px] md:h-[300px] sm:h-[250px] flex lg:flex-row rounded-3xl bg-[#F8F8F8]'>
+        
+        <div className='lg:w-[290px]  md:mb-[40px] sm:w-[200px] flex flex-col h-[auto] lg:relative lg:top-3 lg:pr-[24px] md:pr-5 md:w-[230px]'>
+          <div className='flex lg:gap-4 md:gap-4 w-[auto] h-fit'>
+          <BlogCategory />
+          {showCourseText && <CourseText />}
+          </div>
+          <h2 className='mt-4 font-bold'>{title}</h2>
+
+          <div className='flex lg:w-fit md:w-[200px] items-center mt-3'>
+            <img className='w-6 h-6' src={CourseImage} alt="CourseImageIcon" />
+            <p className='pr-2'>{name}</p>
+          </div>
+          <div className='flex lg:w-fit md:w-[200px] items-center mt-3'>
+            <CourseIcon  />
+            <p className='pr-2'>{date}</p>
+          </div>
+          <div className='flex w-fit items-center mt-3'>
+            <CourseIcon2 />
+            <p className='pr-2'>{comments}</p>
+          </div>
+          <div className='flex w-fit items-center mt-3'>
+            <CourseIcon3 />
+            <p className='pr-2'>{floor}</p>
+          </div>
+    
+          <div className='md:hidden lg:flex sm:hidden justify-between items-center lg:w-[200px] lg:relative lg:bottom-2 lg:left-6 md:w-[150px] lg:mt-6 md:mt-6 mb-6'>
+            
+             <div className='flex justify-center items-center gap-2 md:text-[15px] sm:text-[13px] w-[50%] h-full ' onClick={handleLikes}>
+              <span className='flex justify-center items-center lg:w-11 md:w-8 md:h-8 lg:h-[90%] rounded-full bg-[#A74DD0]'>
+                {liked ? <FilledLike /> : <LikeIcon />}
+              </span>
+              <span>{blog?.currentLikeCount}</span>
+            </div>
+    
+            
+            <div className='flex justify-center items-center gap-2 h-full w-[50%] md:text-[15px] sm:text-[13px]' onClick={handleDislikes}>
+              <span className='flex justify-center items-center lg:w-12 md:w-8 md:h-8 lg:h-12 rounded-full bg-white'>
+                {disliked ? <FilledDislike /> : <Dislike />}
+              </span>
+              <span>{blog?.currentDislikeCount}</span>
             </div> 
           </div>
           
@@ -97,6 +112,7 @@ const BlogCard = ({title, name , date , comments, showCourseText = false , floor
           </div>
         </div>
       </div>
+      
   </div>
   
   );

@@ -39,9 +39,11 @@ const WeeklyBlogs = () => {
           sm:gap-[24px] sm:mt-[32px]
           lg:gap-[26px] lg:mt-[40px]"
       >
-        {threeBlogs.map((item) => (
-          <WeeklyBlog data={item} key={item.id} className="flex-shrink-0 w-full px-4 snap-start sm:w-[auto]" />
-        ))}
+        {
+          threeBlogs.map((item) => {
+            return <WeeklyBlog data={item} key={item.id} className="flex-shrink-0 w-full px-4 snap-start sm:w-[auto]" />
+          })
+        }
       </div>
       {threeBlogs.length > 0 && scrollAmount > 0 && (
         <>

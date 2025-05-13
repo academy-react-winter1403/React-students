@@ -8,7 +8,7 @@ const instance = axios.create({
 });
 
 const onSucc = (res) => {
-  return res.data;
+  return res;
 };
 
 const onErr = (err) => {

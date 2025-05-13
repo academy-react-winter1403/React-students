@@ -34,9 +34,11 @@ const MonthlyTeachers = () => {
         ref={containerRef}
         className="overflow-x-auto flex justify-start gap-[24px] mt-[40px] scroll-smooth 2x:justify-center"
       >
-        {threeTeachers.map((item) => (
-          <MonthlyTeacher data={item} key={item.id} className="flex-shrink-0 w-full px-4 snap-start sm:w-[auto]" />
-        ))}
+        {
+          threeTeachers.map((item) => {
+            return <MonthlyTeacher data={item} key={item.id} className="flex-shrink-0 w-full px-4 snap-start sm:w-[auto]" />
+          })
+        }
       </div>
       {threeTeachers.length > 0 && scrollAmount > 0 && (
         <>

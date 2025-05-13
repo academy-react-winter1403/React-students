@@ -18,17 +18,17 @@ const Footer = () => {
       3x:gap-[250px] 3x:mt-[106px] 3x:mb-[75px] 3x:px-[64px]">
       <div className="flex items-center   ts:gap-[4px]   os:gap-[4px]   sm:gap-[8px]   lg:gap-[12px]">
         <img className="ts:w-[20px] ts:h-[20px]   os:w-[32px] os:h-[32px]   sm:w-[44px] sm:h-[44px]   lg:w-[56px] lg:h-[56px]" src={ReactStudentsIcon} alt="reactStudentsIcon"/>
-        <h2 className="font-[semibold]   ts:text-[12px]   os:text-[12px]   sm:text-[16px]   lg:text-[20px]">React-students</h2>
+        <h2 className="hidden font-[semibold]   os:block os:text-[12px]   sm:text-[16px]   lg:text-[20px]">React-students</h2>
       </div>
       <div className="flex justify-center items-center   ts:gap-[8px]   os:gap-[20px]   sm:gap-[32px]   lg:gap-[48px]">
         <div>
           <Link className="hidden font-[medium]   os:block os:text-[12px]   sm:text-[16px]   lg:text-[20px]" to="/">خانه</Link>
         </div>
         <div>
-          <Link className="hidden font-[medium]   os:block os:text-[12px]   sm:text-[16px]   lg:text-[20px]" to="/courselist">دوره ها</Link>
+          <Link className="block font-[medium]   ts:text-[12px]   os:text-[12px]   sm:text-[16px]   lg:text-[20px]" to="/courselist">دوره ها</Link>
         </div>
         <div>
-          <Link className="hidden font-[medium]   os:block os:text-[12px]   sm:text-[16px]   lg:text-[20px]" to="/bloglist">بلاگ ها</Link>
+          <Link className="block font-[medium]   ts:text-[12px]   os:text-[12px]   sm:text-[16px]   lg:text-[20px]" to="/bloglist">بلاگ ها</Link>
         </div>
         <div>
           <Link className="block font-[medium]   ts:text-[12px]   os:text-[12px]   sm:text-[16px]   lg:text-[20px]" to="/">درباره ما</Link>

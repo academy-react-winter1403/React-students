@@ -39,9 +39,11 @@ const FallCourses = () => {
           lg:gap-[26px] lg:mt-[40px]"
         ref={containerRef}
       >
-        {fallCourses.map((item) => (
-          <FallCourse data={item} key={item.id} className="flex-shrink-0 w-full px-4 snap-start sm:w-[auto]" />
-        ))}
+        {
+          fallCourses.map((item , index) => {
+            return <FallCourse data={item} key={index} className="flex-shrink-0 w-full px-4 snap-start sm:w-[auto]" />
+          })
+        }
       </div>
       {fallCourses.length > 0 && scrollAmount > 0 && (
         <>
