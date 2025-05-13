@@ -7,9 +7,9 @@ import DarkModeIcon from './Icons/DarkModeIcon'
 
 const StuPanelHeader = () => {
   return (
-    <div className='flex justify-between items-center h-[67px] px-2 bg-[#242424]'>
+    <div className='flex justify-between items-center h-[67px] px-2'>
         <div className='flex justify-center gap-2 cursor-pointer'>
-            <img src={UserPhoto}/>
+            <img className='w-12 h-12' src={UserPhoto}/>
             <div>
                 <h2 className='font-[semibold] text-[16px] text-[#FCFCFC]'>پارسا آقایی</h2>
                 <span className='font-[medium] text-[14px] text-[#F6F6F6]'>دانشجو</span>

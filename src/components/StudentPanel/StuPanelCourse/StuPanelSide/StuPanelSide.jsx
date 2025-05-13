@@ -24,7 +24,7 @@ const StuPanelSide = () => {
     ]
 
   return (
-    <div className='w-[290px] pt-6 pb-12 text-center bg-[#242424] border'>
+    <div className='w-[290px] pt-6 pb-12 text-center border'>
         <div className='flex justify-center items-center gap-1 cursor-pointer'>
             <img className='w-[42px] h-10' src={AcademyLogo} alt='academyLogo'/>
             <img className='w-[189px] h-[38px]' src={AcademuName} alt='academyName'/>

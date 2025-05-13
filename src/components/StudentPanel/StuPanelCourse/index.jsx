@@ -5,7 +5,7 @@ import StuPanelHeader from './StuPanelHeader'
 
 const MyCoursesMContent = () => {
   return (
-    <div className='flex border'>
+    <div className='flex bg-[#242424] border'>
       <StuPanelSide className='w-[294px]'/>
       <div className='w-[1250px]'>
         <StuPanelHeader/>
