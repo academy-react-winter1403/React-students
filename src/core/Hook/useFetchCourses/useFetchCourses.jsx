@@ -1,23 +1,25 @@
-import { useEffect, useState } from "react"
-import { getApi } from "../../services/api"
+import { useEffect, useState } from "react";
+import { getApi } from "../../services/api";
 
-const useFetchCourses = () => {
-
+const useFetchCourses = (searchTerm) => {
   const [courses, setCourses] = useState([]);
-  
-  const fetchApi = async () => {
-    const data = await getApi("/Home/GetCoursesWithPagination")
-    setCourses(data.courseFilterDtos)
-  }
 
-
+  const fetchApi = async (query) => {
+    try {
+      const apiUrl = `/Home/GetCoursesWithPagination${query ? `?Query=${query}` : ''}`;
+      const data = await getApi(apiUrl);
+      setCourses(data.courseFilterDtos);
+    } catch (err) {
+      console.error("Error fetching courses:", err);
+      setCourses([]);
+    }
+  };
 
   useEffect(() => {
-    fetchApi();
-  }, [])
+    fetchApi(searchTerm);
+  }, [searchTerm]);
 
-  
-  return { courses }
-}
+  return { courses };
+};
 
-export { useFetchCourses }
+export { useFetchCourses };
