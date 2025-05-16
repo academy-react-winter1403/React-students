@@ -1,6 +1,6 @@
 import React from 'react'
-import AcademyLogo from '../../../../assets/Icons/UserPanelIcons/Untitled-1 4.svg'
-import AcademuName from '../../../../assets/Icons/UserPanelIcons/Untitled-1 3.svg'
+import AcademyLogo from '../../../assets/Icons/StudentPanelIcons/Untitled-1 4.svg'
+import AcademuName from '../../../assets/Icons/StudentPanelIcons/Untitled-1 3.svg'
 import DashboardIcon from '../Icons/DashboardIcon'
 import MyCourseIcon from '../Icons/MyCourseIcon'
 import MyReserveIcon from '../Icons/MyReserveIcon'
@@ -24,7 +24,7 @@ const StuPanelSide = () => {
     ]
 
   return (
-    <div className='w-[290px] pt-6 pb-12 text-center border'>
+    <div className='w-[290px] pt-6 pb-12 text-center'>
         <div className='flex justify-center items-center gap-1 cursor-pointer'>
             <img className='w-[42px] h-10' src={AcademyLogo} alt='academyLogo'/>
             <img className='w-[189px] h-[38px]' src={AcademuName} alt='academyName'/>
@@ -36,7 +36,7 @@ const StuPanelSide = () => {
                 })
             }
         </div>
-        <div className='flex items-center gap-2 w-[258px] h-[57px] mt-[100px] mr-2 pr-4 bg-[#271F26] border border-[#FF5353] rounded-[50px]   hover:bg-[#383838]'>
+        <div className='flex items-center gap-2 w-[258px] h-[57px] mt-40 mr-2 pr-4 bg-[#271F26] border border-[#FF5353] rounded-[50px]   hover:bg-[#383838]'>
             <LogOutIcon/>
             <span className='font-[medium] text-[16px] text-[#FF5353]'>خروج از حساب کاربری</span>
         </div>

@@ -1,14 +1,15 @@
 import React from 'react'
-import MyCourses from '../StuPanelCourse/MyCourses'
+import { Field, Formik } from 'formik'
+import MyReservedCourses from './MyReservedCourses'
 import SearchIcon from './Icons/SearchIcon'
 import DateIcon from './Icons/DateIcon'
-import { Field, Formik } from 'formik'
+import RemoveIcon from './Icons/RemoveIcon'
 
-const MyCoursesContent = () => {
+const MyRCoursesContent = () => {
   return (
     <div className='w-[1230px] pr-6 py-6 bg-[#FCFCFC] rounded-3xl'>
-      <h3 className='font-[bold] text-[24px] text-[#2F2F2F]'>دوره من</h3>
-      <div className='flex justify-start gap-6 mt-8'>
+      <h3 className='font-[bold] text-[24px] text-[#2F2F2F]'>رزرو من</h3>
+      <div className='flex justify-start items-end gap-6 mt-8'>
         <div>
           <div className='flex gap-2'>
             <SearchIcon/>
@@ -31,10 +32,20 @@ const MyCoursesContent = () => {
             </Formik>
           </div>
         </div>
+        <div className='flex items-center gap-4'>
+          <span className='font-[bold] text-[16px] text-[#2F2F2F]'>ترتیب</span>
+          <div className='flex justify-center items-center gap-2'>
+            <div className='flex justify-center items-center gap-2 w-[126px] h-[37px] border border-[#Ff5353] rounded-[32px]'>
+              <RemoveIcon/>
+              <span className='font-[medium] text-[16px] text-[#FF5353]'>تایید نشده</span>
+            </div>
+            <span className='flex justify-center items-center w-[103px] h-[37px] font-[medium] text-[16px] text-[#2F2F2F] border border-[#2F2F2F] rounded-[32px]'>تایید شده</span>
+          </div>
+        </div>
       </div>
-      <MyCourses/>
+      <MyReservedCourses/>
     </div>
   )
 }
 
-export default MyCoursesContent
+export default MyRCoursesContent

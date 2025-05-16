@@ -1,13 +1,13 @@
 import React from 'react'
-import MyCourses from '../StuPanelCourse/MyCourses'
+import MyFavBlogs from './MyFavBlogs'
 import SearchIcon from './Icons/SearchIcon'
 import DateIcon from './Icons/DateIcon'
 import { Field, Formik } from 'formik'
 
-const MyCoursesContent = () => {
+const MyFavBlogsContent = () => {
   return (
     <div className='w-[1230px] pr-6 py-6 bg-[#FCFCFC] rounded-3xl'>
-      <h3 className='font-[bold] text-[24px] text-[#2F2F2F]'>دوره من</h3>
+      <h3 className='font-[bold] text-[24px] text-[#2F2F2F]'>بلاگ های مورد علاقه</h3>
       <div className='flex justify-start gap-6 mt-8'>
         <div>
           <div className='flex gap-2'>
@@ -32,9 +32,9 @@ const MyCoursesContent = () => {
           </div>
         </div>
       </div>
-      <MyCourses/>
+      <MyFavBlogs/>
     </div>
   )
 }
 
-export default MyCoursesContent
+export default MyFavBlogsContent

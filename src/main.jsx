@@ -12,7 +12,11 @@ import SingUpConfirmCode from './components/Authorization/SignUp/SingUpConfirmCo
 import SignUpForm from './components/Authorization/SignUp/SignUpForm'
 import LoginForm from './components/Authorization/Login/LoginForm'
 import Panel from './components/UsePanel/Panel'
+import StuPanelLayout from './components/StuPanelLayout'
 import StuPanelCourse from './components/StudentPanel/StuPanelCourse'
+import StuPanelReserved from './components/StudentPanel/StuPanelReserved'
+import StuPanelFavCourses from './components/StudentPanel/StuPanelFavCourses'
+import StuPanelFavBlogs from './components/StudentPanel/StuPanelFavBlogs'
 import Error from './components/Error/Error'
 import NotFound from './components/Error/NotFound'
 
@@ -49,6 +53,34 @@ export const router = createBrowserRouter([
     ],
   },
   {
+    path: "/",
+    element: <StuPanelLayout/>,
+    children: [
+      {
+        index: true,
+        path: "/studentpanel",
+        element: <StuPanelCourse/>,
+        errorElement: <Error/>
+      },
+      {
+        path: "/studentpanelreservedcourses",
+        element: <StuPanelReserved/>,
+        errorElement: <Error/>
+      },
+      {
+        path: "/studentpanelfavoritecourses",
+        element: <StuPanelFavCourses/>,
+        errorElement: <Error/>
+      },
+      {
+        path: "/studentpanelfavoriteblogs",
+        element: <StuPanelFavBlogs/>,
+        errorElement: <Error/>
+      },
+    ],
+  },
+
+  {
     path: "/RegisterStepOne",
     element: <StepOne/>,
     errorElement: <Error />
@@ -72,11 +104,6 @@ export const router = createBrowserRouter([
     path: "/UserPanel",
     element: <Panel />,
     errorElement: <Error />
-  },
-  {
-    path: "/studentpanel",
-    element: <StuPanelCourse/>,
-    errorElement: <Error/>
   },
   {
     path: "*",

@@ -1,11 +1,11 @@
 import React from 'react'
-import MyCoursesContent from './MyCoursesContent'
+import MyFavCoursesContent from './MyFavCoursesContent'
 
 
 const index = () => {
   return (
     <div>
-      <MyCoursesContent/>
+      <MyFavCoursesContent/>
     </div>
   )
 }

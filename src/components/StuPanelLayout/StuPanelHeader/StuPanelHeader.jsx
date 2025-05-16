@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import UserPhoto from '../../../assets/Icons/UserPanelIcons/userPhoto.svg'
-import NotifeIcon from './Icons/NotifeIcon'
-import DarkModeIcon from './Icons/DarkModeIcon'
+import UserPhoto from '../../../assets/Icons/StudentPanelIcons/userPhoto.svg'
+import NotifeIcon from '../Icons/NotifeIcon'
+import DarkModeIcon from '../Icons/DarkModeIcon'
 
 
 const StuPanelHeader = () => {
