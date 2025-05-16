@@ -1,7 +1,7 @@
 import React from 'react'
 import MyFavCourse from './Common/MyFavCourse'
-import RightArrow from './Icons/RightArrow'
-import LeftArrow from './Icons/LeftArrow'
+import RightArrow from '../Icons/RightArrow'
+import LeftArrow from '../Icons/LeftArrow'
 
 
 const MyFavCourses = () => {

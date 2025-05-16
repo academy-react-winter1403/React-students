@@ -1,7 +1,7 @@
 import React from 'react'
 import MyReservedCourse from './Common/MyReservedCourse'
-import RightArrow from './Icons/RightArrow'
-import LeftArrow from './Icons/LeftArrow'
+import RightArrow from '../Icons/RightArrow'
+import LeftArrow from '../Icons/LeftArrow'
 
 
 const MyCourses = () => {
@@ -21,11 +21,11 @@ const MyCourses = () => {
       <div className='flex justify-center items-center w-min h-12 mx-auto mt-20 bg-[#EFEFEF] rounded-2xl'>
         <RightArrow/>
         <div className='flex justify-center items-center mx-4'>
-          <div className='flex justify-center items-center w-[45px] h-12 border rounded-lg'>5</div>
-          <div className='flex justify-center items-center w-[45px] h-12 border rounded-lg'>4</div>
-          <div className='flex justify-center items-center w-[45px] h-12 border rounded-lg'>3</div>
-          <div className='flex justify-center items-center w-[45px] h-12 border rounded-lg'>2</div>
-          <div className='flex justify-center items-center w-[45px] h-12 border rounded-lg'>1</div>
+          <div className='flex justify-center items-center w-[45px] h-12 border rounded-lg cursor-pointer'>5</div>
+          <div className='flex justify-center items-center w-[45px] h-12 border rounded-lg cursor-pointer'>4</div>
+          <div className='flex justify-center items-center w-[45px] h-12 border rounded-lg cursor-pointer'>3</div>
+          <div className='flex justify-center items-center w-[45px] h-12 border rounded-lg cursor-pointer'>2</div>
+          <div className='flex justify-center items-center w-[45px] h-12 border rounded-lg cursor-pointer'>1</div>
         </div>
         <LeftArrow/>
       </div>

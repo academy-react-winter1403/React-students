@@ -1,7 +1,7 @@
 import React from 'react'
 import MyFavBlog from './Common/MyFavBlog'
-import RightArrow from './Icons/RightArrow'
-import LeftArrow from './Icons/LeftArrow'
+import RightArrow from '../Icons/RightArrow'
+import LeftArrow from '../Icons/LeftArrow'
 
 
 const MyFavBlogs = () => {

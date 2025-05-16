@@ -1,7 +1,7 @@
 import React from 'react'
 import MyFavCourses from './MyFavCourses'
-import SearchIcon from './Icons/SearchIcon'
-import DateIcon from './Icons/DateIcon'
+import SearchIcon from '../Icons/SearchIcon'
+import DateIcon from '../Icons/DateIcon'
 import { Field, Formik } from 'formik'
 
 const MyFavCoursesContent = () => {
@@ -16,7 +16,7 @@ const MyFavCoursesContent = () => {
           </div>
           <div className='mt-2'>
             <Formik>
-              <Field className='w-[258px] h-12 indent-3.5 font-[medium] text-[12px] text-[#707070] bg-[#F1F1F1] rounded-2xl' placeholder='دوره موردنظر را جستجو کنید...'/>
+              <Field className='w-[258px] h-12 indent-3.5 font-[medium] text-[12px] text-[#707070] bg-[#F1F1F1] rounded-2xl cursor-pointer' placeholder='دوره موردنظر را جستجو کنید...'/>
             </Formik>
           </div>
         </div>
@@ -27,7 +27,7 @@ const MyFavCoursesContent = () => {
           </div>
           <div className='mt-2'>
             <Formik>
-              <Field className='w-[258px] h-12 indent-3.5 font-[medium] text-[12px] text-[#707070] bg-[#F1F1F1] rounded-2xl'/>
+              <Field className='w-[258px] h-12 indent-3.5 font-[medium] text-[12px] text-[#707070] bg-[#F1F1F1] rounded-2xl cursor-pointer'/>
             </Formik>
           </div>
         </div>

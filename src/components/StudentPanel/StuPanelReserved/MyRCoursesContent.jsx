@@ -1,9 +1,9 @@
 import React from 'react'
 import { Field, Formik } from 'formik'
 import MyReservedCourses from './MyReservedCourses'
-import SearchIcon from './Icons/SearchIcon'
-import DateIcon from './Icons/DateIcon'
-import RemoveIcon from './Icons/RemoveIcon'
+import SearchIcon from '../Icons/SearchIcon'
+import DateIcon from '../Icons/DateIcon'
+import RemoveIcon from '../Icons/RemoveIcon'
 
 const MyRCoursesContent = () => {
   return (
@@ -17,7 +17,7 @@ const MyRCoursesContent = () => {
           </div>
           <div className='mt-2'>
             <Formik>
-              <Field className='w-[258px] h-12 indent-3.5 font-[medium] text-[12px] text-[#707070] bg-[#F1F1F1] rounded-2xl' placeholder='دوره موردنظر را جستجو کنید...'/>
+              <Field className='w-[258px] h-12 indent-3.5 font-[medium] text-[12px] text-[#707070] bg-[#F1F1F1] rounded-2xl cursor-pointer' placeholder='دوره موردنظر را جستجو کنید...'/>
             </Formik>
           </div>
         </div>
@@ -28,18 +28,20 @@ const MyRCoursesContent = () => {
           </div>
           <div className='mt-2'>
             <Formik>
-              <Field className='w-[258px] h-12 indent-3.5 font-[medium] text-[12px] text-[#707070] bg-[#F1F1F1] rounded-2xl'/>
+              <Field className='w-[258px] h-12 indent-3.5 font-[medium] text-[12px] text-[#707070] bg-[#F1F1F1] rounded-2xl cursor-pointer'/>
             </Formik>
           </div>
         </div>
         <div className='flex items-center gap-4'>
           <span className='font-[bold] text-[16px] text-[#2F2F2F]'>ترتیب</span>
           <div className='flex justify-center items-center gap-2'>
-            <div className='flex justify-center items-center gap-2 w-[126px] h-[37px] border border-[#Ff5353] rounded-[32px]'>
+            <div className='flex justify-center items-center gap-2 w-[126px] h-[37px] border border-[#Ff5353] rounded-[32px] cursor-pointer'>
               <RemoveIcon/>
               <span className='font-[medium] text-[16px] text-[#FF5353]'>تایید نشده</span>
             </div>
-            <span className='flex justify-center items-center w-[103px] h-[37px] font-[medium] text-[16px] text-[#2F2F2F] border border-[#2F2F2F] rounded-[32px]'>تایید شده</span>
+            <div className='flex justify-center items-center w-[103px] h-[37px] border border-[#2F2F2F] rounded-[32px] cursor-pointer'> 
+              <span className='font-[medium] text-[16px] text-[#2F2F2F]'>تایید شده</span>
+            </div>
           </div>
         </div>
       </div>
