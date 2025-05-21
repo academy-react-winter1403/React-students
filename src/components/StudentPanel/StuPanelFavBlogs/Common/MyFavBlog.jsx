@@ -1,5 +1,5 @@
 import React from 'react'
-import JSIcon from '../../../../assets/Icons/StudentPanelIcons/Rectangle(1).svg'
+import JSIcon from '../../../../assets/Icons/StudentPanel/Rectangle(1).svg'
 import ViewIcon from '../../Icons/ViewIcon'
 import RemoveIcon from '../../Icons/RemoveIcon'
 

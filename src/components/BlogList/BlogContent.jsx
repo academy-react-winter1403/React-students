@@ -35,7 +35,12 @@ const BlogContent = () => {
   const displayedBlogs = initialBlogs?.slice(indexOfFirstBlog, indexOfLastBlog) || [];
 
   return (
-    <div className="flex justify-center w-full   ts:gap-[4px] ts:mt-[8px] ts:px-[8px]   os:gap-[12px] os:mt-[16px] os:px-[20px]   sm:gap-[24px] sm:mt-[10px] sm:px-[32px]   lg:gap-[40px] lg:mt-[10px] lg:px-[64px]">
+    <div className="flex justify-center w-full   
+    ts:gap-[4px] ts:pt-[8px] ts:px-[8px]   
+    os:gap-[12px] os:pt-[16px] os:px-[20px]   
+    sm:gap-[24px] sm:pt-[10px] sm:px-[32px]   
+    lg:gap-[40px] lg:pt-[10px] lg:px-[64px]
+    dark:bg-[#000000]">
       <BlogSide onSearchChange={() => {}} />
       <div>
         <BlogSort

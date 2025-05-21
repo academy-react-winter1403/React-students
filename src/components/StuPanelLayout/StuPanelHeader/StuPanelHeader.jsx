@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import UserPhoto from '../../../assets/Icons/StudentPanelIcons/userPhoto.svg'
+import UserPhoto from '../../../assets/Icons/StudentPanel/userPhoto.svg'
 import NotifeIcon from '../Icons/NotifeIcon'
 import DarkModeIcon from '../Icons/DarkModeIcon'
 

@@ -21,20 +21,24 @@ const WeeklyBlog = ({ data }) => {
       </div>
       <div className="ts:pr-[4px]   os:pr-[8px]   sm:pr-[12px]   lg:pr-[16px]">
         <div className="border   ts:h-[60px]   lg:h-[80px]">
-          <h3 className="font-[bold]   ts:mt-[8px] ts:text-[16px]   sm:mt-[12px] sm:text-[20px]   lg:mt-[12px] lg:text-[24px]">{data.googleTitle}</h3>
+          <h3 className="font-[bold]   ts:mt-[8px] ts:text-[16px]   sm:mt-[12px] sm:text-[20px]   lg:mt-[12px] lg:text-[24px]
+          dark:text-gray-300">{data.googleTitle}</h3>
         </div>
         <div className="flex justify-between items-center text-[#959595]   ts:mt-[12px]">
           <div className="flex items-center border   ts:gap-[4px]   lg:gap-[8px]">
             <img className="ts:w-[16px] ts:h-[16px]   sm:w-[20px] sm:h-[20px]   lg:w-[24px] lg:h-[24px]" src={MortarBoardIcon} alt="mortarBoardIcon"/>
-            <span className="font-[semibold] text-[#959595]   ts:text-[12px]   lg:text-[14px]">{data.categoryName}</span>
+            <span className="font-[semibold] text-[#959595]   ts:text-[12px]   lg:text-[14px]
+            dark:text-gray-300">{data.categoryName}</span>
           </div>
           <div className="flex items-center   ts:gap-[4px]   os:gap-[4px]   sm:gap-[8px]   lg:gap-[16px]">
             <div className="flex items-center border   ts:gap-[4px]   os:gap-[4px]   sm:gap-[8px]   lg:gap-[8px]">
-              <span className="font-[semibold]   ts:text-[12px]   lg:text-[16px]">{data.likeNumber}</span>
+              <span className="font-[semibold]   ts:text-[12px]   lg:text-[16px]
+              dark:text-gray-300">{data.likeNumber}</span>
               <img className="ts:w-[16px] ts:h-[16px]   sm:w-[20px] sm:h-[20px]   lg:w-[24px] lg:h-[24px]" src={ThumbsUpIcon} alt="thumbsUpIcon"/>
             </div>
             <div className="flex items-center border   ts:gap-[4px] ts:ml-[4px]   os:gap-[4px] os:ml-[8px]   sm:gap-[8px] sm:ml-[12px]   lg:gap-[8px] lg:ml-[16px]">
-              <span className="font-[semibold]   ts:text-[12px]   lg:text-[16px]">{data.viewNumber}</span>
+              <span className="font-[semibold]   ts:text-[12px]   lg:text-[16px]
+              dark:text-gray-300">{data.viewNumber}</span>
               <img className="ts:w-[16px] ts:h-[16px]   sm:w-[20px] sm:h-[20px]   lg:w-[24px] lg:h-[24px]" src={ViewIcon} alt="viewIcon"/>
             </div>
           </div>

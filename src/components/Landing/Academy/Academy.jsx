@@ -4,16 +4,19 @@ import React from 'react'
 const Academy = () => {
 
   return (
-    <div className="flex justify-between gap-[101px]   ts:justify-center ts:mt-[12px]   os:mt-[32px]   sm:mt-[60px]   lg:mt-[96px]">
+    <div className="flex justify-between gap-[101px]   ts:justify-center ts:pt-[12px]   os:pt-[32px]   sm:pt-[60px]   lg:pt-[96px]
+    dark:bg-[#000000]">
       <div className="ts:text-center   3x:pr-[64px]">
         <button className="font-[bold] text-[#A74DD1] bg-[#F1D1FF]   
           ts:px-[8px] ts:py-[4px] ts:text-[12px] ts:rounded-[4px]    
           os:px-[8px] os:py-[4px] os:rounded-[4px]    
           sm:px-[12px] sm:py-[4px] sm:rounded-[8px]   
           lg:px-[16px] lg:py-[8px] lg:text-[12px] lg:rounded-[8px]">درباره آکادمی</button>
-        <h2 className="font-[bold]   ts:mt-[4px] ts:text-[20px]   os:mt-[4px] os:text-[24px]   sm:mt-[8px] sm:text-[28px]   lg:mt-[12px] lg:text-[32px]">آکادمی سپهر</h2>
+        <h2 className="font-[bold]   ts:mt-[4px] ts:text-[20px]   os:mt-[4px] os:text-[24px]   sm:mt-[8px] sm:text-[28px]   lg:mt-[12px] lg:text-[32px]
+        dark:text-gray-300">آکادمی سپهر</h2>
         <div className="ts:w-[240px] ts:mt-[12px]   os:w-[440px] os:mt-[16px]   sm:w-[520px] sm:mt-[20px]   lg:w-[543px] lg:mt-[24px]">
-          <p className="font-[medium]   ts:text-[12px]   os:text-[16px]   sm:text-[20px]   lg:text-[20px]">آکادمی سپهر با 20 سال سابقه آموزش تخصصی در زمینه کدنویسی و برنامه نویسی در سنین کودکی تا بزرگسال در محیطی جامع و پیشرفت متداول در تمامی مهارت ها در کنار اساتید بزرگ از سراسر جهان. اینجا مکانی برای بدست اوردن رویاهای شماست.</p>
+          <p className="font-[medium]   ts:text-[12px]   os:text-[16px]   sm:text-[20px]   lg:text-[20px]
+          dark:text-gray-300">آکادمی سپهر با 20 سال سابقه آموزش تخصصی در زمینه کدنویسی و برنامه نویسی در سنین کودکی تا بزرگسال در محیطی جامع و پیشرفت متداول در تمامی مهارت ها در کنار اساتید بزرگ از سراسر جهان. اینجا مکانی برای بدست اوردن رویاهای شماست.</p>
         </div>
       </div>
       <div className="flex justify-center items-end gap-[24px] ml-[81px]   ts:hidden   3x:flex"> 

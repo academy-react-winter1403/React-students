@@ -4,7 +4,7 @@ import React from 'react'
 
 const ListHeroSection = ({data}) => {
   return (
-    <div className="flex justify-center gap-[16px]   2x:mt-[53px] 2x:pr-[96px] 2x:pl-[108px]">
+    <div className="flex justify-center gap-[16px]   2x:pt-[53px] 2x:pr-[96px] 2x:pl-[108px]   dark:bg-[#000000]">
         <img className="hidden    2x:block 2x:w-[397px] 2x:h-[397px]" src={data.rightImg} alt="codingImage"/>
         <div className="2x:mr-[63px]">
             <button className="font-[bold] text-[#A74DD0] bg-[#F1D1FF]   ts:mt-0 ts:px-[8px] ts:py-[4px] ts:text-[6px] ts:rounded-[4px]   os:mt-[16px] os:px-[8px] os:py-[4px] os:text-[6px] os:rounded-[4px]   sm:mt-[20px] sm:px-[16px] sm:py-[8px] sm:text-[8px] sm:rounded-[8px]   2x:mt-[72px] 2x:px-[16px] 2x:py-[8px] 2x:text-[12px] 2x:rounded-[8px]">{data.button}</button>

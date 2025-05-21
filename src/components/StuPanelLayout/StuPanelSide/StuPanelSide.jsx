@@ -1,6 +1,6 @@
 import React from 'react'
-import AcademyLogo from '../../../assets/Icons/StudentPanelIcons/Untitled-1 4.svg'
-import AcademuName from '../../../assets/Icons/StudentPanelIcons/Untitled-1 3.svg'
+import AcademyLogo from '../../../assets/Icons/StudentPanel/Untitled-1 4.svg'
+import AcademuName from '../../../assets/Icons/StudentPanel/Untitled-1 3.svg'
 import DashboardIcon from '../Icons/DashboardIcon'
 import MyCourseIcon from '../Icons/MyCourseIcon'
 import MyReserveIcon from '../Icons/MyReserveIcon'

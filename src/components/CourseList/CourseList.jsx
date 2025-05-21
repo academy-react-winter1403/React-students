@@ -2,7 +2,7 @@ import React from 'react'
 import ListHeroSection from './Common/ListHeroSection/ListHeroSection'
 import CourseContent from './CourseContent'
 import CodingImage from '../../assets/Icons/Coding-A-Website-Streamline.svg'
-import Icons from '../../assets/Icons/4icons.svg'
+import Icons from '../../assets/Icons/CourseList&BlogList/Group 156.svg'
 
 const CourseList = () => {
 

@@ -2,7 +2,7 @@ import React from 'react'
 import ListHeroSection from '../CourseList/Common/ListHeroSection/ListHeroSection'
 import BlogContent from './BlogContent'
 import StreamLineImage from '../../assets/Icons/Data-Cloud-Streamline.svg'
-import Icons from '../../assets/Icons/4icons.svg'
+import Icons from '../../assets/Icons/CourseList&BlogList/Group 156.svg'
 
 
 

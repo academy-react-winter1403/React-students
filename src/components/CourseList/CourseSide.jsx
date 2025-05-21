@@ -18,7 +18,7 @@ const CourseSide = ({ onSearchChange }) => {
   ];
 
   return (
-    <div className="relative">
+    <div className="relativ">
       {!isMenuOpen && (
         <button
           className="md:hidden p-[8px] shadow-md bg-gray-200 rounded-md fixed top-[65px] right-[16px] z-50"
@@ -30,8 +30,8 @@ const CourseSide = ({ onSearchChange }) => {
       )}
 
       <div
-        className={`md:hidden w-[300px] h-full transform transition-transform duration-300 ease-in-out shadow-md bg-[#F8F8F8] fixed top-0 right-0 z-40 ${
-          isMenuOpen ? 'translate-x-0' : 'translate-x-[300px]'}`}>
+        className={`md:hidden w-[300px] h-full transform transition-transform duration-300 ease-in-out shadow-md bg-[#F8F8F8] fixed top-0 right-0 z-40 
+        ${isMenuOpen ? 'translate-x-0' : 'translate-x-[300px]'}`}>
         <div className="flex items-center justify-end mb-[16px] px-[16px] pt-[16px]">
           <button onClick={toggleMenu}>
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -54,7 +54,8 @@ const CourseSide = ({ onSearchChange }) => {
         </div>
       </div>
 
-      <div className="hidden md:block bg-[#F8F8F8]
+      <div className="hidden bg-[#F8F8F8] 
+        md:block 
         os:w-[240px] os:h-[366px] os:px-[16px] os:py-[12px] os:rounded-[20px]
         sm:w-[260px] sm:h-[506px] sm:px-[20px] sm:py-[16px] sm:rounded-[24px]
         lg:w-[316px] lg:h-[646px] lg:px-[24px] lg:py-[20px] lg:rounded-[24px]">

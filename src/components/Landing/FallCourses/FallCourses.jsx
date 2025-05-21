@@ -2,7 +2,8 @@ import { React, useRef, useEffect, useState } from 'react';
 import FallCourse from '../Common/FallCourse/FallCourse';
 import SeeAll from '../Common/SeeAll/SeeAll';
 import useFetchFallCourses from '../../../core/Hook/useFetchFallCourses/useFetchFallCourses';
-import VectorLine3 from '../../../assets/Icons/Group 7.svg';
+
+
 
 const FallCourses = () => {
   const { fallCourses } = useFetchFallCourses();
@@ -18,7 +19,7 @@ const FallCourses = () => {
   }, [fallCourses]); 
 
   return (
-    <div className="relative z-[10]     ts:mt-[18px]   os:mt-[32px]   sm:mt-[68px]   lg:mt-[112px]">
+    <div className="relative z-[10]     ts:pt-[18px]   os:pt-[32px]   sm:pt-[68px]   lg:pt-[112px]   dark:bg-[#000000]">
       <div className="text-center">
         <button className="mx-[auto] font-[bold] text-[#A74DD1] bg-[#F1D1FF]
           ts:px-[8px] ts:py-[4px] ts:text-[12px] ts:rounded-[8px]
@@ -29,7 +30,8 @@ const FallCourses = () => {
           ts:mt-[8px] ts:text-[16px]
           os:mt-[8px] os:text-[20px]
           sm:mt-[12px] sm:text-[20px]
-          lg:mt-[12px] lg:text-[24px]">دوره های جدید پاییزه</h2>
+          lg:mt-[12px] lg:text-[24px]
+          dark:text-gray-300">دوره های جدید پاییزه</h2>
       </div>
       <div
         className="overflow-x-auto scroll-smooth flex justify-start items-center 2x:justify-center
@@ -72,7 +74,6 @@ const FallCourses = () => {
         </>
       )}
       <SeeAll />
-      <img className="w-full absolute bottom-[-165px] z-[5]" src={VectorLine3} alt="vectorLine3Image" />
     </div>
   );
 };

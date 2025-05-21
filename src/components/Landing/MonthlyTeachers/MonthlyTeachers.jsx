@@ -17,7 +17,9 @@ const MonthlyTeachers = () => {
   }, [threeTeachers]);
 
   return (
-    <div className="ts:mt-[18px] os:mt-[32px] sm:mt-[68px] lg:mt-[112px] relative z-[10]">
+    <div className="relative z-[10]   
+    ts:pt-[18px] ts:pb-[28px]   os:pt-[32px] os:pb-[48px]   sm:pt-[68px] sm:pb-[60px]   lg:pt-[112px] lg:pb-[80px]    3x:pb-[106px]
+    dark:bg-[#000000]">
       <div className="text-center">
         <button className="mx-[auto] font-[bold] text-[#A74DD1] bg-[#F1D1FF]
           ts:px-[8px] ts:py-[4px] ts:text-[12px] ts:rounded-[8px]
@@ -28,7 +30,8 @@ const MonthlyTeachers = () => {
           ts:mt-[8px] ts:text-[16px]
           os:mt-[8px] os:text-[20px]
           sm:mt-[12px] sm:text-[20px]
-          lg:mt-[12px] lg:text-[24px]">اساتید برتر این ماه</h2>
+          lg:mt-[12px] lg:text-[24px]
+          dark:text-gray-300">اساتید برتر این ماه</h2>
       </div>
       <div
         ref={containerRef}

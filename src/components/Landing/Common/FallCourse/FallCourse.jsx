@@ -44,10 +44,8 @@ const FallCourse = ({data}) => {
       </div>
       <div className="ts:pr-[4px]   os:pr-[8px]   sm:pr-[12px]   lg:pr-[16px]">
         <h3 className="font-[bold]   
-          ts:mt-[4px] ts:text-[12px]   
-          os:mt-[8px] os:text-[16px]   
-          sm:mt-[12px] sm:text-[20px]   
-          lg:mt-[12px] lg:text-[24px]">
+          ts:mt-[4px] ts:text-[12px]   os:mt-[8px] os:text-[16px]   sm:mt-[12px] sm:text-[20px]   lg:mt-[12px] lg:text-[24px]
+          dark:text-gray-300">
           {data.title}
         </h3>
         <div className="flex justify-between items-center   ts:mt-[4px]   os:mt-[8px]   sm:mt-[12px]   lg:mt-[12px]">
@@ -56,27 +54,18 @@ const FallCourse = ({data}) => {
               os:w-[16px] os:h-[16px]   
               sm:w-[20px] sm:h-[20px]  
               lg:w-[24px] lg:h-[24px]" src={MortarBoardIcon} alt="mortarBoardIcon"/>
-            <span className="font-[semibold] text-[#959595]   
-              ts:text-[12px]   
-              os:text-[12px]   
-              sm:text-[14px]   
-              lg:text-[14px]">
+            <span className="font-[semibold] text-[#959595]   ts:text-[12px]   os:text-[12px]   sm:text-[14px]   lg:text-[14px]
+            dark:text-gray-300">
               {data.teacherName}
             </span>
           </div>
           <div className="flex items-center gap-[4px] border   ts:ml-[4px]   os:ml-[8px]   sm:ml-[12px]   lg:ml-[16px]">
-            <span className="font-[semibold]   
-              ts:text-[12px]   
-              os:text-[16px]   
-              sm:text-[16px]   
-              lg:text-[20px]">
+            <span className="font-[semibold]   ts:text-[12px]   os:text-[16px]   sm:text-[16px]   lg:text-[20px]   
+            dark:text-gray-300">
               {data.cost}
             </span>
-            <span className="font-[semibold]   
-              ts:text-[12px]   
-              os:text-[12px]   
-              sm:text-[14px]   
-              lg:text-[14px]">تومان</span>
+            <span className="font-[semibold]   ts:text-[12px]   os:text-[12px]   sm:text-[14px]   lg:text-[14px]
+            dark:text-gray-300">تومان</span>
           </div>
         </div> 
       </div>

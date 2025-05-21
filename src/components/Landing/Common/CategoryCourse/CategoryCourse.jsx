@@ -22,12 +22,14 @@ const CategoryCourse = ({data}) => {
         ts:mt-[6px] ts:text-[12px]   
         os:mt-[16px] os:text-[16px]   
         sm:mt-[24px] sm:text-[20px]   
-        lg:mt-[66px] lg:text-[24px]">{data.title}</h3>
+        lg:mt-[66px] lg:text-[24px]
+        dark:text-gray-300">{data.title}</h3>
       <p className="font-[medium] text-[#959595]   
         ts:mt-[4px] ts:text-[12px]    
         os:text-[12px]   
         sm:text-[16px]   
-        lg:mt-[8px] lg:text-[16px]">{data.desc}</p>
+        lg:mt-[8px] lg:text-[16px]
+        dark:text-gray-300">{data.desc}</p>
     </div>
   )
 }

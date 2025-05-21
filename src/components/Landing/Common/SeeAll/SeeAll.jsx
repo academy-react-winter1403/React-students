@@ -13,7 +13,8 @@ const SeeAll = () => {
           lg:gap-[8px] lg:w-[156px] lg:h-[48px] lg:mt-[40px] lg:px-[16px] lg:py-[12px] lg:rounded-[16px]" 
           to="/courselist"
         >
-          <span className="font-[semibold] text-white   ts:text-[12px]   os:text-[12px]   sm:text-[16px]   lg:text-[16px]">مشاهده همه</span>
+          <span className="font-[semibold] text-white   ts:text-[12px]   os:text-[12px]   sm:text-[16px]   lg:text-[16px]
+          dark:text-gray-300">مشاهده همه</span>
           <img className="ts:hidden   lg:flex lg:w-[24px] lg:h-[24px]" src={ArrowLeftIcon} alt="arrowLeftIcon"/>
         </Link>
     </div>
