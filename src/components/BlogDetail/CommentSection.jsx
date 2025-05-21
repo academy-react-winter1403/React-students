@@ -1,11 +1,11 @@
 import React from 'react'
-import rabbit from '../../assets/peppe.svg'
-import Arrow from '../../assets/frame.svg'
-// import likeIcon from '../../assets/thumbs-up.svg'
-// import dislikeIcon from '../../assets/thumbs-down.svg'
-import upArrow from '../../assets/upArrow.svg'
 import { useState } from 'react'
 import LikeDislike from './LikeDislike'
+import rabbit from '../../assets/Icons/CourseDetail&BlogDetail/Peppe.svg'
+import Arrow from '../../assets/Icons/CourseDetail&BlogDetail/Frame.svg'
+// import likeIcon from '../../assets/Icons/CourseDetail&BlogDetail/thumbs-up.svg'
+// import dislikeIcon from '../../assets/Icons/CourseDetail&BlogDetail/thumbs-down.svg'
+import upArrow from '../../assets/Icons/CourseDetail&BlogDetail/upArrow.svg'
 
 const CommentSection = () => {
 

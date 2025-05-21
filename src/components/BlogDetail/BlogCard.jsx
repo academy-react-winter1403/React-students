@@ -1,4 +1,4 @@
-import CourseImage from '../../assets/CourseImg.svg'
+import CourseImage from '../../assets/Icons/CourseDetail&BlogDetail/CourseImg.svg'
 import CourseIcon from '../../assets/Icons/CourseIcon'
 import CourseIcon2 from '../../assets/Icons/CourseIcon2'
 import CourseIcon3 from '../../assets/Icons/CourseIcon3'

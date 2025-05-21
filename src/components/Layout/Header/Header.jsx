@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import DarkMode from '../../DarkMode/DarkMode'
 import ReactStudentsIcon from '../../../assets/Icons/react-students.svg';
+
 
 const Header = () => {
 
@@ -74,6 +76,7 @@ const Header = () => {
         >
           ثبت‌ نام
         </Link>
+        <DarkMode/>
       </div>
     </div>
   );

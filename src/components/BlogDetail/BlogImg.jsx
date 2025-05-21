@@ -1,5 +1,5 @@
 import React from 'react'
-import jspic from '../../assets/jspic.png'
+import jspic from '../../assets/Icons/CourseDetail&BlogDetail/jspic.png'
 
 
 const BlogImg = ({image}) => {

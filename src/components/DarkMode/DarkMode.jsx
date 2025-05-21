@@ -1,14 +1,48 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import DarkModeIcon from '../../assets/Icons/dark-mode-100.png';
+import LightModeIcon from '../../assets/Icons/sun-100.png';
 
 const DarkMode = () => {
-  return (
-    // بهش باید onclick بدی تا DarkMode رو فعال کنه
-    <div>
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className='bg-white rounded-full'>
-            <path d="M21.5 14.0784C20.3003 14.7189 18.9301 15.0821 17.4751 15.0821C12.7491 15.0821 8.91792 11.2509 8.91792 6.52485C8.91792 5.06986 9.28105 3.69968 9.92163 2.5C5.66765 3.49698 2.5 7.31513 2.5 11.8731C2.5 17.1899 6.8101 21.5 12.1269 21.5C16.6849 21.5 20.503 18.3324 21.5 14.0784Z" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-    </div>
-  )
-}
+  useEffect(() => {
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    const htmlElement = document.documentElement;
+    const moonIcon = document.getElementById('moon-icon');
+    const sunIcon = document.getElementById('sun-icon');
 
-export default DarkMode
+    function updateDarkMode(isDarkMode) {
+      htmlElement.classList.toggle('dark', isDarkMode);
+      localStorage.setItem('darkMode', isDarkMode ? 'enabled' : 'disabled');
+      updateIconVisibility(isDarkMode);
+    }
+
+    function updateIconVisibility(isDarkMode) {
+      if (moonIcon && sunIcon) {
+        moonIcon.style.display = isDarkMode ? 'none' : 'block';
+        sunIcon.style.display = isDarkMode ? 'block' : 'none';
+      }
+    }
+
+    if (darkModeToggle && moonIcon && sunIcon) {
+      darkModeToggle.addEventListener('click', () => {
+        const isDarkMode = htmlElement.classList.contains('dark');
+        updateDarkMode(!isDarkMode);
+      });
+    }
+
+    // بررسی وضعیت ذخیره شده در localStorage هنگام بارگیری صفحه
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      updateDarkMode(true);
+    } else {
+      updateDarkMode(false);
+    }
+  }, []);
+
+  return (
+    <button id="dark-mode-toggle" className="flex justify-center items-center gap-3">
+      <img id="moon-icon" className='w-6 h-6' src={DarkModeIcon} alt="darkModeIcon" style={{ display: localStorage.getItem('darkMode') === 'enabled' ? 'none' : 'block' }} />
+      <img id="sun-icon" className='w-6 h-6' src={LightModeIcon} alt="lightModeIcon" style={{ display: localStorage.getItem('darkMode') === 'enabled' ? 'block' : 'none' }} />
+    </button>
+  );
+};
+
+export default DarkMode;
