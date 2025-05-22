@@ -18,7 +18,7 @@ const CourseSide = ({ onSearchChange }) => {
   ];
 
   return (
-    <div className="relativ">
+    <div className="relative">
       {!isMenuOpen && (
         <button
           className="md:hidden p-[8px] shadow-md bg-gray-200 rounded-md fixed top-[65px] right-[16px] z-50"
@@ -54,12 +54,15 @@ const CourseSide = ({ onSearchChange }) => {
         </div>
       </div>
 
-      <div className="hidden bg-[#F8F8F8] 
+      <div className="hidden bg-[#F8F8F8]   dark:bg-[#606060]
         md:block 
         os:w-[240px] os:h-[366px] os:px-[16px] os:py-[12px] os:rounded-[20px]
         sm:w-[260px] sm:h-[506px] sm:px-[20px] sm:py-[16px] sm:rounded-[24px]
         lg:w-[316px] lg:h-[646px] lg:px-[24px] lg:py-[20px] lg:rounded-[24px]">
-        <h2 className="font-[semibold] text-[#1E1E1E] ts:text-[6px] os:text-[8px] sm:text-[12px] lg:text-[16px]">فیلتر ها</h2>
+        <h2 className="font-[semibold] text-[#1E1E1E] ts:text-[6px] os:text-[8px] sm:text-[12px] lg:text-[16px]
+        dark:text-[#FFFFFF]">
+          فیلتر ها
+        </h2>
         <Formik initialValues={{ search: '' }} onSubmit={() => {}}>
           <Form>
             <Search onSearchChange={onSearchChange} />

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Styles from './Card.module.css'
 import JsIcon2 from '../../assets/Icons/java-script2.svg';
 import MortarBoardIcon from '../../assets/Icons/mortarboard.svg';
 import FloorIcon from '../../assets/Icons/Frame.svg';
@@ -13,7 +14,7 @@ const CourseCard = ({ data }) => {
 
   return (
     <div
-      className="overflow-hidden bg-[#EAEAEA] cursor-pointer  
+      className="overflow-hidden bg-[#EAEAEA] cursor-pointer   dark:bg-[#606060] dark:text-[#FFFFFF]
         ts:w-[140px] ts:h-[200px] ts:rounded-[16px]   
         os:w-[180px] os:h-[280px] os:rounded-[20px]   
         sm:w-[220px] sm:h-[360px] sm:rounded-[24px]   
@@ -39,7 +40,7 @@ const CourseCard = ({ data }) => {
             lg:px-[8px] lg:py-[5px] lg:text-[12px] lg:rounded-[8px]">
             {data.levelName}
           </span>
-          <span className="font-[semibold] text-[#A74DD0] bg-[#F1D1FF]   
+          <span className="font-[semibold] text-[#A74DD0] bg-[#F1D1FF]     
             ts:px-[8px] ts:py-[4px] ts:text-[6px] ts:rounded-[4px]   
             os:px-[8px] os:py-[4px] os:text-[8px] os:rounded-[4px]   
             sm:px-[8px] sm:py-[4px] sm:text-[12px] sm:rounded-[8px]   
@@ -47,11 +48,11 @@ const CourseCard = ({ data }) => {
             {data.statusName}
           </span>
         </div>
-        <h2 className="font-[semibold]   
+        <h2 className={`${Styles.overflow} font-[semibold]     
           ts:mt-[4px] ts:text-[8px]   
           os:mt-[4px] os:text-[12px]   
           sm:mt-[8px] sm:text-[16px]   
-          lg:mt-[8px] lg:text-[20px]">
+          lg:mt-[8px] lg:text-[20px]`}>
           {data.title}
         </h2>
         <div className="flex items-center   
@@ -63,7 +64,10 @@ const CourseCard = ({ data }) => {
             className="ts:w-[12px] ts:h-[12px]   os:w-[16px] os:h-[16px]   sm:w-[20px] sm:h-[20px]   lg:w-[24px] lg:h-[24px]"
             src={MortarBoardIcon}
             alt="mortarBoardIcon"/>
-          <span className="font-[semibold] text-[#1E1E1E]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[14px]">{data.teacherName}</span>
+          <span className="font-[semibold] text-[#1E1E1E]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[14px]\
+            dark:text-[#FFFFFF]">
+            {data.teacherName}
+          </span>
         </div>
         <div className="flex items-center   
           ts:gap-[4px] ts:mt-[4px]   
@@ -74,7 +78,10 @@ const CourseCard = ({ data }) => {
             className="ts:w-[12px] ts:h-[12px]   os:w-[16px] os:h-[16px]   sm:w-[20px] sm:h-[20px]   lg:w-[24px] lg:h-[24px]"
             src={FloorIcon}
             alt="floorIcon"/>
-          <span className="font-[semibold] text-[#1E1E1E]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[14px]">{data.classRoomName}</span>
+          <span className="font-[semibold] text-[#1E1E1E]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[14px]
+            dark:text-[#FFFFFF]">
+            {data.classRoomName}
+          </span>
         </div>
         <div className="flex items-center   
           ts:gap-[4px] ts:mt-[4px]   
@@ -85,7 +92,10 @@ const CourseCard = ({ data }) => {
             className="ts:w-[12px] ts:h-[12px]   os:w-[16px] os:h-[16px]   sm:w-[20px] sm:h-[20px]   lg:w-[24px] lg:h-[24px]"
             src={DateIcon}
             alt="dateIcon"/>
-          <span className="font-[semibold] text-[#1E1E1E]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[14px]">{data.lastUpdate}</span>
+          <span className="font-[semibold] text-[#1E1E1E]   ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[14px]
+            dark:text-[#FFFFFF]">
+            {data.lastUpdate}
+          </span>
         </div>
         <div className="flex items-center   
           ts:gap-[8px] ts:mt-[12px]   

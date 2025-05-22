@@ -11,7 +11,9 @@ const Academy = () => {
           ts:px-[8px] ts:py-[4px] ts:text-[12px] ts:rounded-[4px]    
           os:px-[8px] os:py-[4px] os:rounded-[4px]    
           sm:px-[12px] sm:py-[4px] sm:rounded-[8px]   
-          lg:px-[16px] lg:py-[8px] lg:text-[12px] lg:rounded-[8px]">درباره آکادمی</button>
+          lg:px-[16px] lg:py-[8px] lg:text-[12px] lg:rounded-[8px]">
+          درباره آکادمی
+        </button>
         <h2 className="font-[bold]   ts:mt-[4px] ts:text-[20px]   os:mt-[4px] os:text-[24px]   sm:mt-[8px] sm:text-[28px]   lg:mt-[12px] lg:text-[32px]
         dark:text-gray-300">آکادمی سپهر</h2>
         <div className="ts:w-[240px] ts:mt-[12px]   os:w-[440px] os:mt-[16px]   sm:w-[520px] sm:mt-[20px]   lg:w-[543px] lg:mt-[24px]">

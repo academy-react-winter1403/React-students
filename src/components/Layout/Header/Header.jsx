@@ -68,8 +68,7 @@ const Header = () => {
           ts:px-[8px] ts:py-[4px] ts:text-[10px] ts:rounded-[4px] 
           os:px-[12px] os:py-[4px] os:text-[12px] os:rounded-[8px] 
           sm:px-[16px] sm:py-[8px] sm:text-[14px] sm:rounded-[10px] 
-          3x:px-[16px] 3x:py-[8px] 3x:text-[16px] 3x:rounded-[12px]
-          dark:text-gray-300"
+          3x:px-[16px] 3x:py-[8px] 3x:text-[16px] 3x:rounded-[12px]"
           to="/registerstepone"
         >
           ثبت‌ نام

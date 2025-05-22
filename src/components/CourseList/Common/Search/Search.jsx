@@ -21,10 +21,10 @@ const Search = ({ onSearchChange }) => {
 
   return (
     <div className="ts:mt-[16px] lg:mt-[24px]">
-      <label className="block font-[semibold] text-[#1E1E1E]   ts:text-[12px]   lg:text-[16px]">جستجو</label>
+      <label className="block font-[semibold] text-[#1E1E1E]   ts:text-[12px]   lg:text-[16px]   dark:text-[#FFFFFF]">جستجو</label>
       <div className="flex items-center relative   ts:mt-[8px]   lg:mt-[12px]">
         <Field
-          className="outline-0 font-[medium] text-[#898989] border border-[#E9E9E9] cursor-pointer
+          className="outline-0 font-[medium] text-[#898989] border border-[#E9E9E9] cursor-pointer   dark:bg-[#404040]
           ts:w-[224px] ts:h-[40px] ts:text-[12px] ts:indent-[12px] ts:rounded-[16px]
           lg:w-[268px] lg:h-[48px] lg:text-[14px] lg:indent-[16px] lg:rounded-[16px]"
           type="search"
@@ -34,7 +34,7 @@ const Search = ({ onSearchChange }) => {
           name="search"
         />
         <span
-          className="flex justify-center items-center bg-[#A74DD0] cursor-pointer absolute top-0 left-0
+          className="flex justify-center items-center bg-[#A74DD0] cursor-pointer absolute top-0 left-0   
           ts:w-[40px] ts:h-[40px] ts:rounded-[16px]
           lg:w-[48px] lg:h-[48px] lg:rounded-[16px]"
           onClick={handleSearchClick}>

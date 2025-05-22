@@ -23,11 +23,12 @@ const DropDown = ({ options, onSelect, title, placeholder }) => {
 
   return (
     <div>
-      <label className="block font-[semibold] text-[#1E1E1E]      
+      <label className="block font-[semibold] text-[#1E1E1E]   dark:text-[#FFFFFF]  
       ts:mt-[12px] ts:text-[12px]   
       lg:mt-[16px] lg:text-[16px]">{title}</label>
       <div className="relative">
-        <div className="flex items-center font-[medium] text-[#898989] bg-[#FFFFFF] border border-[#E9E9E9] cursor-pointer    
+        <div className="flex items-center font-[medium] text-[#898989] bg-[#FFFFFF] border border-[#E9E9E9] cursor-pointer
+          dark:bg-[#404040]    
           ts:w-[224px] ts:h-[40px] ts:mt-[8px] ts:text-[12px] ts:indent-[12px] ts:rounded-[16px]   
           lg:w-[268px] lg:h-[48px] lg:mt-[12px] lg:text-[14px] lg:indent-[16px] lg:rounded-[16px]" onClick={toggleDropDown}>
           {selectedValue ? selectedValue : `${placeholder}`}
@@ -35,12 +36,13 @@ const DropDown = ({ options, onSelect, title, placeholder }) => {
             {isOpen ? <img className="w-[20px] h-[20px]" src={FrameUpIcon}/> : <img className="ts:w-[16px] ts:h-[16px]   lg:w-[20px] lg:h-[20px]" src={FrameDownIcon}/>}
           </span>
         </div>
-        <div className="bg-[#F8F8F8] border border-[#E9E9E9] absolute z-[50]   rounded-[16px] top-[48px]">
+        <div className="bg-[#F8F8F8] border border-[#E9E9E9] rounded-[16px] absolute top-[48px] z-[50]   dark:bg-[#606060]">
           {isOpen && (
             <ul>
               {options.map((option) => (
                 <li
-                  className="flex items-center font-[medium] text-[#898989] bg-[#FFFFFF] border border-[#E9E9E9] cursor-pointer     
+                  className="flex items-center font-[medium] text-[#898989] bg-[#FFFFFF] border border-[#E9E9E9] cursor-pointer
+                  dark:text-[#FFFFFF] dark:bg-[#404040]     
                   ts:w-[224px] ts:h-[40px] ts:mt-[8px] ts:text-[12px] ts:indent-[12px] ts:rounded-[16px]   
                   lg:w-[268px] lg:h-[48px] lg:mt-[8px] lg:text-[14px] lg:indent-[16px] lg:rounded-[16px]"                
                   // className={`dropdown-item ${selectedValue === option ? 'selected' : ''}`}

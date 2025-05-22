@@ -24,8 +24,7 @@ const HeroSection = () => {
           ts:px-[8px] ts:py-[4px] ts:text-[12px] ts:rounded-[8px]   
           os:px-[8px] os:py-[4px] os:rounded-[8px]   
           sm:px-[12px] sm:py-[8px] sm:rounded-[12px]   
-          lg:px-[16px] lg:py-[12px] lg:text-[16px] lg:rounded-[16px]
-          dark:text-gray-300"
+          lg:px-[16px] lg:py-[12px] lg:text-[16px] lg:rounded-[16px]"
           to="/courselist"
           >
             شروع یادگیری

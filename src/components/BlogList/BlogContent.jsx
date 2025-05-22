@@ -1,6 +1,6 @@
 import { React, useState, useEffect, useCallback } from 'react';
 import BlogSide from './BlogSide';
-import BlogSort from './BlogSort';
+import SortShow from '../CourseList/SortShow';
 import BlogMain from './BlogMain';
 import PaginationButtons from '../CourseList/Common/PaginationButtons/PaginationButtons';
 import { useFetchBlogs } from '../../core/Hook/useFetchBlogs/useFetchBlogs';
@@ -43,7 +43,7 @@ const BlogContent = () => {
     dark:bg-[#000000]">
       <BlogSide onSearchChange={() => {}} />
       <div>
-        <BlogSort
+        <SortShow
           onSort={() => {}}
           onItemsPerPageChange={handleItemsPerPageChange}
           currentItemsPerPage={itemsPerPage}
