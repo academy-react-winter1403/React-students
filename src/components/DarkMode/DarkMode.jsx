@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import DarkModeIcon from '../../assets/Icons/dark-mode-100.png';
+import DarkModeIcon from '../../assets/Icons/moon.png';
 import LightModeIcon from '../../assets/Icons/light-mode.png'; 
 
 const DarkMode = () => {

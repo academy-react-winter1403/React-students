@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import UserPhoto from '../../../assets/Icons/StudentPanel/userPhoto.svg'
 import NotifeIcon from '../Icons/NotifeIcon'
-import DarkModeIcon from '../Icons/DarkModeIcon'
+import DarkMode from '../../DarkMode/DarkMode'
 
 
 const StuPanelHeader = () => {
@@ -28,7 +28,7 @@ const StuPanelHeader = () => {
                 </div>
             </div>
             <div className='flex justify-center items-center w-[48px] h-[48px] bg-[#2F2F2F] rounded-[50px] cursor-pointer'>
-                <DarkModeIcon/>
+                <DarkMode/>
             </div>
         </div>
     </div>
