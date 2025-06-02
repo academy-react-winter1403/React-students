@@ -1,12 +1,12 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import { getApi } from "../../services/api";
 
-const useFetchCourses = (searchTerm, sortParam = 'popular', itemsPerPage = 6) => {
-  const [courses, setCourses] = useState([]);
+const useFetchCourses = (searchTerm, sortParam = 'popular', itemsPerPage = 6, minPrice = null, maxPrice = null) => {
+  const [allCourses, setAllCourses] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const fetchApi = async () => {
+  const fetchAllCourses = async () => {
     setLoading(true);
     setError(null);
 
@@ -17,17 +17,17 @@ const useFetchCourses = (searchTerm, sortParam = 'popular', itemsPerPage = 6) =>
       if (searchTerm) {
         queryParams.push(`Query=${searchTerm}`);
       }
+      
       if (sortParam === 'CostDown') {
-        queryParams.push('?CostDown='); 
+        queryParams.push('CostDown=true');
       } else if (sortParam === 'CostUp') {
-        queryParams.push('?CostUp=');   
+        queryParams.push('CostUp=true');
       } else if (sortParam === 'Popular') {
-        queryParams.push('?Popularity='); 
+        queryParams.push('Popularity=true');
       }
 
-
       if (itemsPerPage) {
-        queryParams.push(`PageSize=${itemsPerPage}`); 
+        queryParams.push(`PageSize=${itemsPerPage}`);
       }
       
       if (queryParams.length > 0) {
@@ -35,20 +35,39 @@ const useFetchCourses = (searchTerm, sortParam = 'popular', itemsPerPage = 6) =>
       }
 
       const data = await getApi(apiUrl);
-      setCourses(data.courseFilterDtos);
+      setAllCourses(data.courseFilterDtos);
     } catch (err) {
       setError(err);
-      setCourses([]);
+      setAllCourses([]);
     } finally {
       setLoading(false);
     }
   };
 
   useEffect(() => {
-    fetchApi(); 
-  }, [searchTerm, sortParam, itemsPerPage]); 
+    fetchAllCourses();
+  }, [searchTerm, sortParam, itemsPerPage]);
 
-  return { courses, loading, error };
+  const filteredCourses = useMemo(() => {
+    if (minPrice === null && maxPrice === null) {
+      return allCourses;
+    }
+
+    return allCourses.filter(course => {
+      const courseCost = course.Cost;
+
+      if (minPrice !== null && maxPrice !== null) {
+        return courseCost >= minPrice && courseCost <= maxPrice;
+      } else if (minPrice !== null) {
+        return courseCost >= minPrice;
+      } else if (maxPrice !== null) {
+        return courseCost <= maxPrice;
+      }
+      return true;
+    });
+  }, [allCourses, minPrice, maxPrice]);
+
+  return { courses: filteredCourses, loading, error };
 };
 
 export { useFetchCourses };
