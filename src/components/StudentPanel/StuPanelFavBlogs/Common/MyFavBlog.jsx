@@ -7,7 +7,7 @@ import RemoveIcon from '../../Icons/RemoveIcon'
 
 const MyFavBlog = () => {
   return (
-    <div className='flex items-center w-[1150px] h-16 mt-3 mr-3 pr-3   bg-[#606060]'>
+    <div className='flex items-center w-[1150px] h-16 mt-3 mr-3 pr-3 rounded-2xl   dark:bg-[#606060]'>
         <div className='flex justify-center items-center w-[83px] h-[52px] bg-[#F0DB4F] rounded-xl'>
             <img src={JSIcon} alt='javaScriptIcon'/>
         </div>

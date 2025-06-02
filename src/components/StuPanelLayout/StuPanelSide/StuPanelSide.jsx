@@ -15,10 +15,10 @@ const StuPanelSide = () => {
 
     const sideItems = [
         {id:1 , itemsName:"داشبرد" , itemsIcon: DashboardIcon},
-        {id:2 , itemsName:"دوره من" , itemsIcon: MyCourseIcon},
-        {id:3 , itemsName:"رزرو من" , itemsIcon: MyReserveIcon},
-        {id:4 , itemsName:"دوره های مورد علاقه" , itemsIcon: FavoriteCoursesIcon},
-        {id:5 , itemsName:"بلاگ های مورد علاقه" , itemsIcon: FavoriteBlogsIcon},
+        {id:2 , itemsName:"دوره من" , itemsIcon: MyCourseIcon, to:"/stupanelcourses"},
+        {id:3 , itemsName:"رزرو من" , itemsIcon: MyReserveIcon, to:"/stupanelreservedcourses"},
+        {id:4 , itemsName:"دوره های مورد علاقه" , itemsIcon: FavoriteCoursesIcon, to:"/stupanelfavcourses"},
+        {id:5 , itemsName:"بلاگ های مورد علاقه" , itemsIcon: FavoriteBlogsIcon, to:"/stupanelfavblogs"},
         {id:6 , itemsName:"پروفایل" , itemsIcon: ProfileIcon},
         {id:7 , itemsName:"پرداخت ها" , itemsIcon: PaymentsIcon}
     ]

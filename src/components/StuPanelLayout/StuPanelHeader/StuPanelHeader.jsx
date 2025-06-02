@@ -17,8 +17,8 @@ const StuPanelHeader = () => {
         </div>
         <div className='flex justify-center gap-16'>
             <Link className='font-[medium] text-[16px] text-[#FCFCFC]' to={"/"}>صفحه اصلی</Link>
-            <Link className='font-[medium] text-[16px] text-[#FCFCFC]'>گزارش</Link>
-            <Link className='font-[medium] text-[16px] text-[#FCFCFC]'>ارتباط با ما</Link>
+            <Link className='font-[medium] text-[16px] text-[#FCFCFC]' to={"*"}>گزارش</Link>
+            <Link className='font-[medium] text-[16px] text-[#FCFCFC]' to={"*"}>ارتباط با ما</Link>
         </div>
         <div className='flex justify-center gap-2'>
             <div className='flex justify-center items-center w-[48px] h-[48px] bg-[#2F2F2F] rounded-[50px] cursor-pointer relative'>
