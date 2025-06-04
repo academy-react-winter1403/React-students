@@ -2,9 +2,13 @@ import React from 'react'
 import MyCourse from './Common/MyCourse'
 import RightArrow from '../Icons/RightArrow'
 import LeftArrow from '../Icons/LeftArrow'
+import { useFetchMyCourses } from '../../../core/Hook/useFetchMyCourses/useFetchMyCourses'
 
 
 const MyCourses = () => {
+
+  const { myCourses } = useFetchMyCourses();
+
   return (
     <div className='w-[1180px] mt-6 pt-4 bg-[#F6F6F6] rounded-3xl   dark:bg-[#404040]'>
       <div className='flex items-center w-[1150px] h-11 mx-auto pr-3 font-[semibold] text-[14px] text-[#707070] bg-[#F1F1F1] rounded-[50px]
@@ -17,7 +21,11 @@ const MyCourses = () => {
         <span className='mr-32'>سطح</span>
       </div>
       <div className='w-[1150px]'>
-        <MyCourse/>
+        {
+          myCourses.map((item , index) => {
+            return <MyCourse item={item} key={index}/>
+          })
+        }
       </div>
       <div className='flex justify-center items-center w-min h-12 mx-auto mt-20 bg-[#EFEFEF] rounded-2xl   dark:bg-[#606060]'>
         <RightArrow/>

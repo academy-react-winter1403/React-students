@@ -6,9 +6,11 @@ import DateIcon from '../Icons/DateIcon'
 import RemoveIcon from '../Icons/RemoveIcon'
 
 const MyRCoursesContent = () => {
+
+  
   return (
     <div className='w-[1230px] pr-6 py-6 bg-[#FCFCFC] rounded-3xl   dark:bg-[#606060]'>
-      <h3 className='font-[bold] text-[24px] text-[#2F2F2F]   dark:text-[#FFFFFF]'>رزرو من</h3>
+      <h3 className='font-[bold] text-[24px] text-[#2F2F2F]   dark:text-[#FFFFFF]'>رزرو های من</h3>
       <div className='flex justify-start items-end gap-6 mt-8'>
         <div>
           <div className='flex gap-2'>

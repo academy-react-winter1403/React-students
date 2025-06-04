@@ -58,12 +58,12 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        path: "/stupanelcourses",
+        path: "/stupanelmycourses",
         element: <StuPanelCourse/>,
         errorElement: <Error/>
       },
       {
-        path: "/stupanelreservedcourses",
+        path: "/stupanelmyreserveds",
         element: <StuPanelReserved/>,
         errorElement: <Error/>
       },

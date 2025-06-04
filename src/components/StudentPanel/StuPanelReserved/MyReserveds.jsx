@@ -1,10 +1,14 @@
 import React from 'react'
+import useFetchMyReserveds from '../../../core/Hook/useFetchMyReserveds/useFetchMyReserveds'
 import MyReservedCourse from './Common/MyReservedCourse'
 import RightArrow from '../Icons/RightArrow'
 import LeftArrow from '../Icons/LeftArrow'
 
 
-const MyCourses = () => {
+const MyReserveds = () => {
+
+  const { myReserveds} = useFetchMyReserveds();
+
   return (
     <div className='w-[1180px] mt-6 pt-4 bg-[#F6F6F6] rounded-3xl   dark:bg-[#404040]'>
       <div className='flex items-center w-[1150px] h-11 mx-auto pr-3 font-[semibold] text-[14px] text-[#707070] bg-[#F1F1F1] rounded-[50px]
@@ -17,7 +21,11 @@ const MyCourses = () => {
         <span className='mr-32'>سطح</span>
       </div>
       <div className='w-[1150px]'>
-        <MyReservedCourse/>
+        {
+          myReserveds.map((item , index) => {
+            return <MyReservedCourse item={item} key={index}/>
+          })
+        }
       </div>
       <div className='flex justify-center items-center w-min h-12 mx-auto mt-20 bg-[#EFEFEF] rounded-2xl   
         dark:text-[#FFFFFF] dark:bg-[#606060]'>
@@ -35,4 +43,4 @@ const MyCourses = () => {
   )
 }
 
-export default MyCourses
+export default MyReserveds

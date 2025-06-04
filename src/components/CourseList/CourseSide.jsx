@@ -42,7 +42,8 @@ const CourseSide = ({ onSearchChange, onPriceRangeChange }) => {
       )}
 
       <div
-        className={`md:hidden w-[300px] h-full transform transition-transform duration-300 ease-in-out shadow-md bg-[#F8F8F8] fixed top-0 right-0 z-40 
+        className={`md:hidden w-[300px] h-full transform transition-transform duration-300 ease-in-out shadow-md bg-[#F8F8F8] fixed top-0 right-0 z-40
+          dark:bg-[#606060] 
         ${isMenuOpen ? 'translate-x-0' : 'translate-x-[300px]'}`}>
         <div className="flex items-center justify-end mb-[16px] px-[16px] pt-[16px]">
           <button onClick={toggleMenu}>
@@ -52,7 +53,7 @@ const CourseSide = ({ onSearchChange, onPriceRangeChange }) => {
           </button>
         </div>
         <div className="p-[16px]">
-          <h2 className="mb-[16px] font-[semibold] text-lg text-[#1E1E1E]">فیلتر ها</h2>
+          <h2 className="mb-[16px] font-[semibold] text-lg text-[#1E1E1E] dark:text-[#FFFFFF]">فیلتر ها</h2>
           <Formik initialValues={{ search: '' }} onSubmit={() => {}}>
             <Form>
               <Search onSearchChange={onSearchChange} />
@@ -73,9 +74,9 @@ const CourseSide = ({ onSearchChange, onPriceRangeChange }) => {
 
       <div className="hidden bg-[#F8F8F8]   dark:bg-[#606060]
         md:block 
-        os:w-[240px] os:h-[366px] os:px-[16px] os:py-[12px] os:rounded-[20px]
-        sm:w-[260px] sm:h-[506px] sm:px-[20px] sm:py-[16px] sm:rounded-[24px]
-        lg:w-[316px] lg:h-[646px] lg:px-[24px] lg:py-[20px] lg:rounded-[24px]">
+        os:w-[240px] os:h-[416px] os:px-[16px] os:py-[12px] os:rounded-[20px]
+        sm:w-[260px] sm:h-[556px] sm:px-[20px] sm:py-[16px] sm:rounded-[24px]
+        lg:w-[316px] lg:h-[696px] lg:px-[24px] lg:py-[20px] lg:rounded-[24px]">
         <h2 className="font-[semibold] text-[#1E1E1E] ts:text-[6px] os:text-[8px] sm:text-[12px] lg:text-[16px]
         dark:text-[#FFFFFF]">
           فیلتر ها
