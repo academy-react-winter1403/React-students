@@ -1,5 +1,5 @@
 import React from 'react'
-import useFetchFavBlogs from '../../../core/Hook/useFetchFavBlogs/useFetchFavBlogs'
+import { useFetchFavBlogs } from '../../../core/Hook/useFetchFavBlogs/useFetchFavBlogs'
 import MyFavBlog from './Common/MyFavBlog'
 import RightArrow from '../Icons/RightArrow'
 import LeftArrow from '../Icons/LeftArrow'

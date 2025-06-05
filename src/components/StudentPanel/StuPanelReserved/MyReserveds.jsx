@@ -1,5 +1,5 @@
 import React from 'react'
-import useFetchMyReserveds from '../../../core/Hook/useFetchMyReserveds/useFetchMyReserveds'
+import { useFetchMyReserveds } from '../../../core/Hook/useFetchMyReserveds/useFetchMyReserveds'
 import MyReservedCourse from './Common/MyReservedCourse'
 import RightArrow from '../Icons/RightArrow'
 import LeftArrow from '../Icons/LeftArrow'

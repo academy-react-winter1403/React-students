@@ -1,5 +1,5 @@
 import React from 'react'
-import useFetchFavCourses from '../../../core/Hook/useFetchFavCourses/useFetchFavCourses'
+import { useFetchFavCourses } from '../../../core/Hook/useFetchFavCourses/useFetchFavCourses'
 import MyFavCourse from './Common/MyFavCourse'
 import RightArrow from '../Icons/RightArrow'
 import LeftArrow from '../Icons/LeftArrow'

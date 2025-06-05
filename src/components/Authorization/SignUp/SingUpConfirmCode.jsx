@@ -10,15 +10,13 @@ import AutField from '../common/AutField';
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const CustomParagraph = ({ phoneNumber }) => {
-  return (
-    <p>
-      لطفا کد ارسال شده به شماره موبایل 
-      <span className='text-login'>{"  " + phoneNumber + "  "}</span>
-      را وارد کنید
-    </p>
-  );
-};
+const CustomParagraph = ({ phoneNumber }) => (
+  <p>
+    لطفا کد ارسال شده به شماره موبایل
+    <span className='text-login'>{"  " + phoneNumber + "  "}</span>
+    را وارد کنید
+  </p>
+);
 
 const SingUpConfirmCode = () => {
   const navigate = useNavigate();
@@ -30,17 +28,41 @@ const SingUpConfirmCode = () => {
       setPhoneNumber(storedPhoneNumber);
     } else {
       alert("لطفاً شماره موبایل را دوباره وارد کنید");
-      navigate("/");
+      navigate("/RegisterStepOne");
     }
   }, [navigate]);
 
-  const handleSubmit = (values, { setSubmitting }) => {
-    console.log('مقادیر ارسالی:', values);
-    setTimeout(() => {
-      alert("کد تایید با موفقیت ارسال شد!");
+  const handleSubmit = async (values, { setSubmitting, setErrors }) => {
+    try {
+      const response = await fetch("https://classapi.sepehracademy.ir/api/Sign/VerifyMessage", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          phoneNumber: phoneNumber,
+          verifyCode: values.verifyCode,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        alert("کد تایید با موفقیت تأیید شد!");
+        navigate("/RegisterStepThree");
+      } else {
+        if (data?.message) {
+          setErrors({ verifyCode: data.message });
+        } else {
+          alert("مشکلی در تأیید کد وجود دارد");
+        }
+      }
+    } catch (error) {
+      alert("ارتباط با سرور برقرار نشد. لطفاً دوباره تلاش کنید.");
+      console.error("API Error:", error);
+    } finally {
       setSubmitting(false);
-      navigate("/RegisterStepThree");  // next step
-    }, 1000);
+    }
   };
 
   return (
@@ -56,17 +78,28 @@ const SingUpConfirmCode = () => {
             <CustomParagraph phoneNumber={phoneNumber} />
 
             <Formik
-              initialValues={InitialValuesConfrimCode}
+              initialValues={{ verifyCode: '' }}
               validationSchema={ValidationSchemaConfrimCode}
               onSubmit={handleSubmit}
             >
               {({ isSubmitting }) => (
                 <Form className="space-y-6 bg-white rounded-xl">
                   <div className="rounded-md shadow-sm -space-y-px">
-                    <AutField name={"verificationCode"} title={"کد تایید"} type={"text"} autoComplete={"off"} placeholder={"کد تایید خود را وارد کنید"} />
+                    <AutField
+                      name={"verifyCode"}
+                      title={"کد تایید"}
+                      type={"text"}
+                      autoComplete={"off"}
+                      placeholder={"کد تایید خود را وارد کنید"}
+                    />
                   </div>
 
-                  <AutButton type={"submit"} SvgTitle={"در حال بررسی..."} isSubmittingTitle={"تایید کد"} isSubmitting={isSubmitting} />
+                  <AutButton
+                    type={"submit"}
+                    SvgTitle={"در حال بررسی..."}
+                    isSubmittingTitle={"تایید کد"}
+                    isSubmitting={isSubmitting}
+                  />
                 </Form>
               )}
             </Formik>

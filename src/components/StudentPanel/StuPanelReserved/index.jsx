@@ -1,6 +1,6 @@
 import React from 'react'
 import { Field, Formik } from 'formik'
-import MyReservedCourses from './MyReservedCourses'
+import MyReserveds from './MyReserveds'
 import SearchIcon from '../Icons/SearchIcon'
 import DateIcon from '../Icons/DateIcon'
 import RemoveIcon from '../Icons/RemoveIcon'
@@ -50,7 +50,7 @@ const MyRCoursesContent = () => {
           </div>
         </div>
       </div>
-      <MyReservedCourses/>
+      <MyReserveds/>
     </div>
   )
 }
