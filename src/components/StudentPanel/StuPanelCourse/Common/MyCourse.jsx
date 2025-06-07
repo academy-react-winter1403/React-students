@@ -7,10 +7,11 @@ import ViewIcon from '../../Icons/ViewIcon'
 const MyCourse = () => {
   return (
     <div className='flex items-center w-[1150px] h-16 mt-3 mr-3 pr-3 rounded-2xl   dark:bg-[#606060]'>
-        <div className='flex justify-center items-center w-[83px] h-[52px] bg-[#F0DB4F] rounded-xl'>
+        <div className='flex justify-center items-center bg-[#F0DB4F]   
+            xl:w-16 xl:h-10 xl:rounded-xl   3x:w-[83px] 3x:h-[52px] 3x:rounded-xl'>
             <img src={JSIcon} alt='javaScriptIcon'/>
         </div>
-        <div className='border   xl:w-[156px]   3x:w-[240px] mr-6 '>
+        <div className='border   xl:w-[160px] xl:mr-10   3x:w-[240px] 3x:mr-6'>
             <span className='font-[bold] text-[#2F2F2F]   
                 xl:text-[14px]   3x:text-[16px]   
                 dark:text-[#FFFFFF]'>دوره جاوااسکریپت</span>
@@ -25,7 +26,7 @@ const MyCourse = () => {
                 xl:text-[12px]   3x:text-[14px]   
                 dark:text-[#FFFFFF]'>29 اردیبهشت 1403</span>
         </div>
-        <div className='border   xl:w-[156px]   3x:w-[172px]'>
+        <div className='border   xl:w-[152px]   3x:w-[172px]'>
             <span className='font-[semibold] text-[#2F2F2F]   
                 xl:text-[12px]   3x:text-[14px]   
                 dark:text-[#FFFFFF]'>29 اردیبهشت 1403</span>

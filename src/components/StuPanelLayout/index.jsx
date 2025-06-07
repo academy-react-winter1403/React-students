@@ -7,7 +7,7 @@ const index = () => {
 
   return (
     <div className='flex bg-[#242424]'>
-      <StuPanelSide className='w-[294px]'/>
+      <StuPanelSide/>
       <div className='w-[1250px]'>
         <StuPanelHeader/>
         <main>

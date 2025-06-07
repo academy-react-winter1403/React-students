@@ -47,7 +47,7 @@ const SignUpForm = () => {
 
       if (data.success) {
         alert("ثبت‌نام با موفقیت انجام شد.");
-        navigate("/UserPanel");
+        navigate("/");
       } else {
         alert(data.message || "اطلاعات وارد شده نادرست است.");
       }

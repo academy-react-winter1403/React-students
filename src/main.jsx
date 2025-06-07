@@ -13,6 +13,8 @@ import SignUpForm from './components/Authorization/SignUp/SignUpForm'
 import LoginForm from './components/Authorization/Login/LoginForm'
 import Panel from './components/UsePanel/Panel'
 import StuPanelLayout from './components/StuPanelLayout'
+import DashboardContent from './components/StudentPanel/StuPanelDashboard'
+import AllProfile from './components/StudentPanel/stuPanelProfile/AllProfile'
 import StuPanelCourse from './components/StudentPanel/StuPanelCourse'
 import StuPanelReserved from './components/StudentPanel/StuPanelReserved'
 import StuPanelFavCourses from './components/StudentPanel/StuPanelFavCourses'
@@ -57,23 +59,32 @@ export const router = createBrowserRouter([
     element: <StuPanelLayout/>,
     children: [
       {
-        index: true,
-        path: "/stupanelmycourses",
+        path: "/userpaneldashboard",
+        element: <DashboardContent/>,
+        errorElement: <Error/>
+      },
+      {
+        path: "/profile/*",
+        element: <AllProfile/>,
+        errorElement: <Error/>
+      },      
+      {
+        path: "/userpanelmycourses",
         element: <StuPanelCourse/>,
         errorElement: <Error/>
       },
       {
-        path: "/stupanelmyreserveds",
+        path: "/userpanelmyreserveds",
         element: <StuPanelReserved/>,
         errorElement: <Error/>
       },
       {
-        path: "/stupanelfavcourses",
+        path: "/userpanelfavcourses",
         element: <StuPanelFavCourses/>,
         errorElement: <Error/>
       },
       {
-        path: "/stupanelfavblogs",
+        path: "/userpanelfavblogs",
         element: <StuPanelFavBlogs/>,
         errorElement: <Error/>
       },
