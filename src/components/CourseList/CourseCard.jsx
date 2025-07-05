@@ -8,18 +8,18 @@ import DateIcon from '../../assets/Icons/calendar-02-stroke-rounded 3.svg';
 import ThumbsUpIcon from '../../assets/Icons/thumbs-up.svg';
 import ThumbsDownIcon from '../../assets/Icons/thumbs-down.svg';
 
-const CourseCard = ({ data }) => {
+const CourseCard = ({ data , Id }) => {
 
   const navigate = useNavigate();
 
   return (
     <div
-      className="overflow-hidden bg-[#EAEAEA] cursor-pointer   dark:bg-[#606060] dark:text-[#FFFFFF]
+      className="overflow-hidden bg-[#e4e4e4] cursor-pointer   dark:bg-[#606060] dark:text-[#FFFFFF]
         ts:w-[140px] ts:h-[200px] ts:rounded-[16px]   
         os:w-[180px] os:h-[280px] os:rounded-[20px]   
         sm:w-[220px] sm:h-[360px] sm:rounded-[24px]   
         lg:w-[297px] lg:h-[441px] lg:rounded-[24px]"
-      onClick={() => navigate(`/detail/${id}`)}
+      onClick={() => navigate(`/coursedetail/${Id}`)}
     >
       <div className="flex justify-center bg-[#DAE01E]   
         ts:h-[80px] ts:pt-[24px] ts:rounded-b-[24px]   

@@ -4,7 +4,7 @@ import useFetchTeachers from '../../../core/Hook/useFetchTeachers/useFetchTeache
 
 const MonthlyTeachers = () => {
   const { teachers } = useFetchTeachers();
-  const threeTeachers = teachers.slice(0, 3);
+  const threeTeachers = teachers?.slice(0, 3);
   const containerRef = useRef(null);
   const [scrollAmount, setScrollAmount] = useState(0);
 
@@ -38,12 +38,12 @@ const MonthlyTeachers = () => {
         className="overflow-x-auto flex justify-start gap-[24px] mt-[40px] scroll-smooth 2x:justify-center"
       >
         {
-          threeTeachers.map((item) => {
+          threeTeachers?.map((item) => {
             return <MonthlyTeacher data={item} key={item.id} className="flex-shrink-0 w-full px-4 snap-start sm:w-[auto]" />
           })
         }
       </div>
-      {threeTeachers.length > 0 && scrollAmount > 0 && (
+      {threeTeachers?.length > 0 && scrollAmount > 0 && (
         <>
           <button
             className="absolute right-[5px] -translate-y-1/2 bg-gray-200 rounded-full p-2 opacity-50 hover:opacity-100 2x:hidden

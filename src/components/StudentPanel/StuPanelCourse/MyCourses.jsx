@@ -15,8 +15,9 @@ const MyCourses = () => {
 
 
   return (
-    <div className='bg-[#F6F6F6] 
-      w-[400px] mt-4 pt-2 rounded-2xl 
+    <div className='bg-[#F6F6F6]
+      os:w-[240px] os:mt-4 os:pt-2 os:rounded-xl 
+      sm:w-[352px] sm:mt-4 sm:pt-2 sm:rounded-2xl 
       lg:w-[640px] lg:mt-6 lg:pt-4 lg:rounded-3xl     
       xl:w-[880px]      
       3x:w-[1180px]    

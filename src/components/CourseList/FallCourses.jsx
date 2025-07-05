@@ -1,7 +1,7 @@
 import { React, useRef, useEffect, useState } from 'react';
-import FallCourse from '../Common/FallCourse/FallCourse';
-import SeeAll from '../Common/SeeAll/SeeAll';
-import useFetchFallCourses from '../../../core/Hook/useFetchFallCourses/useFetchFallCourses';
+import FallCourse from '../Landing/Common/FallCourse/FallCourse';
+import SeeAll from '../Landing/Common/SeeAll/SeeAll';
+import useFetchFallCourses from '../../core/Hook/useFetchFallCourses/useFetchFallCourses';
 
 
 
@@ -42,12 +42,12 @@ const FallCourses = () => {
         ref={containerRef}
       >
         {
-          fallCourses.map((item , index) => {
+          fallCourses?.map((item , index) => {
             return <FallCourse data={item} key={index} className="flex-shrink-0 w-full px-4 snap-start sm:w-[auto]" />
           })
         }
       </div>
-      {fallCourses.length > 0 && scrollAmount > 0 && (
+      {fallCourses?.length > 0 && scrollAmount > 0 && (
         <>
           <button
             className="absolute right-[5px] -translate-y-1/2 bg-gray-200 rounded-full p-2 opacity-50 hover:opacity-100 2x:hidden

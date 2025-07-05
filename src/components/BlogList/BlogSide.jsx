@@ -6,6 +6,9 @@ import CoursePrice from '../CourseList/Common/CoursePrice/CoursePrice';
 import Date from '../CourseList/Common/Date/Date';
 
 const CourseSide = ({ onSearchChange }) => {
+  const MIN_PRICE = 100;
+const MAX_PRICE = 12000;
+  const [priceRange, setPriceRange] = useState([MIN_PRICE, MAX_PRICE]); 
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => {
@@ -51,7 +54,11 @@ const CourseSide = ({ onSearchChange }) => {
               {sideData.map((item, index) => (
                 <DropDownHolder key={index} title={item.title} placeholder={item.placeholder} />
               ))}
-              <CoursePrice />
+              <CoursePrice
+               min={MIN_PRICE} 
+              max={MAX_PRICE} 
+              values={priceRange} 
+              />
               <Date />
             </Form>
           </Formik>

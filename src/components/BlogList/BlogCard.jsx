@@ -10,8 +10,8 @@ import ViewIcon from '../../assets/Icons/view.svg'
 
 
 
-const BlogCard = ({data}) => {
-
+const BlogCard = ({data,Id}) => {
+console.log(Id)
   const navigate = useNavigate();
 
   return (
@@ -21,7 +21,7 @@ const BlogCard = ({data}) => {
         os:w-[180px] os:h-[280px] os:rounded-[20px]   
         sm:w-[240px] sm:h-[360px] sm:rounded-[24px]   
         lg:w-[297px] lg:h-[441px] lg:rounded-[24px]"
-        onClick={() => navigate(`/detail/${id}`)}
+        onClick={() => navigate(`/blogdetail/${Id}`)}
     >
         <div className="flex justify-center bg-[#DAE01E]   ts:h-[80px] ts:pt-[24px] ts:rounded-b-[24px]   os:h-[120px] os:pt-[32px] os:rounded-b-[28px]   sm:h-[160px] sm:pt-[40px] sm:rounded-b-[32px]   lg:h-[191px] lg:pt-[48px] lg:rounded-b-[32px]">
             <img className="ts:w-[14px] ts:h-[14px]   os:w-[28px] os:h-[28px]   sm:w-[56px] sm:h-[56px]   lg:w-[112px] lg:h-[112px]" src={JsIcon2} alt="javaScriptIcon"/>
@@ -35,7 +35,7 @@ const BlogCard = ({data}) => {
             </div>
             <h2 className={`${Styles.overflow} font-[semibold]   dark:text-[#FFFFFF]
                 ts:mt-[4px] ts:text-[8px]   os:mt-[4px] os:text-[12px]   sm:mt-[8px] sm:text-[16px]   lg:mt-[8px] lg:text-[20px]`}>
-                {data.googleTitle}
+                {data.title}
             </h2>
             <p className={`${Styles.overflow} font-[semibold] text-[#868686]   dark:text-[#FFFFFF]  
                 ts:mt-[4px] ts:text-[6px]   os:mt-[4px] os:text-[8px]   sm:mt-[8px] sm:text-[12px]   lg:mt-[8px] lg:text-[14px]`}>
@@ -46,7 +46,7 @@ const BlogCard = ({data}) => {
                 <img className="ts:w-[12px] ts:h-[12px]   os:w-[16px] os:h-[16px]   sm:w-[20px] sm:h-[20px]   lg:w-[24px] lg:h-[24px]" src={WriteIcon} alt="writeIcon"/>
                 <span className="font-[semibold] text-[#1E1E1E]   dark:text-[#FFFFFF]
                     ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[14px]">
-                    {data.teacherName}
+                    {data.addUserFullName}
                 </span>
             </div>
             <div className="flex items-center   
@@ -64,14 +64,14 @@ const BlogCard = ({data}) => {
                         <img className="ts:w-[12px] ts:h-[12px]   os:w-[16px] os:h-[16px]   sm:w-[20px] sm:h-[20px]   lg:w-[24px] lg:h-[24px]" src={ThumbsUpIcon} alt="thumbsUpIcon"/>
                         <span className="font-[medium]   dark:text-[#FFFFFF]
                             ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[16px]">
-                            {data.likeCount}
+                            {data.currentLikeCount}
                         </span>
                     </div>
                     <div className="flex items-center   ts:gap-[4px]   os:gap-[4px]   sm:gap-[8px]   lg:gap-[8px]">
                         <img className="ts:w-[12px] ts:h-[12px]   os:w-[16px] os:h-[16px]   sm:w-[20px] sm:h-[20px]   lg:w-[24px] lg:h-[24px]" src={ThumbsDownIcon} alt="thumbsDownIcon"/>
                         <span className="font-[medium]   dark:text-[#FFFFFF]
                             ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[16px]">
-                            {data.dissLikeCount}
+                            {data.currentDissLikeCount}
                         </span>
                     </div>
                 </div>
@@ -80,7 +80,7 @@ const BlogCard = ({data}) => {
                     <img className="w-[24px] h-[24px]" src={ViewIcon} alt="viewIcon"/>
                     <span className="font-[medium]   dark:text-[#FFFFFF]
                         ts:text-[6px]   os:text-[8px]   sm:text-[12px]   lg:text-[16px]">
-                        {data.currentRegistrants}
+                        {data.currentView}
                     </span>
                 </div>
             </div>

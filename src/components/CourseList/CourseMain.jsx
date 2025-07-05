@@ -8,6 +8,7 @@ const CourseMain = ({ courses, searchTerm, currentPage, itemsPerPage }) => {
   const displayedCourses = (courses || []).filter(item =>
     item.title?.toLowerCase().includes(searchTerm?.toLowerCase() || "")
   ).slice(startIndex, endIndex);
+  console.log(displayedCourses)
 
   return (
     <div className="flex flex-row flex-wrap justify-center
@@ -18,8 +19,9 @@ const CourseMain = ({ courses, searchTerm, currentPage, itemsPerPage }) => {
       {displayedCourses?.length > 0 ? (
         displayedCourses.map((item) => (
           <CourseCard
-            data={item}
-            key={item.id}
+          key={item.id}
+          Id={item.courseId}
+          data={item}
           />
         ))
       ) : searchTerm ? (

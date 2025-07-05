@@ -19,6 +19,7 @@ const BlogContent = () => {
   }, []);
 
   const { blogs: allBlogs } = useFetchBlogs();
+  console.log(allBlogs)
 
   useEffect(() => {
     if (allBlogs?.length > 0) {

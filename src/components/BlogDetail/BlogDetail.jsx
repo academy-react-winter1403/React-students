@@ -4,14 +4,13 @@ import BlogCard from './BlogCard'
 import BlogText from './BlogText'
 import BlogComments from './BlogComments'
 import { useFetchBlog } from '../../core/hooks/useFetchCourseDetail/useFetchBlog'
+import { useParams } from 'react-router-dom'
 // import { getApi } from "../../core/services/api/index";
 // import { useParams } from 'react-router-dom'
   
 const BlogDetail = () => {
-
-    const { blog } = useFetchBlog();
-  
-    console.log(blog);
+  const { blog } = useFetchBlog();
+  console.log(blog)
 
   
   return (

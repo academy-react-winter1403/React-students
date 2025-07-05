@@ -10,7 +10,7 @@ const CoursePrice = ({ min, max, values, setValues }) => {
       <small className='block mt-2 text-sm text-[#99a3ba]'>
         قیمت فعلی : {values[1]} تومان - {values[0]} تومان
       </small>
-      <Slider className={Styles.slider} value={values} min={min} max={max} onChange={setValues}/>
+      <Slider className={Styles.slider} value={values} min={min} max={max} onChange={setValues ?? null}/>
     </div>
   )
 }

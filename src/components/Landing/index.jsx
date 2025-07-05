@@ -4,9 +4,9 @@ import HeroSection from '../Landing/HeroSection/HeroSection'
 import VectorLines from '../Landing/VectorLines/VectorLines'
 import Academy from '../Landing/Academy/Academy'
 import Courses from '../Landing/Courses/Courses'
-import FallCourses from '../Landing/FallCourses/FallCourses'
 import WeeklyBlogs from '../Landing/WeeklyBlogs/WeeklyBlogs'
 import MonthlyTeachers from '../Landing/MonthlyTeachers/MonthlyTeachers'
+import FallCourses from '../CourseList/FallCourses'
 
 const index = () => {
   return (

@@ -1,8 +1,8 @@
-// import HandEmoji from '../../StuPanelLayout/Icons/emoji.png'
-// import timepic from '../../StuPanelLayout/Icons/time.png'
-// import leftSideArrow from '../../StuPanelLayout/Icons/leftSideArrow.png'
-// import writingIcon from '../../StuPanelLayout/Icons/writing.png' 
-// import UserPhoto from '../../../assets/Icons/StudentPanel/userPhoto.svg'
+import HandEmoji from '../../../assets/Icons/StuPanelLayout/Icons/emoji.png'
+import timepic from '../../../assets/Icons/StuPanelLayout/Icons/time.png'
+import leftSideArrow from '../../../assets/Icons/StuPanelLayout/Icons/leftSideArrow.png'
+import writingIcon from '../../../assets/Icons/StuPanelLayout/Icons/writing.png' 
+import UserPhoto from '../../../assets/Icons/StudentPanel/userPhoto.svg'
 import CircleProgress from './CircleProgress'
 
 const DashboardContent = () => {

@@ -39,31 +39,31 @@ const LoginForm = () => {
   };
 
   const handleSubmit = async (values, { setSubmitting }) => {
-    alert('🟡 ارسال فرم شروع شد');
+    // alert('🟡 ارسال فرم شروع شد');
     try {
       //Send request for Server
       const response = await postLoginForm(values);
 
       // Show Response
-      alert('📦 پاسخ دریافتی:\n' + JSON.stringify(response, null, 2));
-      console.log('📦 پاسخ دریافتی:', response);
+      // alert('📦 پاسخ دریافتی:\n' + JSON.stringify(response, null, 2));
+      // console.log('📦 پاسخ دریافتی:', response);
 
       // get token from response
       const token = response?.token || response?.data?.token || response?.access;
 
       if (token) {
-        alert('🟢 توکن دریافت شد و ذخیره می‌شود');
+        // alert('🟢 توکن دریافت شد و ذخیره می‌شود');
         setItem('token', token);
         alert('➡️ هدایت به userPanel...');
-        navigate('/userPanel');
+        navigate('/userpaneldashboard');
       } else {
-        alert('⚠️ توکنی دریافت نشد!');
+        // alert('⚠️ توکنی دریافت نشد!');
       }
     } catch (error) {
-      alert('🔴 خطا در ورود: ' + error.message);
-      console.error('خطا در ورود:', error);
+      // alert('🔴 خطا در ورود: ' + error.message);
+      // console.error('خطا در ورود:', error);
     } finally {
-      alert('✅ عملیات به پایان رسید');
+      // alert('✅ عملیات به پایان رسید');
       setSubmitting(false);
     }
   };

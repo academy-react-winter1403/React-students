@@ -3,14 +3,14 @@ import { useParams } from "react-router-dom";
 import { getApi } from "../../services/api";
 
 const useFetchBlog = () => {
-  const params = useParams()
-  console.log(params);
+  const params = useParams();
 
   const [blog, setBlog] = useState([])
 
   const fetchApi = async () => {
-    const res = await getApi(`/News/${params.blogId}`)
-    res.detailsNewsDto && setBlog(res?.detailsNewsDto)
+    const res = await getApi(`/News/${params.id}`)
+    console.log(res)
+    res?.detailsNewsDto && setBlog(res?.detailsNewsDto)
   }
 
   useEffect(() => {

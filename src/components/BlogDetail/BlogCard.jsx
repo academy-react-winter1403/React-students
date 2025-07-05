@@ -86,7 +86,7 @@ const BlogCard = ({title, name , date , comments, showCourseText = false , floor
               <span className='flex justify-center items-center lg:w-11 md:w-8 md:h-8 lg:h-[90%] rounded-full bg-[#A74DD0]'>
                 {liked ? <FilledLike /> : <LikeIcon />}
               </span>
-              <span>{blog?.currentLikeCount}</span>
+              {/* <span>{blog?.currentLikeCount}</span> */}
             </div>
     
             
@@ -94,7 +94,7 @@ const BlogCard = ({title, name , date , comments, showCourseText = false , floor
               <span className='flex justify-center items-center lg:w-12 md:w-8 md:h-8 lg:h-12 rounded-full bg-white'>
                 {disliked ? <FilledDislike /> : <Dislike />}
               </span>
-              <span>{blog?.currentDislikeCount}</span>
+              {/* <span>{blog?.currentDislikeCount}</span> */}
             </div> 
           </div>
           

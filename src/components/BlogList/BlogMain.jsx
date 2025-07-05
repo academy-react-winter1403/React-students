@@ -11,8 +11,9 @@ const BlogMain = ({ displayedBlogs }) => {
       {displayedBlogs?.length > 0 ? (
         displayedBlogs.map((item) => (
           <BlogCard
-            data={item}
             key={item.id}
+            data={item}
+            Id={item.id}
           />
         ))
       ) : (

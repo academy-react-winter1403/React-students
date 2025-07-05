@@ -14,12 +14,12 @@ import LogOutIcon from '../Icons/LogOutIcon'
 const StuPanelSide = () => {
 
     const sideItems = [
-        {id:1 , itemsName:"داشبرد" , itemsIcon: DashboardIcon},
-        {id:2 , itemsName:"دوره من" , itemsIcon: MyCourseIcon, to:"/stupanelcourses"},
-        {id:3 , itemsName:"رزرو من" , itemsIcon: MyReserveIcon, to:"/stupanelreservedcourses"},
-        {id:4 , itemsName:"دوره های مورد علاقه" , itemsIcon: FavoriteCoursesIcon, to:"/stupanelfavcourses"},
-        {id:5 , itemsName:"بلاگ های مورد علاقه" , itemsIcon: FavoriteBlogsIcon, to:"/stupanelfavblogs"},
-        {id:6 , itemsName:"پروفایل" , itemsIcon: ProfileIcon},
+        {id:1 , itemsName:"داشبرد" , itemsIcon: DashboardIcon, to:"/userpaneldashboard"},
+        {id:2 , itemsName:"دوره من" , itemsIcon: MyCourseIcon, to:"/userpanelmycourses"},
+        {id:3 , itemsName:"رزرو من" , itemsIcon: MyReserveIcon, to:"/userpanelmyreserveds"},
+        {id:4 , itemsName:"دوره های مورد علاقه" , itemsIcon: FavoriteCoursesIcon, to:"/userpanelfavcourses"},
+        {id:5 , itemsName:"بلاگ های مورد علاقه" , itemsIcon: FavoriteBlogsIcon, to:"/userpanelfavblogs"},
+        {id:6 , itemsName:"پروفایل" , itemsIcon: ProfileIcon, to:"/profile/*"},
         {id:7 , itemsName:"پرداخت ها" , itemsIcon: PaymentsIcon}
     ]
 
